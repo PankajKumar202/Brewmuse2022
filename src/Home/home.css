@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: 0;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+/* Image Div Starts */
+#section{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-position-x: center;
+}
+
+#section1{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/2.png);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#section2{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/3.jpg);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#section3{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/4.jpg);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#section4{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/5.png);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#section5{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/6.png);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#section6{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/7.jpg);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#section7{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/8.png);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#section8{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/9.jpg);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#section9{
+    height: 560px;
+    width: 100%;
+    background-image: url(../../images/10.jpg);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+/* Image Div ends */
+
+#section10{
+    height: 550px;
+    width: 100%;
+}
+
+#component1{
+    float: left;
+    width: 30%;
+    margin-left: 6%;
+    margin-top: 6%;
+}
+
+#component2{
+    float: right;
+    width: 30%;
+    margin-right: 15%;
+    margin-top: 12%;
+}
+
+#component2>h4{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+
+#component2>p{
+    text-transform: italic;
+    font-size: 18px;
+    color: #000;
+    padding-top: 1%;
+}
+
+#section11{
+    height: 530px;
+    width: 100%;
+}
+
+#component3{
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+#component3>h4{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+
+#component3>p{
+    text-transform: italic;
+    font-size: 18px;
+    color: #000;
+    padding-top: 1%;
+}
+
+#component4{
+    float: right;
+    width: 30%;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+
+/* Coupon Code */
+#coupon{
+    height: 375px;
+    width: 405px;
+    visibility: hidden;
+    z-index:100;
+    margin-left: 35%;
+    margin-top: 6%;
+    display: inline-block;
+    border: 2px ridge white;
+    box-shadow: 10px 20px 15px #0b180e;
+    position: absolute;
+}
+
+#offer1{
+    display: inline-block;
+}
+
+#offer2{
+    display: inline-block;
+    margin-left: -1%;
+    width: 202px;
+}
+
+#offer3{
+    display:block;
+}
+
+#couponBtn{
+    position:absolute;
+    margin-top: -93%;
+    margin-left: 95%;
+    z-index: 100;
+    background-color: #5b5959;
+    color: #f7f7f7
+}
+/* Coupon Code Ends */
+
+
+@media screen and (max-width: 1400px){
+    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section9{
+        background-position-x: 45%;   
+    }
+    #section8{
+        background-position-x: 55%;
+    }
+}
+
+@media screen and (max-width:1238px){
+    #section8{
+        background-position-x: 60%;
+    }
+}
+
+@media  screen and (max-width:1200px){
+    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9{
+        height: 100%;
+        width: 100%; 
+        background-position-x: 46%;
+    }
+    #section8{
+        background-position-x: 70%;
+    }
+}
+
+@media screen and (max-width: 1104px){
+    #component2{
+        margin-right: 7%;
+    }
+    #component4>img{
+        margin-left: -35%;
+    }
+}
+
+@media  screen and (max-width: 1100px){
+    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9{
+        height: 50%;
+        background-position-x: 50%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .container-fluid{
+        background-color:black;
+    }
+    #section10, #section11{
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 902px){
+    #component1{
+        margin-left: 0%;
+    }
+    #component3{
+        margin-left: 3%
+    }
+    #component4{
+        margin-right: 24%;
+    }
+} 
+
+@media screen and (max-width: 840px){
+    #component1{
+        width: 100%;
+    }
+    #component1>img{
+        margin-left: 25%;
+    }
+    #component2 {
+        width: 86%;
+        margin-top: 6%;
+        text-align: center;
+    }
+    #section11{
+        height: 650px;
+    }
+    #component3{
+        width: 95%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    #component4{
+        width: 43%;
+        margin-top: 8%;
+    }
+    #coupon{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #component1>img{
+        margin-left: 15%;
+    }
+    #component4{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9{
+        height: 900px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position-x: center;   
+    }
+    #section{
+        background-image: url(https://i.ibb.co/G0PkpGC/section.jpg);
+    }
+    #section1{
+        background-image: url(https://i.ibb.co/BBjHr4X/section1.png);
+    }
+    #section2{
+        background-image: url(https://i.ibb.co/HHP8hy3/section2.jpg);
+    }
+    #section3{
+        background-image: url(https://i.ibb.co/6gKXWyt/section3.jpg);
+    }
+    #section4{
+        background-image: url(https://i.ibb.co/zhwmckZ/section4.png);
+    }
+    #section5{
+        background-image: url(https://i.ibb.co/yYTkwyk/section5.png);
+    }
+    #section6{
+        background-image: url(https://i.ibb.co/F8WsmbT/section6.jpg);
+    }
+    #section7{
+        background-image: url(https://i.ibb.co/mcNPtYj/section7.png);
+    }
+    #section8{
+        background-image: url(https://i.ibb.co/9vgCsXd/section8.jpg);
+    }
+    #section9{
+        background-image: url(https://i.ibb.co/NCKjSgY/section9.jpg);
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    #section11{
+        height: 500px;
+    }
+    #component1>img {
+        margin-left: 13%;
+        width: 75%;
+    }
+    #component4>img {
+        width: 150%;
+        margin-left: -35%;
+        margin-top: -10%;
+    }
+    #coupon{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #section11 {
+        height: 460px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    #component4>img {
+        margin-top: -25%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    #offer1 {
+        width: 100px;
+        height: 125px;
+    }
+    #offer2 {
+        margin-left: -3%;
+        width: 100px;
+        height: 125px;
+    }
+    #offer3 {
+        width: 200px;
+    }
+    #coupon {
+        height: 190px;
+        width: 204px;
+        margin-left: 25%;
+    }
+    #couponBtn {
+        margin-top: -94%;
+        margin-left: 90%;
+    }   
+}
+
+@media screen and (max-width:400px){
+    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9 {
+        background-position-x: 54%;
+    }
+    #section{
+        background-position-x: 54%;
+    }
+    #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9 {
+        background-position-x: 50%;
+    }
+    #component4>img {
+        margin-top: -80%;
+    }
+    #section11 {
+        height: 340px;
+    }
+}

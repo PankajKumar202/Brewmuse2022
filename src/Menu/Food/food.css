@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: auto;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+/* Main Div Starts */
+#mainMenu{
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+h2, img{
+    padding: 0.5%;
+}
+
+h3{
+    line-height: 1px;
+    padding: 1%;
+    padding-left: 0%;
+    margin-left: 0.5%;
+}
+
+.content{
+    font-size: 14px;
+    padding: 1%;
+    width: 77%;
+    padding-top: 1%;
+}
+
+#links1>a, #links2>a{
+    text-decoration: none;
+    color: #2a8a15 !important;
+}
+
+#links1, #links2{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5%;
+    margin-left: -4%;
+    margin-top: -2%;
+}
+
+#links1>a>h2:hover, #links2>a>h2:hover{
+    color: #fff !important;
+    background-color: #2a8a15;
+}
+
+#menu1:hover{
+    width: 215px;
+}
+
+#menu2:hover{
+    width: 210px;
+}
+
+#menu4:hover{
+    width: 198x;
+}
+
+#menu6:hover{
+    width: 125px;
+}
+
+#div3{
+    margin-left: 1%;
+    padding-bottom: 2%;
+}
+
+span > a{
+    text-decoration: none;
+    color: #2a8a15 !important;
+}
+
+span > a:hover{
+    color: #fff !important;
+    background-color: #2a8a15;
+}
+
+/* Main Div Ends */
+
+/* Code for responsive designing using Media Query*/
+@media screen and (max-width: 1400px){
+    .subHeadings,.heading,.footerLinks2{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    #links1{
+        padding: 4%;
+        padding-bottom: 2%;
+    }
+    #links2{
+        display: block;
+        padding: 4%;
+        padding-top: 0%;
+    }
+    img{
+        width: 85%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #div3 {
+        margin-left: 1%;
+        padding-bottom: 6%;
+        padding-top: 3%;
+    }
+}
+
