@@ -1,0 +1,137 @@
+/* Responsibility css */
+.articleBlock{
+    padding-top:32px;
+    margin-left:3%;
+    width: 80%;
+}
+.articleHeading{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+    display: inline;
+}
+.summaryHead{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    width: 80%;
+}
+.image{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    width:42.5%;
+}
+.paraText{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    font-size: 15px;
+}
+.community{
+    margin-left:3%;
+}
+.comHeadline{
+    color:green;
+}
+
+.comImage>img{
+    width:40%;
+    height:auto;
+}
+.Environment{
+    margin-left:3%;
+}
+.envHeadline{
+    color:green;
+}
+.ethicalSource{
+    margin-left:3%;
+}
+.ethHeadline{
+    color:green;
+}
+.Diversity{
+    margin-left:3%;
+}
+.divHeadline{
+    color:green;
+}
+.spanHead{
+    margin-left:3%;
+}
+@media screen and (min-width:800px) and (max-width:1000px){
+   .image>img{
+       width:150%;
+   } 
+}
+@media screen and (min-width:600px) and (max-width:800px){
+   .image>img{
+       width:150%;
+   } 
+    .summaryHead{
+        font-size:19px;
+    }
+    .comImage>img{
+        height:230px;
+        width:70%;
+    }
+    .comPara{
+        margin-top:5%;
+    }
+}
+@media screen and (min-width:400px) and (max-width:600px){
+    .image>img{
+       width:230%;
+    } 
+    .summaryHead{
+        font-size:19px;
+    }
+    .comImage>img{
+        height:230px;
+        width:90%;
+    }
+}
+@media screen and (min-width:250px) and (max-width:400px){
+   .image>img{
+       width:220%;
+    } 
+    .summaryHead{
+        font-size:14px;
+    }
+    /* community */
+    .comHeadline{
+        display:inline
+    }
+    .comPara{
+        width:70%;
+        margin-top:2%;
+    }
+    .comImage>img{
+        height:150px;
+        width:77%;
+        margin-top:3%;
+    }
+    .envPara{
+        width:70%;
+        margin-top:2%;
+    }
+      .envHeadline{
+        display:inline
+    }
+      .ethPara{
+        width:70%;
+        margin-top:2%;
+    }
+     .ethHeadline{
+        display:inline
+    }
+        .divPara{
+        width:70%;
+        margin-top:2%;
+    }
+     .divHeadline{
+        display:inline
+    }
+}

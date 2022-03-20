@@ -64,16 +64,16 @@ const Header=()=>{
                     <div className="collapse navbar-collapse w-50" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to={"coffee.html"} >COFFEE</Link>
+                                <Link className="nav-link active" aria-current="page" to={"/coffee"} >COFFEE</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="Menu" >MENU</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to={"coffeehouse.html" } >COFFEEHOUSE</Link>
+                                <Link className="nav-link active" to={"/coffeeHouse"} >COFFEEHOUSE</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to={"responsibility.html"} >RESPONSIBILITY</Link>
+                                <Link className="nav-link active" to={"/Responsibility"} >RESPONSIBILITY</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to={"#"}>REWARDS</Link>

@@ -2,28 +2,27 @@ import React,{Component} from "react";
 import {Link} from 'react-router-dom';
 import "./delivers.css";
 import Deliverdisplay from "./deliverDisplay";
+import Search from "./search";
 const menuUrl="https://brewmusepk.herokuapp.com/Menu";
 class delivers extends Component{
     constructor(props){
         super(props)
         this.state={
             items:"",
-            filtered:"",
-            keywords:""
+            filtered:""
+          
+           
         }
     }
-    handleChange=(event)=>{
-        console.log(event.target.value)
-        this.setState({keywords:event.target.value?event.target.value:'User Text'})
-        this.props.userInput(event.target.value);
-    }
-    filterProduct = (userText) => {
-        let output = this.state.items.filter((item) => {
-            return item.name.toLowerCase().indexOf(userText.toLowerCase()) > -1
+  
+    filtered=(userText)=>{
+        let output=this.state.items.filter((item)=>{
+            return item.name.toLowerCase().indexOf(userText.toLowerCase())>-1
         })
-        this.setState({ filtered: output })
+        this.setState({filtered:output})
+        
     }
-   
+
     render(){
         return(
 
@@ -34,14 +33,14 @@ class delivers extends Component{
         
     
     <div id="buttons">
-        <Link to={"#"}><button className="btn btn-secondary"><img src="./images/starbucks delivers/user-plus.svg" alt="" id="signImage"/> Sign in</button></Link>
-        <Link to={"#"}><button className="btn btn-primary"><img src="./images/starbucks delivers/log-in.svg" alt="" id="loginImage"/><span id="loginText">Login</span></button></Link>
-        <Link to={"#"}><button id="cart"  className="btn btn-success"><img src="./images/starbucks delivers/shopping-bag (1).svg" alt="" id="cartImg"/><span id="cartText">Cart</span><span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>1</button></Link>
+        <Link to={"#"}><button className="btn btn-secondary" id="signUp"><img src="/images/deliver/user-plus.svg" alt="" id="signImage"/><span id="signText">Sign up</span></button></Link>
+        <Link to={"#"}><button className="btn btn-primary" id="logIn"><img src="/images/deliver/log-in.svg" alt="" id="loginImage"/><span id="loginText">Login</span></button></Link>
+        <Link to={"#"}><button id="cart"  className="btn btn-success"><img src="/images/deliver/shopping-bag.svg" alt="" id="cartImg"/><span id="cartText">Cart</span><span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span></button></Link>
     </div>
     <form id="form"> 
      <img src="./images/starbucks delivers/search.svg" alt=""/> 
     <i className="fas fa-search"></i>
-        <input userinput={(data) => { this.filterProduct(data) }} onChange={this.handleChange} type="search" id="query" name="q" placeholder="Search..."/>
+        <Search userInput={(data) => { this.filtered(data) }} />
         {/* <button>Search</button>  */}
       </form>
       <span id="budgt">Cost For Two : <i className="fa-solid fa-indian-rupee-sign"></i>1200</span>
@@ -58,7 +57,8 @@ class delivers extends Component{
         fetch(menuUrl,{method:'GET'})
         .then((res)=>res.json())
         .then((data)=>{
-            this.setState({filtered:data})
+            this.setState({items:data,filtered:data})
+           
         })
     }
     

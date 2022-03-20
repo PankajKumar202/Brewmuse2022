@@ -46,10 +46,12 @@ body{
     margin-top:0.5%;
 }
 #cartImg{
-    margin-left:-48%;
-    position:absolute;
-    margin-top:-18%;
-    filter:invert(1);
+  
+    margin-left: -11%;
+    position: absolute;
+    margin-top: -14%;
+    filter: invert(1);
+
 }
 #loginImage{
     margin-left:-30%;
@@ -59,8 +61,14 @@ body{
 #loginText{
     margin-left:12%
 }
+#signText{
+    
+    margin-left: 7%;
+
+}
 #signImage{
-    filter:invert(1)
+    filter:invert(1);
+    margin-left: -11%;
 }
 #cartText{
     margin-left:-5%;
@@ -68,8 +76,9 @@ body{
     position:absolute;
 }
 .btn-secondary{
-    float:right;
-    margin-left:1%;
+    float: right;
+    margin-left: 1%;
+    height: 40px;
 }
 .btn-primary{
     float:right;
@@ -702,7 +711,8 @@ footer{
 /* responsive for page */
 @media screen and (min-width:1800px) and (max-width:2000px){
     #cart{
-        margin-left:29.8%;
+        margin-left: 29.8%;
+        width: 4%;
     }
     #delTime{
         margin-left:48%;
@@ -711,7 +721,8 @@ footer{
         width:255%;
     }
     #form>i{
-        margin-left:239%;
+        margin-left: 232%;
+        margin-top: 6%;
     }
     .component1{
         margin-top:2%;

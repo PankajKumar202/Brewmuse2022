@@ -19,6 +19,7 @@ class Drinks extends Component{
     }
 
     render(){
+        console.log(">>>>>Inside render drinks js",this.state.category_id)
         return(
 
             <div className="container" id="mainMenu">
