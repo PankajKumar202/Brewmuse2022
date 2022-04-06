@@ -1,0 +1,33 @@
+.map-container {
+    position: absolute;
+    display: inline-block;
+    height: 646px;
+    width: 69%;
+    margin-top: 3%;
+    margin-left: 31%;
+    border: 5px solid #006341;
+}
+#storeContainer{
+   margin-top:2%;
+  width: 30%;;
+    
+}
+#storeBox{
+    height: 300px;
+    width: 95%;
+    border: 2px solid  #006341;
+    margin-left: 2.5%;
+    color: #006341;
+    margin-top: -134%;
+}
+#storeComponent{
+    display: inline-block;
+    border: 2px solid  #006341;
+width: 60%;
+
+margin-top: 4%;
+margin-left: 2%;
+
+}
+
+/* Pagination css */

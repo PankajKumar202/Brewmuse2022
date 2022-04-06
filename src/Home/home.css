@@ -18,7 +18,7 @@ body{
 #section1{
     height: 560px;
     width: 100%;
-    background-image: url(../../images/2.png);
+    background-image: url(../../images/2.jpg);
     background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@ body{
 
 
 @media screen and (max-width: 1400px){
-    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section9{
+    .homies{
         background-position-x: 45%;   
     }
     #section8{
@@ -225,7 +225,7 @@ body{
 }
 
 @media  screen and (max-width:1200px){
-    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9{
+    .homies{
         height: 100%;
         width: 100%; 
         background-position-x: 46%;
@@ -245,14 +245,14 @@ body{
 }
 
 @media  screen and (max-width: 1100px){
-    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9{
+   .homies{
         height: 50%;
         background-position-x: 50%;
     }
 }
 
 @media screen and (max-width: 991px){
-    .container-fluid{
+    .homies{
         background-color:black;
     }
     #section10, #section11{
@@ -319,16 +319,17 @@ body{
         background-position-x: center;   
     }
     #section{
-        background-image: url(https://i.ibb.co/G0PkpGC/section.jpg);
+    display: none;
+       
     }
     #section1{
-        background-image: url(https://i.ibb.co/BBjHr4X/section1.png);
+        background-image: url(../../images/2short.jpg);
     }
     #section2{
-        background-image: url(https://i.ibb.co/HHP8hy3/section2.jpg);
+        background-image: url(../../images/3short.jpg);
     }
     #section3{
-        background-image: url(https://i.ibb.co/6gKXWyt/section3.jpg);
+       display: none;
     }
     #section4{
         background-image: url(https://i.ibb.co/zhwmckZ/section4.png);
@@ -406,19 +407,14 @@ body{
 }
 
 @media screen and (max-width:400px){
-    #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9 {
-        background-position-x: 54%;
-    }
-    #section{
-        background-position-x: 54%;
-    }
-    #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9 {
-        background-position-x: 50%;
-    }
+ 
     #component4>img {
         margin-top: -80%;
     }
     #section11 {
         height: 340px;
+    }
+    #section,#section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9{
+       background-size: 100% 100%;
     }
 }

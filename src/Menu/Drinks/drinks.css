@@ -26,50 +26,29 @@ h2, img{
     margin-left: -1%;
 }
 
-#links1>a, #links2>a{
+#typeLinks>a{
     text-decoration: none;
     color: #2a8a15 !important;
 }
 
-#links1, #links2{
-    display: inline-block;
-    vertical-align: top;
-    padding: 6%;
-    margin-left: -7%;
-    margin-top: -2%;
+#typeLinks{
+    display: block;
+    padding: 2%;
+    margin-top: -3%;
+    margin-left: -2%;
 }
 
-#links1>a>h2:hover, #links2>a>h2:hover{
+#typeLinks>a>h2:hover{
     color: #fff !important;
     background-color: #2a8a15;
 }
 
 #menu1:hover{
-    width: 292px;
+    width: 300px;
 }
 
-#menu4:hover{
-    width: 155px;
-}
-
-#menu5:hover{
-    width: 178px;
-}
-
-#menu6:hover{
-    width: 130px;
-}
-
-#menu8:hover{
-    width: 245px;
-}
-
-#menu9:hover{
-    width: 210px;
-}
-
-#div3{
-    margin-left: -2%;
+#drinksDiv3{
+    margin-left: 1%;
     padding-bottom: 2%;
 }
 
@@ -93,16 +72,10 @@ span > a:hover{
 
 
 @media screen and (max-width: 800px){
-    #links1{
+    #typeLinks{
         padding: 4%;
         padding-bottom: 2%;
         margin-left: -5%;
-    }
-    #links2{
-        display: block;
-        padding: 4%;
-        padding-top: 0%;
-        margin-left: -4%;
     }
     img{
         width: 85%;
@@ -112,7 +85,7 @@ span > a:hover{
 }
 
 @media screen and (max-width: 700px){
-    #div3 {
+    #drinksDiv3 {
         margin-left: -2%;
         padding-bottom: 6%;
         padding-top: 3%;

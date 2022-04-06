@@ -537,9 +537,7 @@ img{
 
 @media screen and (max-width: 800px){
 
-    img{
-        width: 85%;
-    }
+    
     #div2{
         margin-left: 5%;
     }

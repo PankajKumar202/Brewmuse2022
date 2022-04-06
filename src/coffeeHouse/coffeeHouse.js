@@ -1,9 +1,11 @@
 import react,{Fragment} from "react";
 import {Link} from "react-router-dom";
+import Header from "../Header";
 import "./coffeeHouse.css";
 const coffeeHouse=()=>{
     return(
         <Fragment>
+            <Header/>
             <div className="container" id="mainDiv">
         <h2>Coffeehouse</h2>
         <img src="https://i.ibb.co/zQjrZ96/Coffeehouse.jpg" alt="Coffeehouse"/>

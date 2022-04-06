@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../Header";
 import './home.css';
 
 function closeDiv(){
@@ -13,6 +14,7 @@ const Home = () =>{
     return(
         
         <React.Fragment>
+            <Header/>
             <div id="coupon">
                 <img src="https://i.ibb.co/g7X9bKS/offer3.jpg" alt="offer" id="offer1"/>
                 <img src="https://i.ibb.co/BqhGhdW/offer4.jpg" alt="offer" id="offer2"/>  
@@ -20,17 +22,17 @@ const Home = () =>{
                 <button id="couponBtn" onclick="closeDiv()">&times;</button>   
             </div>
 
-            <div className="container-fluid" id="section"></div>
-            <div className="container-fluid" id="section1"></div>
-            <div className="container-fluid" id="section2"></div>
-            <div className="container-fluid" id="section3"></div>
-            <div className="container-fluid" id="section4"></div>
-            <div className="container-fluid" id="section5"></div>
-            <div className="container-fluid" id="section6"></div>
-            <div className="container-fluid" id="section7"></div>
-            <div className="container-fluid" id="section8"></div>
-            <div className="container-fluid" id="section9"></div>
-            <div className="container-fluid" id="section10">
+            <div className="homies" id="section" ></div>
+            <div className="homies" id="section1"></div>
+            <div className="homies" id="section2"></div>
+            <div className="homies" id="section3"></div>
+            <div className="homies" id="section4"></div>
+            <div className="homies" id="section5"></div>
+            <div className="homies" id="section6"></div>
+            <div className="homies" id="section7"></div>
+            <div className="homies" id="section8"></div>
+            <div className="homies" id="section9"></div>
+            <div className="homies" id="section10">
                 <div id="component1">
                     <img src="https://i.ibb.co/0B94Vnp/latte-starbucks-tcm87-16216-w1024-n.png" alt="Latte Starbucks"/>
                 </div>
@@ -43,7 +45,7 @@ const Home = () =>{
                     </p>
                 </div>
             </div>
-            <div className="container-fluid w-100" id="section11">
+            <div className="homies w-100" id="section11">
                 <div id="component4">
                     <img src="https://i.ibb.co/YyLm7Xs/oportunity-tcm87-16218-w1024-n.png" alt="image"/>
                 </div>

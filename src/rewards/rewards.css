@@ -1,0 +1,172 @@
+#rewardsContainer{
+    border: 2px solid transparent;
+    background: url(../../images/1.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+#rewardheading1{
+    font-size: 44px;
+    margin-top: 6.8%;
+    color: #fff;
+    margin-left: 5.5%;
+}
+#rewardheading2{
+    font-size: 60px;
+    margin-top: 0.8%;
+    color: #fff;
+    margin-left: 6.3%;
+}
+#rewardsButton1{
+    margin-top: 1.5%;
+    margin-left: 6.3%;
+    border: 2px solid #fff !important;
+    border-radius: 10px;
+    height: 64px !important;
+    width: 12% !important;
+    color:#fff;
+    font-weight: bold;
+    font-size: 18px;
+} 
+
+
+/* part2 */
+#rewardsContainer1{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 1000px;
+}
+#rewardComponent{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top:4%;
+}
+.rewardTile{
+    /* border: 2px solid blue; */
+    display: inline-block;
+    margin-left: 1%;
+
+}
+#rewardheading3{
+    font-size: 65px;
+    margin-top: 3%;
+}   
+#rewardheading4{
+    margin-top:5%;
+    font-size: 35px;
+    color:#006341;
+
+}
+#rewardheading5{
+    font-size: 70px;
+}
+
+/* part3 */
+#rewardContainer2{
+    border: 2px solid transparent;
+    width: 100%;
+    height: 900px;
+    background: url(../../images/rewardsContainer2.jpg);
+    background-repeat: no-repeat;
+    background-size: 88.5% 100%;
+    background-color: #fff;
+    
+}
+#rewardheading6{
+    font-size: 67px;
+    margin-left: 12%;
+    margin-top: 16%;
+}
+#rewardpara{
+    font-size: 21px;
+    font-weight: BOLD;
+    margin-left: 12%;
+    color: #006341;
+}
+#rewardButton2{
+    margin-left: 12%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #006341;
+    color:#fff;
+    height: 64px !important;
+    width: 12% !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+#rewardButton2:hover{
+    background-color: #333;
+}
+
+/* Part4 */
+#rewardContainer3{
+    /* border:2px solid green; */
+    height: 800px;
+    background-color: #fff;
+   
+}
+#rewardTile6{
+    width: 50%;
+    /* border: 2px solid red; */
+    height: 800px;
+    background-color: #fff;
+    display: inline-block;
+   
+}
+#rewardTile6Img{
+    
+    margin-top: 11%;
+    width: 100%;
+
+}
+/* #rewardTile7{
+    width: 50%;
+    border: 2px solid red;
+    height: 1000px;
+    background-color: #fff;
+    display: inline-block;
+   
+} */
+
+#rewardheading7{
+    font-size: 64px;
+    margin-top: 12%;
+    margin-left: 5%;
+    display: inline-block;
+    /* border: 2px solid #333; */
+    position: absolute;
+
+}
+#rewardpara2{
+    font-weight: BOLD;
+    margin-left: 5%;
+    margin-top: 21%;
+    position: absolute;
+    font-size: 21px;  
+    color:#006341
+}
+#rewardsButton3{
+    margin-top: -29.5%;
+    margin-left: 5%;
+    background-color: #006341;
+    border: 2px solid #fff !important;
+    border-radius: 10px;
+    height: 64px !important;
+    width: 12% !important;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+} 
+#rewardsButton3:hover{
+    background-color: #333;
+}
+#rewardpara3{
+position: absolute;
+font-size: 21px;
+    margin-top: 30%;
+    position: absolute;
+    margin-left: -11.5%;
+}
+

@@ -26,6 +26,7 @@ let showPosition=(data)=>{
     .then((res)=>res.json())
     .then((data)=>{
         console.log(data);
+        sessionStorage.setItem('city',data.city.name)
         data.list.map((item)=>{
             console.log(item.temp.day)
             y.innerText=`${item.temp.day}°C`;
@@ -42,7 +43,7 @@ const Header=()=>{
             <div id="header1"></div>
             <div id="nav1">
                 <div className="logo">
-                    <Link className="navbar-brand" to={"#"}><img src="https://i.ibb.co/zbXs3MY/logo.png" alt="Logo"/></Link>
+                    <Link className="navbar-brand" to={"/"}><img src="https://i.ibb.co/zbXs3MY/logo.png" alt="Logo"/></Link>
                 </div>
             
                 <p id="weather"></p>
@@ -50,7 +51,7 @@ const Header=()=>{
 
                 <div id="findStore">
                     <i className="fas fa-map-marker-alt"></i>
-                    <Link to={"#"}>
+                    <Link to={"/store"}>
                         <p id="find">Find a Store</p> 
                     </Link>
                 </div> 
@@ -76,13 +77,13 @@ const Header=()=>{
                                 <Link className="nav-link active" to={"/Responsibility"} >RESPONSIBILITY</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to={"#"}>REWARDS</Link>
+                                <Link className="nav-link active" aria-current="page" to={"/rewards"}>REWARDS</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active" to={"#"}>CAREERS</Link>
                             </li>
                             <li className="nav-item" id="gift">
-                                <Link className="nav-link active" to={"seasongifting.html"}>STARBUCKS SEASON'S GIFTING</Link>
+                                <Link className="nav-link active" to={"/seasonGifting"}>STARBUCKS SEASON'S GIFTING</Link>
                             </li>
                             <li className="nav-item" id="del">
                                 <Link className="nav-link active" aria-current="page" to={"/starbucksdelivers"}>STARBUCKS DELIVERS</Link>

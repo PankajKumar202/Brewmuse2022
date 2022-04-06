@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
+import Header from "../Header";
 import './Responsibility.css';
 const Responsibility = () => {
     return (
         <Fragment>
+            <Header/>
             <article className="articleBlock">
                 <h1 className="articleHeading">
                     Being a Responsible Company
