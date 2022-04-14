@@ -52,8 +52,9 @@ const Header=()=>{
                 <div id="findStore">
                     <i className="fas fa-map-marker-alt"></i>
                     <Link to={"/store"}>
-                        <p id="find">Find a Store</p> 
-                    </Link>
+                        <p className="find">Find a Store</p> 
+                    </Link>&nbsp;&nbsp;&nbsp;
+                    <Link to={"#"} className="find">SignIn</Link>
                 </div> 
                 </div>
 
@@ -80,17 +81,21 @@ const Header=()=>{
                                 <Link className="nav-link active" aria-current="page" to={"/rewards"}>REWARDS</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to={"#"}>CAREERS</Link>
+                                <Link className="nav-link active" to={"/careers"}>CAREERS</Link>
                             </li>
                             <li className="nav-item" id="gift">
                                 <Link className="nav-link active" to={"/seasonGifting"}>STARBUCKS SEASON'S GIFTING</Link>
                             </li>
                             <li className="nav-item" id="del">
-                                <Link className="nav-link active" aria-current="page" to={"/starbucksdelivers"}>STARBUCKS DELIVERS</Link>
+                                <Link className="nav-link active" aria-current="page" to={"/starbucksdelivers"}>BREWMUSE DELIVERS</Link>
                             </li>
                             <li className="nav-item" id="about">
-                                <Link className="nav-link active" to={"about.html"} >ABOUT US</Link>
+                                <Link className="nav-link active" to={"/aboutUs"} >ABOUT US</Link>
                             </li>
+                            <li className="nav-item" id="signin">
+                                <Link className="nav-link active" to={"#"} >SignIn</Link>
+                            </li>
+                        
                 
                         </ul>
                     </div>

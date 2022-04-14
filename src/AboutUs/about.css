@@ -1,0 +1,77 @@
+
+
+/* Main Div Starts */
+#mainAboutDiv{
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+h4, h5{
+    padding: 0.5%;
+}
+
+#aboutDiv1>img{
+    padding: 2%;
+    padding-left: 0%;
+}
+
+#aboutDiv2, #aboutDiv3{
+    display: inline-block;
+    width: 45%;
+    padding: 5%;
+    padding-left: 0%;
+    padding-top: 2%;
+    vertical-align: top;
+}
+
+#aboutDiv2>p, #aboutDiv3>p, #aboutDiv2>img, #aboutDiv3>img{
+    padding-top: 3%;
+}
+
+.aboutContent{
+    font-size: 14px;
+}
+
+#aboutDiv4{
+    padding: 4%;
+    padding-left: 0%;
+}
+
+#aboutDiv4> span> a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #242221 !important;
+}
+
+#aboutDiv4> span> a:hover{
+    color: #fff !important;
+    background-color: #2a8a15 !important;
+}
+
+/* Main Div Ends */
+
+@media screen and (max-width: 900px) {
+    #aboutDiv3{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #aboutDiv3 {
+        margin-left: 9%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #aboutDiv1>img{
+        width: 90%;
+    }    
+    #aboutDiv2, #aboutDiv3{
+        display: block;
+        width: 90%;
+    }
+    #aboutDiv3{
+        margin-left: 0%;
+    }
+}

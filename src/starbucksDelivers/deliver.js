@@ -36,11 +36,7 @@ class delivers extends Component {
 
 
 
-                    <div id="buttons">
-                        <Link to={"#"}><button className="btn btn-secondary" id="signUp"><img src="/images/deliver/user-plus.svg" alt="" id="signImage" /><span id="signText">Sign up</span></button></Link>
-                        <Link to={"#"}><button className="btn btn-primary" id="logIn"><img src="/images/deliver/log-in.svg" alt="" id="loginImage" /><span id="loginText">Login</span></button></Link>
-                        <Link to={"#"}><button id="cart" className="btn btn-success"><img src="/images/deliver/shopping-bag.svg" alt="" id="cartImg" /><span id="cartText">Cart</span><span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span></button></Link>
-                    </div>
+                   
                     <form id="form">
                         <img src="./images/starbucks delivers/search.svg" alt="" />
                         <i className="fas fa-search"></i>
@@ -51,6 +47,8 @@ class delivers extends Component {
                     <span id="delTime">Delivery Time <i className="fa-duotone fa-moped"></i> : 30 mins</span>
                 </div>
                 <Deliverdisplay Menu={this.state.filtered} />
+                
+
             </div></>
 
 

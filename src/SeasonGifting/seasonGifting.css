@@ -10,7 +10,7 @@ body{
 #seasonimg1{
     height: 560px;
     width: 100%;
-    background-image: url(../../images/Website_banner_1_tcm87-73252.jpg);
+    background-image: url(../../images/seasongift/Website_banner_1_tcm87-73252.jpg);
     background-size: cover;
     background-repeat: no-repeat;    
     background-position-x: center;
@@ -19,7 +19,7 @@ body{
 #seasonimg2{
     height: 560px;
     width: 100%;
-    background-image: url(../../images/Website_banner_2_tcm87-73254.jpg);
+    background-image: url(../../images/seasongift/Website_banner_2_tcm87-73254.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;

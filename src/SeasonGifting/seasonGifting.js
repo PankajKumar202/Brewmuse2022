@@ -1,22 +1,21 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import {Link} from 'react-router-dom';
-import "./seasonGifting.css"
-
+import './seasonGifting.css'
 import Header from '../Header';
 
 const seasonGifting = () =>{
     return(
-        <React.Fragment>
+        <Fragment>
             <Header/>
-            <div id="mainDiv">
+            <div id="mainSeasonDiv">
                 <Link to="https://www.starbucks.in/media/MERCH_CATALOGUE_tcm87-73230.pdf" target="__blank">
-                    <div className="container-fluid" id="seasonImg1"></div>
+                    <div className="container-fluid" id="seasonimg1"></div>
                 </Link>
                 <Link to="#">
-                    <div className="container-fluid" id="seasonImg2"></div>
+                    <div className="container-fluid" id="seasonimg2"></div>
                 </Link>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

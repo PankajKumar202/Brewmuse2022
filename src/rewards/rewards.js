@@ -13,6 +13,7 @@ const Rewards = () => {
                     <h2 id="rewardheading1">My Starbucks Rewards<sup>TM</sup> </h2>
                     <h1 id="rewardheading2">A loyalty program <br />that's all about you.</h1>
                     <button type="button" class="btn btn-outline-dark" id="rewardsButton1">JOIN NOW</button>
+                    <Link to={"/giftCards"}><button type="button" class="btn btn-outline-dark" id="rewardsButton">GIFT CARDS</button></Link>
                 </div>
                 <div id="rewardsContainer1" className="col-md-12">
                     <center><h1 id="rewardheading3">The First Sip Feeling</h1></center>
@@ -37,11 +38,9 @@ const Rewards = () => {
                         </center>
 
                     </div>
-                    <center><h4 id="rewardheading4">How to collect stars</h4>
-                        <h1 id="rewardheading5">Collect Stars, Get Rewards</h1>
-                        <img src="https://i.ibb.co/k4M1hDH/complete-line.jpg" alt="starsRewards" />
-
-                    </center>
+                    <center><h4 id="rewardheading4">How to collect stars</h4></center>
+                    <center> <h1 id="rewardheading5">Collect Stars, Get Rewards</h1></center>
+                        <center><img src="https://i.ibb.co/k4M1hDH/complete-line.jpg" alt="starsRewards" id="rewardsImg2" /></center>
 
                 </div>
                 <div id="rewardContainer2" className="col-md-12">
@@ -59,8 +58,19 @@ const Rewards = () => {
                 <div id="rewardContainer3" className="col-md-12">
                     <div id="rewardTile6">
                         <img src="https://i.ibb.co/DK8SWgc/1009x729.jpg" alt="rewardTile6" id="rewardTile6Img" />
+                        <h1 id="rewardheading8">
+                            How to join My<br />Starbucks Rewards<sup style={{ fontSize: '18px' }}>TM</sup>
+                        </h1>
+                        <span id="rewardpara8">Already have a card?<br />
+
+                            Signing up is easy and fast</span>
+                        <button type="button" class="btn btn-outline-dark" id="rewardsButton11">JOIN NOW</button>
+                        <span id="rewardpara5">Already a member? <Link to={'#'}><span id="insiderewardpara">Sign in</span></Link></span>
+
+
 
                     </div>
+                    
 
                     <h1 id="rewardheading7">
                         How to join My<br />Starbucks Rewards<sup style={{ fontSize: '18px' }}>TM</sup>

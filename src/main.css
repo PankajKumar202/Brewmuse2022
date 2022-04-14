@@ -48,7 +48,7 @@ body {
     color: #006341;
 }
 
-#find {
+.find {
     display: inline;
     padding-left: 4px;
 }
@@ -59,6 +59,7 @@ body {
     height: 110px;
     top:0;
     position: sticky !important;
+    
 }
 
 #navigationMenu {
@@ -71,7 +72,9 @@ body {
 .navbar-nav {
     margin-left: 5%;
 }
-
+#signin{
+   visibility:hidden;
+}
 .nav-item>a {
     text-decoration: none;
     color: #242221;
@@ -687,15 +690,18 @@ footer {
 
     #weather {
 
-        margin-top: 6%;
-        margin-left: 71%;
+margin-top: 6%;
+    margin-left: 62%;
 
     }
 
     #icon {
 
-        margin-top: 3%;
-        margin-left: 74%;
+            margin-top: 3%;
+    margin-left: 66%;
+    }
+    #findStore{
+        margin-left:80%;
     }
 }
 
@@ -704,25 +710,29 @@ footer {
     #weather {
 
         margin-top: 6%;
-        margin-left: 69%;
+        margin-left: 58%;
     }
 
 
     #icon {
 
         margin-top: 3%;
-        margin-left: 72%;
+        margin-left: 62%;
     }
 
-    #findStore {
-        margin-top: -5%;
+    #findStore{
+        margin-top: -6%;
+        margin-left: 80%;
     }
 }
 
 
 @media screen and (max-width: 991px) {
-    #find {
+    .find {
         visibility: hidden;
+    }
+    #signin{
+        visibility: visible;
     }
 
     #findStore {
@@ -783,7 +793,7 @@ footer {
 
     #weather {
 
-        margin-top: 1%;
+        margin-top: 4%;
         margin-left: 61%;
         top: 5%;
 

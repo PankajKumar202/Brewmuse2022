@@ -1,0 +1,903 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* coffee fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@0;1&family=Outfit:wght@200;300;600&family=Quicksand&family=Raleway:wght@300&display=swap');
+/* Coffee press fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@0;1&family=Merriweather:wght@300&family=Outfit:wght@200;300;600&family=Quicksand&family=Raleway:wght@300&display=swap');
+/* ends */
+
+
+/* Our Coffee */
+#coffeeSection1{
+    border:2px solid transparent;
+    height:623px;
+    width: 100%;
+    background-image:url(../../images/Coffee-Hero_tcm87-3963.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#coffeeSection1>h1{
+    font-family: 'Amaranth', sans-serif;
+    font-style: italic;
+    color: #fff;
+    margin-top: 11%;
+    font-weight: lighter;
+    margin-left: 7%;
+}
+
+#coffeeSection1>p{
+    width:30%;
+    color: white;
+    font-size: 20px;
+    margin-left: 7%;
+    height: auto;
+}
+
+#coffeeSection1>a{
+    text-decoration: none;
+}
+
+#coffeeSection1>a>h5{
+    border: 2px solid white;
+    color: white;
+    width: 15%;
+    margin-left: 7%;
+    position: absolute;
+    text-align: center;
+    height: 35px;
+    border-radius: 8px;
+}
+/* Our Coffee ends */
+
+/* Coffee Finder */
+#coffeeSection2{
+    height:535px;
+    width: 100%;
+}
+
+#coffeeSection2>h2{
+    display: inline;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+#coffeeSection2>p{
+    margin-top: 15%;
+    display: inline;
+    position: absolute;
+    width: 35%;
+    margin-left: 7%;
+}
+
+#coffeeSection2>a{
+    text-decoration: none;
+}
+
+#coffeeSection2>a>li{
+    margin-top: 22%;
+    position: absolute;
+    margin-left: 7%;
+    display: inline;
+    color: black;
+    font-family: 'Amaranth', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: dotted underline;
+}
+
+#coffeeSection2>a>h5{
+    margin-top: 25%;
+    position: absolute;
+    margin-left: 7%;
+    color: black;
+    font-family: 'Amaranth', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline;
+    text-decoration: dotted underline;
+}
+
+#coffeeSection2>a>li:hover{
+    background-color: #dbdbdb;
+}
+
+#coffeeSection2>a>h5:hover{
+    background-color: #dbdbdb;
+}
+
+.coffeeImage{
+    background-image: url(../../images/Coffee-Finder-Circles_tcm87-3966_w1024_n.png);
+    width: 50%;
+    height: 535px;
+    background-size: contain;
+    float: right;
+    background-repeat: no-repeat;
+}
+/* Coffee Finder ends*/
+
+/* Coffee Press */
+#coffeeSection3{
+    height:535px;
+    width: 100%;
+}
+#background-video{
+    width: 100%;
+    height: 532px;
+    object-fit:cover;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+#coffeeSection3>h5{
+    position: absolute;
+    margin-top: -36%;
+    margin-left: 7%;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+#coffeeSection3>h2{
+    position: absolute;
+    margin-top: -33%;
+    margin-left: 7%;
+    font-size: 45px;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    text-align: center;
+}
+#coffeeSection3>p{
+    width: 41%;
+    position:absolute;
+    margin-left: 7%;
+    color: white;
+    font-size: 18px;
+    margin-top: -28%;
+    font-weight: 600;
+}
+.coffeeBox{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    margin-top:-16%;
+}
+.coffeeLinks{
+    color: white !important;
+    display: inline;
+    margin-top: 12%;
+    position:absolute;
+}
+
+.Press{
+    margin-left: 31%;
+    background-image: url(../../images/coffee/coffee_press.svg); 
+    position: absolute;
+    background-size: 600;
+    background-repeat: no-repeat;
+    margin-top:6%;
+    min-height:45px;
+    line-height:100px;
+    background-position:0 -56px; 
+    padding:50px 11px 0px 0px;
+}
+.Press:hover{
+    background-position:0 -536px;
+    animation:htbSpriteMobile .5s steps(4) forwards;
+    background-repeat:no-repeat;
+    font-weight: 400;
+}
+@keyframes htbSpriteMobile{
+    from
+    {
+        background-position:0 -50px;
+    }
+    to
+    {
+        background-position:0 -510px
+    }
+} 
+
+.Pour-Over{
+    margin-left:40%;
+    background-image: url(../../images/coffee/pour_over_cone.svg); 
+    position: absolute;
+    background-size: 600;
+    background-repeat: no-repeat;
+    margin-top:6%;
+    min-height:45px;
+    line-height:100px;
+    background-position:0 -56px; 
+    padding:50px 11px 0px 0px;
+    
+}
+.Pour-Over:hover{
+    background-position:0 -536px;
+    animation:htbSpriteMobile .5s steps(4) forwards;
+    background-repeat:no-repeat;
+}
+@keyframes htbSpriteMobile{
+    from
+    {
+        background-position:0 -50px;
+    }
+    to
+    {
+        background-position:0 -510px
+    }
+} 
+
+
+.Iced{
+    margin-left: 48%;
+    background-image: url(../../images/coffee/pour_over_cone_iced.svg); 
+    position: absolute;
+    background-size: 600;
+    background-repeat: no-repeat;
+    margin-top:6%;
+    min-height:45px;
+    line-height:100px;
+    background-position:0 -56px; 
+    padding:50px 11px 0px 0px;
+  
+}
+.Iced:hover{
+    background-position:0 -536px;
+    animation:htbSpriteMobile .5s steps(4) forwards;
+    background-repeat:no-repeat;
+    font-weight: 400;
+}
+@keyframes htbSpriteMobile{
+    from
+    {
+        background-position:0 -50px;
+    }
+    to
+    {
+        background-position:0 -510px
+    }
+} 
+ .Brew{
+    margin-left: 59%;
+    background-image: url(../../images/coffee/coffee_brewer.svg); 
+    position: absolute;
+    background-size: 600;
+    background-repeat: no-repeat;
+    margin-top:6%;
+    min-height:45px;
+    line-height:100px;
+    background-position:0 -56px; 
+    padding:50px 11px 0px 0px;
+}
+.Brew:hover{
+    background-position:0 -536px;
+    animation:htbSpriteMobile .5s steps(4) forwards;
+    background-repeat:no-repeat;
+    font-weight: 400;
+}
+@keyframes htbSpriteMobile{
+    from
+    {
+        background-position:0 -50px;
+    }
+    to
+    {
+        background-position:0 -510px
+    }
+} 
+
+/* Coffee Press ends*/
+/* Coffee part ends */
+
+
+/* Code for responsive designing using Media Query*/
+@media screen and (max-width:2000px) {
+    #coffeeSection3>h2 {
+    
+        margin-top: -21%;
+    }
+    #coffeeSection3>p {
+      
+        margin-top: -17%;
+     
+    }
+    #coffeeSection3>h5 {
+     
+        margin-top: -23%;
+    }
+    #coffeeSection2>a>li {
+       
+        margin-left: 8%;
+    }
+}
+
+
+
+/* media query for coffee page */
+@media screen and (min-width:1000px) and (max-width:1200px) {
+    /* Our coffee */
+    #coffeeSection1>a>h5{
+        margin-left: 14%; 
+    }
+    /* our coffee ends  */
+
+    /* Coffee finder */
+    #coffeeSection2>a>li{
+        margin-top: 25%;
+    }
+    #coffeeSection2>a>h5{
+        margin-top: 29%;
+    }
+    .coffeeImage{
+       
+        background-position-y: 50%;
+        background-size: contain;
+    }
+    /* Coffee finder ends*/
+
+    /* Coffee press */
+    #coffeeSection3>h5{
+        margin-top: -40%;
+    }
+    #coffeeSection3>h2{
+        margin-top: -34%;
+    }
+    #coffeeSection3>p{
+        margin-top: -28%;
+    }
+    .coffeeBox{
+        height: 160px;
+    }
+    .coffeeLinks{
+        margin-top: 3%;
+    }
+    .Press{
+        margin-left: 27%;
+    }
+    .Pour-Over{
+        margin-left: 36%;
+    }
+    .Iced{
+        margin-left: 44%;
+    }
+    .Brew{
+        margin-left: 55%;
+    }
+    /* Coffee press ends*/
+}
+@media screen and (min-width:801px) and (max-width:1000px) {
+    /* Coffee */
+    #coffeeSection1>h1{
+        font-size: 50px;
+    }
+    #coffeeSection1>p{
+        
+        width:50%;
+    }
+    #coffeeSection1>a>h5{
+        width: 20%;
+        margin-left: 20%;
+    }
+    /* Coffee ends*/
+
+    /* Coffee finder */
+    #coffeeSection2>a>li{
+        margin-top: 27%;
+    }
+    #coffeeSection2>a>h5{
+        margin-top: 32%;
+    }
+    .coffeeImage{
+        background-position-y: 30%;
+    }
+    /* Coffee finder ends */
+    /* Coffee Press */
+    #coffeeSection3>h5{
+        margin-top: -50%;
+    }
+    #coffeeSection3>h2{
+        margin-top: -44%;
+    }
+    #coffeeSection3>p{
+        margin-top: -35%;
+    }
+    .coffeeBox{
+        height: 131px;
+    }
+    .coffeeLinks{
+        margin-top: 2%;
+    }
+    .Press{
+        margin-left: 27%;
+    }
+    .Pour-Over{
+        margin-left: 36%;
+    }
+    .Brew{
+        margin-left: 63%;
+    }
+    /* Coffee Press ends*/
+}
+@media screen and (min-width:700px) and (max-width:800px) {
+    /* Coffee */
+    #coffeeSection1{
+        background-size: 208%;
+     
+        height: 325px;
+    }
+    #coffeeSection1>h1{
+        font-size: 20px;
+        margin-top:1% ;
+    }
+    #coffeeSection1>p{
+       
+        font-size: 16px;
+        width:40%;
+        height: 200px;
+    }
+    #coffeeSection1>a>h5{
+        width: 30%;
+        margin-left: 12%;
+        margin-top: 1%;
+    }
+    /* Coffee ends*/
+
+    /* Coffee finder */
+    #coffeeSection2{
+        height: 950px;
+    }
+    #coffeeSection2>a>li{
+        margin-top: 107%;
+        font-size: 16px;
+        margin-left: 42%;
+    }
+    #coffeeSection2>a>h5{
+        margin-top: 114%;
+        font-size: 16px;
+        margin-left: 38%;
+    }
+    #coffeeSection2>h2{
+        margin-top: 82%;
+        margin-left: 36%;
+        display: block;
+    }
+    #coffeeSection2>p{
+        margin-top: 92%;
+        font-size: 15px;
+        width: 100%;
+        font-style: italic;
+        display: inline;
+        font-size: bold;
+        font-family: 'Amaranth', sans-serif;
+        margin-left: 3%;
+    }
+    .coffeeImage{
+        background-size: contain;
+        background-position-x:50% ;
+        width: 100%;
+        height: 70%;
+    }
+    /* Coffee finder ends */
+
+    /* Coffee Press */
+    #coffeeSection3>h5{
+        margin-top: -56%;
+    }
+    #coffeeSection3>h2{
+        margin-top: -50%;
+    }
+    #coffeeSection3>p{
+        margin-top: -41%;
+    }
+    .coffeeBox{
+        height: 114px;
+    }
+    .coffeeLinks{
+        margin-top: 0%;
+    }
+    .Press{
+        margin-left: 25%;
+    }
+    .Pour-Over{
+        margin-left: 34%;
+    }
+    .Iced{
+        margin-left: 46%;
+    }
+    .Brew{
+        margin-left: 63%;
+    }
+    /* Coffee Press ends*/
+}
+@media screen and (min-width:600px) and (max-width:700px) {
+    /* Our Coffee */
+    #coffeeSection1{
+        background-size: 208%;
+     
+        height: 325px;
+    }
+    #coffeeSection1>h1{
+        font-size: 20px;
+        margin-top:1% ;
+    }
+    #coffeeSection1>p{
+       
+        font-size: 16px;
+        width:40%;
+        height: 200px;
+    }
+    #coffeeSection1>a>h5{
+        width: 30%;
+        margin-left: 12%;
+        margin-top: 1%;
+    }
+    /* Our Coffee ends*/
+
+    /* Coffee finder  */
+    #coffeeSection2{
+        height: 825px;
+    }
+    #coffeeSection2>a>li{
+        margin-top: 107%;
+        font-size: 16px;
+        margin-left: 42%;
+    }
+    #coffeeSection2>a>h5{
+        margin-top: 114%;
+        font-size: 16px;
+        margin-left: 38%;
+    }
+    #coffeeSection2>h2{
+        margin-top: 82%;
+        margin-left: 36%;
+        display: block;
+    }
+    #coffeeSection2>p{
+        margin-top: 92%;
+        font-size: 15px;
+        width: 100%;
+        font-style: italic;
+        font-size: bold;
+        display: inline;
+        font-family: 'Amaranth', sans-serif;
+        margin-left: 3%;
+    }
+    .coffeeImage{
+        background-size: contain;
+        background-position-x:50% ;
+        width: 100%;
+        height: 70%;
+    }
+    /* Coffee finder ends */
+
+    /* Coffee Press */  
+    #coffeeSection3>h5{
+        margin-top: -74%;
+    }
+    #coffeeSection3>h2{
+        margin-top: -68%;
+    }
+    #coffeeSection3>p{
+        margin-top: -60%;
+    }
+    .coffeeBox{
+        height: 114px;
+        margin-top: -29%;
+    }
+    .coffeeLinks{
+        margin-top: -2%;
+    }
+    .Press{
+        margin-left: 18%;
+    }
+    .Pour-Over{
+        margin-left: 30%;
+    }
+    .Iced{
+        margin-left: 44%;
+    }
+    .Brew{
+        margin-left: 63%;
+    }
+/* Coffee Press ends*/
+}
+@media screen and (min-width:500px) and (max-width:600px) {
+     /* Our Coffee */
+     #coffeeSection1{
+        background-size: 465%;
+    
+        height: 480px;
+    }
+    #coffeeSection1>h1{
+        font-size: 20px;
+        margin-top:40% ;
+        font-size: 35px;
+        margin-left: 35%;
+    }
+    #coffeeSection1>p{
+        font-size: 15px;
+        width:85%;
+        margin-top: 4%;
+        height: 130px;
+    }
+    #coffeeSection1>a>h5{
+        width: 40%;
+        margin-left: 30%;
+        margin-top: -7%;
+    }
+    /* Our Coffee ends*/
+
+    /* Coffee finder  */
+    #coffeeSection2{
+        height: 725px;
+    }
+    #coffeeSection2>a>li{
+        margin-top: 107%;
+        font-size: 16px;
+        margin-left: 42%;
+    }
+    #coffeeSection2>a>h5{
+        margin-top: 114%;
+        font-size: 16px;
+        margin-left: 38%;
+    }
+    #coffeeSection2>h2{
+        margin-top: 82%;
+        margin-left: 36%;
+        display: block;
+    }
+    #coffeeSection2>p{
+        margin-top: 92%;
+        font-size: 14px;
+        width: 100%;
+        font-style: italic;
+        font-size: bold;
+        display: inline;
+        font-family: 'Amaranth', sans-serif;
+        margin-left: 3%;
+    }
+    .coffeeImage{
+        background-size: contain;
+        background-position-x:50% ;
+        width: 100%;
+        height: 70%;
+    }
+    /* Coffee finder ends */
+
+    /* Coffee Press */
+    #coffeeSection3>h5{
+    margin-top: -85%;
+    }
+    #coffeeSection3>h2{
+    margin-top: -80%;
+    }
+    #coffeeSection3>p{
+    margin-top: -65%;
+    width: 90%;
+    }
+    .coffeeBox{
+        height: 114px;
+        margin-top: -40%;
+    }
+    .coffeeLinks{
+        margin-top: -2%;
+    }
+    .Press{
+        margin-left: 9%;
+    }
+    .Pour-Over{
+        margin-left: 22%;
+    }
+    .Iced{
+        margin-left: 40%;
+    }
+    .Brew{
+        margin-left: 63%;
+    }
+    /* Coffee Press ends*/
+}
+
+@media screen and (min-width:400px) and (max-width:500px) {
+    /* Our Coffee */
+    #coffeeSection1{
+        background-size: 465%;
+        height: 480px;
+    }
+    #coffeeSection1>h1{
+        font-size: 20px;
+        margin-top:50% ;
+        font-size: 23px;
+        margin-left: 37%;
+    }
+    #coffeeSection1>p{
+        font-size: 15px;
+        width:85%;
+        margin-top: 4%;
+        height: 130px;
+    }
+    #coffeeSection1>a>h5{
+        width: 40%;
+        margin-left: 30%;
+        margin-top: -7%;
+    }
+    /* Our Coffee ends*/
+
+    /* Coffee finder  */
+    #coffeeSection2{
+        height: 625px;
+    }
+    #coffeeSection2>a>li{
+        margin-top: 110%;
+        font-size: 16px;
+        margin-left: 42%;
+    }
+    #coffeeSection2>a>h5{
+        margin-top: 118%;
+        font-size: 16px;
+        margin-left: 38%;
+    }
+    #coffeeSection2>h2{
+        margin-top: 82%;
+        margin-left: 36%;
+        display: block;
+    }
+    #coffeeSection2>p{
+        margin-top: 92%;
+        font-size: 15px;
+        width: 100%;
+        font-style: italic;
+        font-size: bold;
+        display: inline;
+        font-family: 'Amaranth', sans-serif;
+        margin-left: 3%;
+    }
+    .coffeeImage{
+        background-size: contain;
+        background-position-x:50% ;
+        width: 100%;
+        height: 70%;
+    }
+    /* Coffee finder ends */
+
+    /* Coffee Press */ 
+    #coffeeSection3>h5{
+        margin-top: -105%;
+    }
+    #coffeeSection3>h2{
+        margin-top: -95%;
+    }
+    #coffeeSection3>p{
+        margin-top: -80%;
+        width: 90%;
+    }
+    .coffeeBox{
+        height: 114px;
+        margin-top: -40%;
+    }
+    .coffeeLinks{
+        margin-top: -2%;
+    }
+    .Press{
+        margin-left: -1%;
+    }
+    .Pour-Over{
+        margin-left: 15%;
+    }
+    .Iced{
+        margin-left: 35%;
+    }
+    .Brew{
+        margin-left: 63%;
+    }
+    /* Coffee Press ends*/
+}
+
+@media screen and (min-width:300px) and (max-width:400px) {
+    /* Our Coffee */
+    #coffeeSection1{
+        background-size: 620%;
+        height: 480px;
+    }
+    #coffeeSection1>h1{
+        font-size: 20px;
+        margin-top:50% ;
+        font-size: 23px;
+        margin-left: 34%;
+    }
+    #coffeeSection1>p{
+        font-size: 13px;
+        width:85%;
+        margin-top: 10%;
+        height: 130px;
+    }  
+    #coffeeSection1>a>h5{
+        width: 50%;
+        font-size: 17px;
+        margin-left: 23%;
+        margin-top:7%;
+    }
+    /* Our Coffee ends*/
+
+    /* Coffee finder  */
+    #coffeeSection2{
+        height: 560px;
+    }
+    #coffeeSection2>a>li{
+        margin-top: 126%;
+        font-size: 18px;
+        margin-left: 35%;
+    }
+    #coffeeSection2>a>h5{
+        margin-top: 133%;
+        font-size: 18px;
+        margin-left: 30%;
+    }   
+    #coffeeSection2>h2{
+        margin-top: 82%;
+        margin-left: 30%;
+        display: block;
+    }
+    #coffeeSection2>p{
+        margin-top: 92%;
+        font-size: 15px;
+        width: 90%;
+        font-style: italic;
+        font-size: bold;
+        display: inline;
+        font-family: 'Amaranth', sans-serif;
+        margin-left: 3%;
+    }
+    .coffeeImage{
+        background-size: contain;
+        background-position-x:50% ;
+        width: 100%;
+        height: 70%;
+    }
+    /* Coffee finder ends */
+
+    /* Coffee Press */ 
+    #coffeeSection3>h5{
+        margin-top: -132%;
+        position:absolute;
+        font-size: 15px;
+    }
+    #coffeeSection3>h2{
+        margin-top: -125%;
+        font-size: 30px;
+    }
+    #coffeeSection3>p{
+        margin-top: -110%;
+        font-size: 12px;
+        width: 90%;
+    }
+    .coffeeBox{
+        height: 114px;
+        margin-top: -80%;
+    }
+    .coffeeLinks{
+        margin-top: -2%;
+        margin: space-between;
+    }
+    .Press{
+        margin-left: -3%;
+        font-size: 11px;
+        padding-right: 21px;
+    }
+    .Pour-Over{
+        margin-left: 17%;
+        font-size: 11px;
+    }
+    .Iced{
+        margin-left: 37%;
+        font-size: 11px;
+    }
+    .Brew{
+        margin-left: 64%;
+        font-size: 11px;
+    }
+    /* Coffee Press ends*/
+}

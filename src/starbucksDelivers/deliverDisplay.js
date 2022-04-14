@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
+
 const Deliverdisplay = (props) => {
     const display = ({ Menu }) => {
+
+        console.log("menu>>>>", Menu)
         if (Menu) {
             if (Menu.length > 0) {
                 return Menu.map((item) => {
@@ -17,7 +20,12 @@ const Deliverdisplay = (props) => {
                                 </div>
                                 <div class="component2">
                                     <img src={item.image_url} alt="Coffee" class="foodImg" />
-                                    <button class="btn btn-success">ADD</button>
+                                  
+                                    <Link to={`/starbucksdelivers/${item._id}`}>
+                                        <button type="button" class="btn btn-success" id="deliverAdd" >
+                                            ADD
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                             <hr />
@@ -47,4 +55,4 @@ const Deliverdisplay = (props) => {
 }
 
 
-export default Deliverdisplay;
+export default withRouter(Deliverdisplay);

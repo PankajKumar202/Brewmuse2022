@@ -1,70 +1,92 @@
-#rewardsContainer{
+#rewardsContainer {
     border: 2px solid transparent;
     background: url(../../images/1.png);
     width: 100%;
     height: 900px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  
+
 }
-#rewardheading1{
+
+#rewardheading1 {
     font-size: 44px;
-    margin-top: 6.8%;
+    margin-top: 7%;
     color: #fff;
     margin-left: 5.5%;
+    position: absolute;
 }
-#rewardheading2{
+
+#rewardheading2 {
     font-size: 60px;
-    margin-top: 0.8%;
+    margin-top: 11.8%;
     color: #fff;
     margin-left: 6.3%;
+    position: absolute;
 }
-#rewardsButton1{
-    margin-top: 1.5%;
+
+#rewardsButton {
+    margin-top: 21%;
+    margin-left: 3.3%;
+    border: 2px solid #fff !important;
+    border-radius: 10px;
+    height: 64px !important;
+    width: 12% !important;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#rewardsButton1 {
+    margin-top: 21%;
     margin-left: 6.3%;
     border: 2px solid #fff !important;
     border-radius: 10px;
     height: 64px !important;
     width: 12% !important;
-    color:#fff;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
-} 
+}
 
 
 /* part2 */
-#rewardsContainer1{
+#rewardsContainer1 {
     /* border: 2px solid black; */
     width: 100%;
     height: 1000px;
 }
-#rewardComponent{
+
+#rewardComponent {
     /* border: 2px solid red; */
     width: 100%;
-    margin-top:4%;
+    margin-top: 4%;
 }
-.rewardTile{
+
+.rewardTile {
     /* border: 2px solid blue; */
     display: inline-block;
     margin-left: 1%;
 
 }
-#rewardheading3{
+
+#rewardheading3 {
     font-size: 65px;
     margin-top: 3%;
-}   
-#rewardheading4{
-    margin-top:5%;
+}
+
+#rewardheading4 {
+    margin-top: 5%;
     font-size: 35px;
-    color:#006341;
+    color: #006341;
 
 }
-#rewardheading5{
+
+#rewardheading5 {
     font-size: 70px;
 }
 
 /* part3 */
-#rewardContainer2{
+#rewardContainer2 {
     border: 2px solid transparent;
     width: 100%;
     height: 900px;
@@ -72,55 +94,62 @@
     background-repeat: no-repeat;
     background-size: 88.5% 100%;
     background-color: #fff;
-    
+
 }
-#rewardheading6{
+
+#rewardheading6 {
     font-size: 67px;
     margin-left: 12%;
     margin-top: 16%;
 }
-#rewardpara{
+
+#rewardpara {
     font-size: 21px;
     font-weight: BOLD;
     margin-left: 12%;
     color: #006341;
 }
-#rewardButton2{
+
+#rewardButton2 {
     margin-left: 12%;
     border: 2px solid #fff;
     border-radius: 10px;
     background-color: #006341;
-    color:#fff;
+    color: #fff;
     height: 64px !important;
     width: 12% !important;
     font-size: 18px;
     font-weight: bold;
 }
-#rewardButton2:hover{
+
+#rewardButton2:hover {
     background-color: #333;
 }
 
 /* Part4 */
-#rewardContainer3{
+#rewardContainer3 {
     /* border:2px solid green; */
     height: 800px;
     background-color: #fff;
-   
+
 }
-#rewardTile6{
+
+#rewardTile6 {
     width: 50%;
     /* border: 2px solid red; */
     height: 800px;
     background-color: #fff;
     display: inline-block;
-   
+
 }
-#rewardTile6Img{
-    
+
+#rewardTile6Img {
+
     margin-top: 11%;
     width: 100%;
 
 }
+
 /* #rewardTile7{
     width: 50%;
     border: 2px solid red;
@@ -130,7 +159,7 @@
    
 } */
 
-#rewardheading7{
+#rewardheading7 {
     font-size: 64px;
     margin-top: 12%;
     margin-left: 5%;
@@ -139,16 +168,18 @@
     position: absolute;
 
 }
-#rewardpara2{
+
+#rewardpara2 {
     font-weight: BOLD;
     margin-left: 5%;
     margin-top: 21%;
     position: absolute;
-    font-size: 21px;  
-    color:#006341
+    font-size: 21px;
+    color: #006341
 }
-#rewardsButton3{
-    margin-top: -29.5%;
+
+#rewardsButton3 {
+       margin-top: -44.5%;
     margin-left: 5%;
     background-color: #006341;
     border: 2px solid #fff !important;
@@ -158,15 +189,944 @@
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-} 
-#rewardsButton3:hover{
+}
+
+#rewardsButton3:hover {
     background-color: #333;
 }
-#rewardpara3{
-position: absolute;
-font-size: 21px;
+
+#rewardpara3 {
+    position: absolute;
+    font-size: 21px;
     margin-top: 30%;
     position: absolute;
     margin-left: -11.5%;
 }
 
+#rewardheading8 {
+    visibility: hidden;
+}
+
+#rewardpara8 {
+    visibility: hidden;
+}
+
+#rewardsButton11 {
+    visibility: hidden;
+}
+
+#rewardsButton11:hover {
+    visibility: hidden;
+}
+
+#rewardpara5 {
+    visibility: hidden;
+}
+
+@media screen and (max-width:1400px) {
+    #rewardheading1 {
+        font-size: 44px;
+        margin-top: 15%;
+        color: #fff;
+        margin-left: 5.5%;
+        position: absolute;
+    }
+
+    #rewardheading2 {
+        font-size: 60px;
+        margin-top: 19.8%;
+        color: #fff;
+        margin-left: 6.3%;
+        position: absolute;
+    }
+
+    #rewardsButton {
+        margin-top: 32.5%;
+        margin-left: 3.3%;
+        border: 2px solid #fff !important;
+        border-radius: 10px;
+        height: 64px !important;
+        width: 12% !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    #rewardsButton1 {
+        margin-top: 32.5%;
+        margin-left: 6.3%;
+        border: 2px solid #fff !important;
+        border-radius: 10px;
+        height: 64px !important;
+        width: 12% !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /* part2 */
+    #rewardsContainer1 {
+        height: 800px;
+        /* border:2px solid black; */
+
+
+    }
+
+    .rewardTile {
+        width: 23%;
+    }
+
+    .rewardTile>img {
+        width: 97%;
+    }
+
+    /* parts3 */
+    #rewardContainer2 {
+        /* border: 2px solid blue; */
+        background-size: 100.5% 88%;
+    }
+
+    #rewardheading6 {
+        margin-left: 5%;
+        /* border:2px solid green; */
+        display: inline-block;
+
+    }
+
+    #rewardpara {
+        margin-left: 5%;
+    }
+
+    #rewardButton2 {
+        margin-left: 5%;
+    }
+
+    /* part4 */
+    #rewardpara2 {
+        margin-top: 23%;
+    }
+
+    #rewardsButton3 {
+        margin-top: 28.5%;
+        position: absolute;
+    }
+
+    #rewardpara3 {
+        margin-top: 34%;
+        position: absolute;
+        margin-left: 5%;
+    }
+
+
+}
+
+@media screen and (max-width:1300px) {
+
+    #rewardheading6 {
+        font-size: 60px;
+    }
+
+    #rewardContainer2 {
+        /* border: 2px solid blue; */
+        background-size: 100.5% 88%;
+        height: 650px;
+    }
+
+    #rewardpara2 {
+        margin-top: 27%;
+    }
+
+    #rewardsButton3 {
+        margin-top: 33.5%;
+        ;
+    }
+
+    #rewardpara3 {
+        margin-top: 40%;
+    }
+
+    #rewardTile6>img {
+        width: 120%;
+
+    }
+
+    #rewardheading7 {
+        font-size: 55px;
+        margin-top: 15%;
+    }
+
+    #rewardpara {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    #rewardsButton {
+        margin-top: 46.5%;
+    }
+
+    #rewardsButton1 {
+        margin-top: 46.5%;
+    }
+
+    #rewardheading2 {
+        margin-top: 29.8%;
+    }
+
+    #rewardheading1 {
+        margin-top: 23%;
+    }
+
+    #rewardheading6 {
+        font-size: 50px;
+    }
+
+    #rewardButton2 {
+        width: 15% !important;
+    }
+
+    #rewardContainer3 {
+        /* border:2px solid black; */
+        height: 650px;
+    }
+
+    #rewardheading7 {
+        font-size: 45px;
+    }
+
+    #rewardpara3 {
+        margin-top: 48%;
+    }
+
+    #rewardsButton3 {
+        margin-top: 40.5%;
+    }
+
+    #rewardpara2 {
+        margin-top: 32%;
+    }
+
+    #rewardheading7 {
+        margin-top: 18%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #rewardsContainer {
+        background-position-y: contain;
+        /* border:2px solid red; */
+        height: 431px;
+    }
+
+    #rewardsButton {
+        margin-top: 21.5%;
+    }
+
+    #rewardsButton1 {
+        margin-top: 21.5%;
+    }
+
+    #rewardheading2 {
+        font-size: 41px;
+        margin-top: 7.8%;
+    }
+
+    #rewardsContainer1 {
+        height: 638px;
+    }
+
+    #rewardheading1 {
+        margin-top: 2%;
+        font-size: 33px;
+    }
+
+    #rewardheading6 {
+        font-size: 44px;
+    }
+
+    #rewardpara {
+        font-size: 14px;
+    }
+
+    #rewardButton2 {
+        width: 20% !important;
+        margin-left: 4%;
+        height: 46px !important;
+    }
+
+    #rewardContainer3 {
+        /* border:2px solid black; */
+        height: 650px;
+    }
+
+    #rewardheading3 {
+        font-size: 50px;
+    }
+
+    #rewardheading7 {
+        font-size: 45px;
+    }
+
+    #rewardpara3 {
+        margin-top: 48%;
+    }
+
+    #rewardsButton3 {
+        height: 41px !important;
+        margin-top: 40.5%;
+        width: 15% !important;
+    }
+
+    #rewardpara2 {
+        margin-top: 32%;
+    }
+
+    #rewardheading7 {
+        margin-top: 18%;
+    }
+
+    #rewardContainer2 {
+        background-size: contain;
+        height: 500px;
+
+    }
+}
+
+@media screen and (max-width:900px) {
+    #rewardsButton {
+        margin-top: 32%;
+    }
+
+    #rewardsButton1 {
+        margin-top: 32%;
+    }
+
+    #rewardheading1 {
+        margin-top: 13%;
+    }
+
+    #rewardheading2 {
+
+        font-size: 31px;
+        margin-top: 20%;
+
+    }
+
+    #rewardheading5 {
+        font-size: 50px;
+    }
+
+    #rewardheading6 {
+        font-size: 40px;
+    }
+
+    #rewardpara {
+        font-size: 12px;
+    }
+
+    #rewardheading7 {
+        font-size: 30px;
+    }
+
+    #rewardpara3 {
+        margin-top: 52%;
+    }
+
+    #rewardsButton3 {
+
+        margin-top: 42.5%;
+        width: 17% !important;
+    }
+
+    #rewardpara2 {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    #rewardsContainer {
+        background: url(../../images/rewards_short.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 1000px;
+        background-color: #d7af38;
+        /* border:2px solid black */
+    }
+
+    #rewardheading1 {
+        margin-top: 1%;
+    }
+
+    #rewardheading2 {
+
+        margin-top: 8%;
+    }
+
+    #rewardsButton {
+        margin-left: 6.5%;
+        width: 15%;
+        width: 23% !important;
+        height: 39px !important;
+        margin-top: 30%;
+        position: absolute;
+    }
+
+    #rewardsButton1 {
+        width: 23% !important;
+        height: 39px !important;
+        margin-top: 22%;
+        position: absolute;
+    }
+
+    /* part 2 */
+    #rewardheading3 {
+        font-size: 40px;
+    }
+
+    /* part3 */
+    #rewardContainer2 {
+        background: url(../../images/rewards_phones.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 600px;
+
+    }
+
+    #rewardheading6 {
+        position: absolute;
+    }
+
+    #rewardheading6 {
+        font-size: 28px;
+        position: absolute;
+        margin-top: 60%;
+    }
+
+    #rewardButton2 {
+
+        width: 27% !important;
+        margin-top: 85%;
+        position: absolute;
+        margin-left: 4%;
+        height: 42px !important;
+
+    }
+
+    #rewardpara {
+        margin-top: 74.5%;
+        position: absolute;
+        font-size: 15px;
+    }
+
+    /* part4 */
+    #rewardTile6>img {
+        display: none;
+    }
+
+    #rewardTile6 {
+        height: 645px;
+        /* border: 2px solid blue; */
+        background: url(../../images/how-to-join-starbucks.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+    }
+
+    #rewardpara3 {
+        margin-top: 62%;
+    }
+
+    #rewardsButton3 {
+        margin-top: 53.5%;
+        width: 20% !important;
+    }
+
+    #rewardheading7 {
+        display: none;
+    }
+
+    #rewardpara2 {
+        display: none;
+    }
+
+    #rewardsButton3 {
+        display: none;
+    }
+
+    #rewardpara3 {
+        display: none;
+    }
+
+    /* for width below 771px */
+    #rewardheading8 {
+        position: absolute;
+        margin-top: 44%;
+        margin-left: 25%;
+        visibility: visible;
+    }
+
+    #rewardpara8 {
+        position: absolute;
+        margin-top: 59%;
+        margin-left: 31%;
+        font-weight: bold;
+        visibility: visible;
+
+    }
+
+    #rewardsButton11 {
+        visibility: visible;
+        margin-top: 71%;
+        position: absolute;
+        margin-left: 36%;
+
+    }
+
+    #rewardsButton11:hover {
+        background-color: #006341;
+        visibility: visible;
+    }
+
+    #rewardpara5 {
+        visibility: visible;
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 31%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #rewardsButton {
+        margin-left: 6.5%;
+        /* width: 15%; */
+        width: 27% !important;
+        /* height: 39px !important; */
+        margin-top: 36%;
+        position: absolute;
+        font-size: 13px;
+    }
+
+    #rewardsButton1 {
+        width: 27% !important;
+        height: 39px !important;
+        margin-top: 24%;
+        position: absolute;
+        font-size: 13px;
+    }
+
+    #rewardheading1 {
+        font-size: 25px;
+        margin-top: 2%;
+    }
+
+    #rewardheading2 {
+        font-size: 25px;
+        margin-top: 10%;
+    }
+
+    /* part2 */
+    #rewardsContainer1 {
+        /* border: 2px solid black; */
+        height: 701px;
+    }
+
+    #rewardButton2 {
+        font-size: 14px;
+    }
+
+    .rewardTile {
+        width: 34%;
+    }
+
+    .rewardTile>img {
+        width: 88%;
+    }
+
+    #rewardsImg2 {
+        margin-top: 26%;
+        position: absolute;
+        margin-left: 8%;
+    }
+
+    #rewardheading4 {
+        margin-top: 7%;
+        font-size: 35px;
+        color: #006341;
+        position: absolute;
+        margin-left: 23%;
+
+    }
+
+    #rewardheading5 {
+        margin-top: 15%;
+        font-size: 45px;
+        position: absolute;
+        margin-left: 5%;
+    }
+
+    #rewardTile6 {
+        height: 542px;
+
+    }
+
+    #rewardpara5 {
+
+        margin-top: 95%;
+
+    }
+
+    #rewardsButton11 {
+        margin-top: 86%;
+    }
+
+    #rewardpara8 {
+
+        margin-top: 69%;
+    }
+
+    #rewardheading8 {
+
+        margin-top: 49%;
+
+    }
+
+}
+
+@media screen and (max-width:553px) {
+    #rewardsImg2 {
+        margin-top: 33%;
+
+    }
+
+    #rewardheading5 {
+        margin-top: 21%;
+        font-size: 32px;
+        margin-left: 8%;
+    }
+
+    #rewardheading4 {
+
+        font-size: 36px;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    #rewardsImg2 {
+        margin-top: 46%;
+
+    }
+
+    #rewardheading5 {
+        margin-top: 35%;
+        font-size: 28px;
+        margin-left: 19%;
+    }
+
+    #rewardheading4 {
+        margin-top: 21%;
+        margin-left: 19%;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    #rewardsButton {
+        margin-left: 35.5%;
+        margin-top: 28%;
+    }
+
+    #rewardsButton1 {
+
+        margin-top: 28%;
+
+    }
+
+    /* part2 */
+    #rewardsContainer1 {
+        /* border: 2px solid black; */
+        height: 609px;
+    }
+
+    #rewardsImg2 {
+        margin-top: 40%;
+
+    }
+
+    #rewardheading5 {
+
+        margin-top: 28%;
+        font-size: 28px;
+        margin-left: 13%;
+
+    }
+
+    #rewardheading4 {
+
+        margin-top: 11%;
+        margin-left: 15%;
+        font-size: 36px;
+
+    }
+
+    /* part4 */
+    #rewardContainer2 {
+
+        height: 510px;
+    }
+
+    #rewardButton2 {
+        margin-top: 95%;
+        font-size: 14px;
+        width: 30% !important;
+    }
+
+    #rewardpara {
+        margin-top: 76.5%;
+        position: absolute;
+        font-size: 15px;
+    }
+
+    /* part5 */
+    #rewardContainer3 {
+        /* border: 2px solid black; */
+        height: 497px;
+    }
+
+    #rewardpara5 {
+        margin-top: 112%;
+    }
+
+    #rewardsButton11 {
+        margin-top: 98%;
+    }
+
+    #rewardheading8 {
+        margin-top: 57%;
+    }
+
+    #rewardpara8 {
+        margin-top: 80%;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    #rewardheading1 {
+        font-size: 20px;
+        margin-top: 2%;
+    }
+
+    #rewardheading2 {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    #rewardsButton {
+        font-size: 11px;
+    }
+
+    #rewardsButton1 {
+
+        font-size: 11px;
+
+    }
+
+    /* part2 */
+    #rewardsContainer1 {
+        /* border: 2px solid black; */
+        height: 609px;
+    }
+
+    #rewardsImg2 {
+        margin-top: 43%;
+
+    }
+
+    #rewardheading5 {
+
+        margin-top: 28%;
+        font-size: 23px;
+        margin-left: 13%;
+
+    }
+
+    #rewardheading4 {
+
+        margin-top: 11%;
+        margin-left: 15%;
+        font-size: 28px;
+
+    }
+
+    /* part4 */
+    #rewardContainer2 {
+
+        height: 510px;
+    }
+
+    #rewardButton2 {
+        margin-top: 108%;
+        font-size: 14px;
+        width: 33% !important;
+    }
+
+    #rewardpara {
+        margin-top: 83.5%;
+
+    }
+
+
+
+}
+
+@media screen and (max-width:350px) {
+    #rewardsContainer {
+
+        height: 484px;
+        background-color: #e2b429;
+        /* border: 2px solid black; */
+    }
+
+    #rewardheading1 {
+        font-size: 13px;
+        margin-top: 4%;
+    }
+
+    #rewardheading2 {
+        font-size: 12px;
+        margin-top: 13%;
+    }
+
+    #rewardsButton {
+        font-size: 7px;
+        width: 28% !important;
+        height: 25px !important;
+    }
+
+    #rewardsButton1 {
+        font-size: 8px;
+        width: 28% !important;
+        height: 25px !important;
+    }
+
+    /* part2 */
+    #rewardsContainer1 {
+        /* border: 2px solid black; */
+        height: 1100px;
+    }
+
+    #rewardheading3 {
+        margin-left: 10%;
+        font-size: 24px;
+        /* text-align: center; */
+    }
+
+    .rewardTile {
+        width: 51%;
+    }
+
+    .rewardTile>img {
+        width: 110%;
+    }
+
+    #rewardheading5 {
+        margin-top: 34%;
+        font-size: 18px;
+        margin-left: 19%;
+
+
+
+    }
+
+    #rewardheading4 {
+
+        margin-top: 19%;
+        margin-left: 20%;
+        font-size: 22px;
+    }
+
+    /* part4 */
+    #rewardContainer2 {
+
+        height: 510px;
+    }
+
+    #rewardButton2 {
+        margin-top: 108%;
+        font-size: 11px;
+        width: 33% !important;
+    }
+
+    #rewardpara {
+        margin-top: 83.5%;
+
+    }
+
+    /* part5 */
+    #rewardContainer3 {
+        /* border: 2px solid black; */
+        height: 497px;
+    }
+
+    #rewardpara5 {
+        margin-top: 136%;
+        margin-left: 20%;
+    }
+    #rewardsButton11 {
+        margin-top: 117%;
+        margin-left: 31%;
+    }
+
+    #rewardheading8 {
+        margin-left: 12%;
+        margin-top: 66%;
+        font-size: 22px;
+    }
+
+    #rewardpara8 {
+        margin-left: 20%;
+        margin-top: 93%;
+    }
+
+
+}
+
+@media screen and (max-width:300px) {
+    #rewardsContainer1 {
+        /* border: 2px solid black; */
+        height: 750px;
+    }
+    #rewardsImg2 {
+        display: none;
+    }
+
+    #rewardheading5 {
+        display: none;
+
+
+    }
+
+    #rewardheading4 {
+
+        display: none;
+    }
+
+    /* part3 */
+    #rewardButton2 {
+        margin-top: 115%;
+        font-size: 9px;
+        width: 35% !important;
+    }
+    #rewardpara {
+        font-size: 12px;
+        margin-top: 89.5%;
+    }
+    #rewardheading6 {
+        font-size: 26px;
+        position: absolute;
+        margin-top: 62%;
+    }
+}
