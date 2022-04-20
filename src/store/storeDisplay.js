@@ -14,16 +14,16 @@ const StoreDisplay = (props) => {
                 return storeloc.map((item) => {
                     return (
                         <Fragment>
-                            <div id='storeContainer' key={item._id}>
+                           
 
-                                <div id='storeComponent'>
+                                <div id='storeComponent' key={item._id}>
                                     <h4>{item.name}</h4>
                                     <h5>{item.address}</h5>
 
                                 </div>
-                                
+                                <br/>
 
-                            </div>
+                            
                          
                         </Fragment>
                     )

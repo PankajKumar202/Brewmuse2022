@@ -189,13 +189,15 @@ body{
 }
 
 #offer2{
+    margin-top: -71%;
     display: inline-block;
-    margin-left: -1%;
+    margin-left: 50%;
     width: 202px;
 }
 
 #offer3{
     display:block;
+    margin-top: -7.2%;
 }
 
 #couponBtn{

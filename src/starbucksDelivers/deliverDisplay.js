@@ -40,17 +40,17 @@ const Deliverdisplay = (props) => {
         }
         else {
             return (
-                <>
+                <div>
                     <img className="Loading" src='/images/Loader.gif' alt="Loader..." />
                     <h1 className="Loading">Loading.....</h1>
-                </>)
+                </div>)
 
         }
     }
     return (
-        <div id="content">
+        <>
             {display(props)}
-        </div>
+        </>
     )
 }
 

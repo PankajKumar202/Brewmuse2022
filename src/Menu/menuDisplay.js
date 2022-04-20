@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import Header from "../Header";
-
+import "./menuDisplay.css";
 const url="https://brewmusepk.herokuapp.com/menu"
 
 class MenuDisplay extends Component{
@@ -20,9 +20,9 @@ class MenuDisplay extends Component{
                      // sessionStorage.setItem('categoryId', item.id)
                     return(
                         
-                        <div className="row" >
-                            <div className="col-md-6" >
-                                <img src={item.image_url} alt={item.name}/>
+                        <div className="row" id="menuDisplayDiv1">
+                            <div className="col-md-2" id="menuDisplayDiv2" >
+                                <img src={item.image_url} alt={item.name} id="menuDisplayImg"/>
                                 <h4>{item.name}</h4>
                             </div>
                         </div>

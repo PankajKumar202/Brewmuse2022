@@ -15,7 +15,7 @@ class Careers extends Component{
     }
 
     handleChange = (event) => {
-        this.setState=({cupName:event.target.value?event.target.value:''})
+        this.setState({cupName:event.target.value?event.target.value:''})
         console.log(event.target.value)
     }
 
@@ -30,7 +30,7 @@ class Careers extends Component{
                             <input onChange={this.handleChange} id="nameInput" name="name" type="text"/>
                             <button className="btn btn-success" id="enterBtn"type="submit">Go</button> 
                         </div>
-                        <div id="nameVisible">{this.state.cupName}</div>
+                        <div id="nameVisible"><span style={{fontWeight:"bold",fontSize:"50px"}}>{this.state.cupName}</span></div>
                     </div>
                 </div>
             </Fragment>

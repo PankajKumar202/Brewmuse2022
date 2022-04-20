@@ -1,0 +1,36 @@
+#menuDisplayDiv1{
+    display: inline-block;
+    vertical-align: top;
+    padding: 2%;
+    width: 20%;
+}
+
+#menuDisplayDiv2{
+    width: 100%;
+    margin-left: 30%;
+}
+
+#menuDisplayImg{
+    height: 150px;
+    width: 150px;
+}
+
+#menuDisplayTitle{
+    text-align: left;
+    font-size: 16px;
+    width: 60%;
+    margin-left: 10%;
+    color: #006341;
+}
+
+@media screen and (max-width:971px){
+    #menuDisplayDiv1{
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:600px){
+    #menuDisplayDiv1{
+        width: 50%;
+    }
+}

@@ -18,10 +18,7 @@ class Finder extends Component {
                         <Link to={'/coffeeCat/2'}>
                         <img src={item.img_url} alt="items" style={{display:"inline-block"}}/>
                         <span>{item.name}</span>
-                    </Link>
-                    
-                 
-                    
+                         </Link>
                 )
             })
         }

@@ -17,7 +17,7 @@ body {
     background-color: #f7f7f7;
     height: 90px;
     top:0;
-    position: sticky !important;
+    /* position: sticky !important; */
 }
 
 /* Logo */
@@ -779,6 +779,8 @@ margin-top: 6%;
     }
 
     .container-fluid {
+     
+        /* position: absolute; */
         background-color: black;
     }
 

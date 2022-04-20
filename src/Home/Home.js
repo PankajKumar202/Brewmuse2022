@@ -2,25 +2,30 @@ import React from "react";
 import Header from "../Header";
 import './home.css';
 
-function closeDiv(){
-    document.getElementById('coupon').style.visibility="hidden"
-}
 
-function test(){
-    document.getElementById('coupon').style.visibility="visible"
-}
 
 const Home = () =>{
+    // function closeDiv(){
+    //     let coupenbox=document.getElementById('couponBtn')[0].style.visibility="hidden";
+    //     return coupenbox;
+    // }
+    
+   
     return(
         
         <React.Fragment>
+            <div className="togglediv">
             <Header/>
-            <div id="coupon">
+            </div>
+          
+            
+            {/* <div id="coupon">
+              
                 <img src="https://i.ibb.co/g7X9bKS/offer3.jpg" alt="offer" id="offer1"/>
                 <img src="https://i.ibb.co/BqhGhdW/offer4.jpg" alt="offer" id="offer2"/>  
                 <img src="https://i.ibb.co/tH5DDnz/offer.jpg" alt="offer" id="offer3"/>    
-                <button id="couponBtn" onclick="closeDiv()">&times;</button>   
-            </div>
+                <button id="couponBtn" onclick={closeDiv}>&times;</button>   
+            </div> */}
 
             <div className="homies" id="section" ></div>
             <div className="homies" id="section1"></div>
@@ -60,9 +65,6 @@ const Home = () =>{
                 </div>
             </div>
             
-            <script>
-                window.onload=test()
-            </script>
            
         </React.Fragment>
     )

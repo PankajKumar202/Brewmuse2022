@@ -22,10 +22,11 @@ import Finder from './Coffee/coffeeFinder/finder';
 import Finder1 from './Coffee/coffeeFinder/finder1';
 import Finder2 from './Coffee/coffeeFinder/finder2';
 import FinderData from './Coffee/coffeeFinder/finderData';
+
 const Router = () =>{
     return(
         <BrowserRouter>
-          
+       
             <Route exact path="/" component={Home}/>
             
             <Route path="/menu" component={Menu}/>
