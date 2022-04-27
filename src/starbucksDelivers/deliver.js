@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import React, { Component ,Fragment} from "react";
+import {withRouter} from 'react-router-dom';
 import "./delivers.css";
 import Header from '../Header'
 import Deliverdisplay from "./deliverDisplay";
@@ -10,6 +10,7 @@ import CostFilter from '../filters/costFilter';
 
 const menuUrl = "https://brewmusepk.herokuapp.com/Menu";
 
+
 class delivers extends Component {
     constructor(props) {
 
@@ -17,9 +18,10 @@ class delivers extends Component {
         this.state = {
             items: "",
             filtered: ""
+           
         }
     }
-
+    
     setDataPerFilter = (data) => {
         this.setState({ filtered: data })
     }
@@ -38,28 +40,29 @@ class delivers extends Component {
                 <Header />
                 <div className="row">
 
-                <div id="header">
-                    <form id="form">
-                        <i className="fas fa-search"></i>
-                        <Search userInput={(data) => { this.filtered(data) }} />
-                    </form>
-                    <span id="budgt">Cost For Two : <i className="fa-solid fa-indian-rupee-sign"></i>1200</span>
-                    <span id="delTime">Delivery Time <i className="fa-duotone fa-moped"></i> : 30 mins</span>
-                    <div id="FilterBox">
-                        <CategoryFilter dataPerCategory={(data) => { this.setDataPerFilter(data) }} />
-                        <CostFilter dataPerCost={(data) => {this.setDataPerFilter(data)}}/>
-                       
-                    </div>
-                 
-                 
-                </div>
-               
-                   
-                    <Deliverdisplay Menu={this.state.filtered} />
-                    
-                    
+                    <div id="header">
+                        <form id="form">
+                            <i className="fas fa-search"></i>
+                            <Search userInput={(data) => { this.filtered(data) }} />
+                        </form>
+                        <span id="budgt">Cost For Two : &#8377; 1200</span>
+                        <span id="delTime">Delivery Time <i className="fa-duotone fa-moped"></i> : 30 mins</span>
+                        <div id="FilterBox">
+                            <CategoryFilter dataPerCategory={(data) => { this.setDataPerFilter(data) }} />
+                            <CostFilter dataPerCost={(data) => { this.setDataPerFilter(data) }} />
 
-                
+                        </div>
+
+
+                    </div>
+
+
+                    <Deliverdisplay Menu={this.state.filtered} />
+
+
+
+
+
 
 
                 </div>
@@ -75,6 +78,8 @@ class delivers extends Component {
                 this.setState({ items: data, filtered: data })
 
             })
+      
+
     }
 }
-export default delivers
+export default withRouter(delivers);

@@ -35,7 +35,7 @@ body {
 /* Find Store Location */
 #findStore {
     margin-left: 88%;
-    margin-top: -4%;
+    margin-top: -4.5%;
 }
 
 #findStore>a {
@@ -52,6 +52,35 @@ body {
     display: inline;
     padding-left: 4px;
 }
+.signOut{
+    /* border: 2px solid; */
+    margin-left: 7%;
+    margin-top: -2%;
+    position: absolute;
+}
+#signinMsg{
+    vertical-align: top;
+    margin-left: -179%;
+    margin-top: -15%;
+}
+/* condtional hader sm */
+#conditionalHeadersm{
+    display: none;
+}
+#conditionalHeaderxl{
+    margin-left: 52%;
+    margin-top: -12%;
+}
+#signinMsgXl{
+    position: absolute;
+    /* border: 2px solid; */
+    display: inline-block;
+    width: 17%;
+    margin-left: -29%;
+    margin-top: -0.5%;
+}
+
+/* end */
 
 /* Navigation Menu Starts */
 .navbar {
@@ -72,7 +101,7 @@ body {
 .navbar-nav {
     margin-left: 5%;
 }
-#signin{
+#signIn{
    visibility:hidden;
 }
 .nav-item>a {
@@ -535,6 +564,10 @@ footer {
 
         margin-top: 0.5%;
     }
+    #signinMsgXl{
+        margin-left: -29%;
+        margin-top: -1.5%;
+    }
 }
 
 @media screen and (max-width:1600px) {
@@ -554,6 +587,18 @@ footer {
     #findStore {
         margin-top: -4%;
     }
+    #signinMsgXl{
+        
+        display: inline-block;
+        width: 20%;
+        margin-left: -33%;
+        margin-top: -3.5%;
+    
+        }
+        #conditionalHeaderxl {
+            margin-left: 60%;
+            margin-top: -12%;
+        }
 }
 
 @media screen and (max-width:1500px) {
@@ -567,6 +612,18 @@ footer {
 
         margin-top: 1%;
         margin-left: 76.5%;
+    }
+    #signinMsgXl{
+        
+    display: inline-block;
+    width: 20%;
+    margin-left: -33%;
+    margin-top: -3.5%;
+
+    }
+    #conditionalHeaderxl {
+        margin-left: 63%;
+        margin-top: -14%;
     }
 }
 
@@ -590,6 +647,24 @@ footer {
         margin-top: 2%;
         margin-left: 75%;
     }
+    #signinMsgXl{
+        
+        width: 23%;
+        margin-left: -37%;
+        margin-top: -4.5%;
+    
+    
+        }
+        #findStore {
+            /* border: 2px solid; */
+            margin-top: -4%;
+            width: 14%;
+            margin-left: 86%;
+        }
+        #conditionalHeaderxl {
+           
+            margin-top: -14%;
+        }
 }
 
 @media screen and (max-width: 1300px) {
@@ -636,7 +711,14 @@ footer {
         margin-top: 3.5%;
         margin-left: 73%;
     }
+    #signinMsgXl {
+        width: 26%;
+        margin-left: -43%;}
+        #conditionalHeaderxl {
+            margin-left: 71%;
+        }
 }
+
 
 /* @media screen and (max-width:1200px) {
     #section, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9{
@@ -724,6 +806,14 @@ margin-top: 6%;
         margin-top: -6%;
         margin-left: 80%;
     }
+    #signinMsgXl {
+        width: 28%;
+        margin-left: -48%;
+    }
+    #conditionalHeaderxl {
+        margin-left: 82%;
+        margin-top: -18%;
+    }
 }
 
 
@@ -731,7 +821,7 @@ margin-top: 6%;
     .find {
         visibility: hidden;
     }
-    #signin{
+    #signIn{
         visibility: visible;
     }
 
@@ -741,17 +831,35 @@ margin-top: 6%;
         margin-top: -6%;
 
     }
-
+#conditonalHeaderxl{
+    display: none;
+}
+#conditionalHeadersm{
+    display: contents;
+    color: #fff;
+}
     .navbar {
         height: 0px;
     }
-
+    .nav-item>a {
+        text-decoration: none;
+        color: #f9fafb;
+    }
     .navbar-toggler {
         position: absolute;
         margin-left: 90%;
         margin-top: -7%;
     }
+    #signinMsgXl {
+        display: none;
+    }
+    .signOutXl{
+        display: none;
+    }
+    .signOutSm{
+        color: white;
 
+    }
     #navIcon:focus:not(focus-visible) {
         position: sticky;
         margin-left: 90%;

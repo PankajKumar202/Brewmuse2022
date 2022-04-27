@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import Footer from './Footer';
-import Home from './Home/home';
+import Home from './Home/Home';
 import Menu from './Menu/menu';
 import Drinks from './Menu/Drinks/Drinks';
 import Food from './Menu/Food/Food';
@@ -22,6 +22,8 @@ import Finder from './Coffee/coffeeFinder/finder';
 import Finder1 from './Coffee/coffeeFinder/finder1';
 import Finder2 from './Coffee/coffeeFinder/finder2';
 import FinderData from './Coffee/coffeeFinder/finderData';
+import login from './login/login';
+import Register from './login/Register';
 
 const Router = () =>{
     return(
@@ -43,6 +45,7 @@ const Router = () =>{
             <Route path="/rewards" component={Rewards}/>
             <Route exact path="/giftCards" component={Gift}/>
             <Route exact path="/giftCards/:giftID" component={Gift}/>
+            {/* <Route exact path="/giftCards/1" component={Gift}/> */}
             <Route exact path="/coffee" component={Coffee}/>
             <Route path="/coffeeCat/1" component={Finder}/>
             <Route path="/coffeeCat/2" component={Finder1}/>
@@ -51,6 +54,9 @@ const Router = () =>{
             <Route path="/seasonGifting" component={seasonGifting}/>
             <Route path="/aboutUs" component={AboutUs}/>
             <Route path="/careers" component={Careers}/>
+            <Route path="/login" component={login}/>
+            <Route path={"/register"} component={Register}/>
+
             <Footer/>
         </BrowserRouter>
     )

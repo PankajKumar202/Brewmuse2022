@@ -12,8 +12,8 @@ const Rewards = () => {
                 <div id="rewardsContainer" className="col-md-12">
                     <h2 id="rewardheading1">My Starbucks Rewards<sup>TM</sup> </h2>
                     <h1 id="rewardheading2">A loyalty program <br />that's all about you.</h1>
-                    <button type="button" class="btn btn-outline-dark" id="rewardsButton1">JOIN NOW</button>
-                    <Link to={"/giftCards"}><button type="button" class="btn btn-outline-dark" id="rewardsButton">GIFT CARDS</button></Link>
+                    <Link to={"/register"}><button type="button" class="btn btn-outline-dark" id="rewardsButton1">JOIN NOW</button></Link>
+                    <Link to={"/giftCards/1"}><button type="button" class="btn btn-outline-dark" id="rewardsButton">GIFT CARDS</button></Link>
                 </div>
                 <div id="rewardsContainer1" className="col-md-12">
                     <center><h1 id="rewardheading3">The First Sip Feeling</h1></center>
@@ -78,8 +78,8 @@ const Rewards = () => {
                     <span id="rewardpara2">Already have a card?<br />
 
                         Signing up is easy and fast</span>
-                    <button type="button" class="btn btn-outline-dark" id="rewardsButton3">JOIN NOW</button>
-                    <span id="rewardpara3">Already a member? <Link to={'#'}><span id="insiderewardpara3">Sign in</span></Link></span>
+                    <Link to={"/register"}><button type="button" class="btn btn-outline-dark" id="rewardsButton3">JOIN NOW</button></Link>
+                    <span id="rewardpara3">Already a member? <Link to={'/login'}><span id="insiderewardpara3">Sign in</span></Link></span>
 
 
                 </div>
