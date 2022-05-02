@@ -48,6 +48,10 @@ class Header extends Component {
            
         }
     }
+    navbar=()=>{
+        let navSpace=document.getElementsByClassName('navbar')[0];
+        navSpace.classList.toggle('navbar1')
+    }
     conditionalHeadersm = () => {
         
         if ( sessionStorage.getItem('userName') !== null) {
@@ -108,7 +112,7 @@ class Header extends Component {
 
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
-                        <button id="navIcon" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                        <button id="navIcon" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={this.navbar} >
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
@@ -150,12 +154,28 @@ class Header extends Component {
 
 
                             </ul>
-                            <br />
+                            {/* <br /> */}
                         </div>
 
                     </div>
 
                 </nav>
+                 {/* <nav className="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+                    <div className="container-fluid">
+
+                        <Link className="navbar-brand" to="/">Zomato</Link>
+
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon" ></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        {this.conditionalHeadersm()}
+                        </div>
+                    </div>
+
+
+                </nav> */}
 
 
             </Fragment>
@@ -203,7 +223,7 @@ class Header extends Component {
             .then((res) => res.json())
             .then((data) => {
                if(sessionStorage.getItem('token') !==null){
-                sessionStorage.setItem('userName',data.name)
+                sessionStorage.setItem('userName',data.name.toLowerCase().trim().split(' ')[0])
             }
             else{
                 sessionStorage.removeItem('userName')  

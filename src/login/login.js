@@ -31,6 +31,7 @@ class login extends Component {
                 this.setState({message:data.token})
             }else{
                 sessionStorage.setItem('token',data.token)
+                sessionStorage.setItem('email',this.state.email)
                 this.props.history.push('/')
             }
         })

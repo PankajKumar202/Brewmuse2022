@@ -19,7 +19,15 @@ body {
     top:0;
     /* position: sticky !important; */
 }
-
+.navbar1 {
+        position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 18.5rem !important;
+    }
 /* Logo */
 .logo {
     margin-left: 46px;
@@ -90,7 +98,10 @@ body {
     position: sticky !important;
     
 }
-
+.navbar-toggler{
+    border:2px solid white;
+    position: fixed;
+}
 #navigationMenu {
     width: 100%;
     margin-top: 0%;
@@ -949,12 +960,12 @@ margin-top: 6%;
         margin-left: 87%;
         margin-top: -12%
     }
-
     #navIcon:focus:not(focus-visible) {
         position: sticky;
         margin-left: 87%;
         margin-top: -12%;
     }
+
 
     .fa-map-marker-alt {
         margin-top: 5% !important;
@@ -1028,17 +1039,18 @@ margin-top: 6%;
         margin-top: -20%
     }
 
-    #navIcon:focus:not(focus-visible) {
-        position: sticky;
-        margin-left: 84%;
-        margin-top: -20%;
-    }
+   
       #weather {
         margin-top: 1%;
         margin-left: 51%;
         top: 5%;
     
 
+    }
+    #navIcon:focus:not(focus-visible) {
+        position: sticky;
+        margin-left: 84%;
+        margin-top: -20%;
     }
 
     #icon {

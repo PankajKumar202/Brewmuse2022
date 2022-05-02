@@ -4,40 +4,47 @@ import Header from "../../Header";
 import GiftCategory from "./giftCategoryDisplay"
 import "./giftCard.css";
 import GiftCardDisplay from "./giftCardDisplay";
-const GiftCategoryUrl="https://brewmusepk.herokuapp.com/giftCategory"
-const giftDataurl="https://brewmusepk.herokuapp.com/cards";
+const GiftCategoryUrl = "https://brewmusepk.herokuapp.com/giftCategory"
+const giftDataurl = "https://brewmusepk.herokuapp.com/cards";
 class Gift extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            giftCategory:"",
+            giftCategory: "",
             giftData: "",
-            default:""
+            giftItem: ""
 
         }
     }
-    giftOrders=[]
-    addOrders=(id)=>{
-
+    // giftOrders=[]
+    addOrders = (id) => {
+        console.log("Inside Addorders", id)
+        this.setState({ giftItem: id })
     }
-    renderCards=()=>{
-        let gift_Category=this.props.match.params.giftID ; 
 
-        //    console.log("gift_Category >>>>",gift_Category)
-           sessionStorage.setItem("giftId>>>",gift_Category)
-        fetch(`${giftDataurl}/${gift_Category}`,{method:'GET'})
-        .then((res)=>res.json())
-        .then((data)=>{
-            this.setState({giftData:data})
-        })
+    proceed=()=>{
+        sessionStorage.setItem('giftItem',this.state.giftItem)
+        this.props.history.push(`/placeGift`)
     }
+
+    renderCards = () => {
+        let gift_Category = this.props.match.params.giftID;
+        sessionStorage.setItem("giftId", gift_Category)
+        fetch(`${giftDataurl}/${gift_Category}`, { method: 'GET' })
+            .then((res) => res.json())
+            .then((data) => {
+                this.setState({ giftData: data })
+            })
+    }
+ 
     render() {
-        // console.log("render gift", this.state.giftData)
-      
-        if(sessionStorage.getItem('token') !== null){
-           
+        console.log("render gift ID", this.state.giftItem);
+        console.log("Props guiftcard>>>",this.props)
+
+        if (sessionStorage.getItem('token') !== null) {
+
             return (
-        
+
                 <Fragment>
                     <Header />
                     <h5 id="giftHeading1">STARBUCKS E-GIFT</h5>
@@ -45,54 +52,58 @@ class Gift extends Component {
                     <ul id="giftContainer">
                         <li>
                             <a>
-    
+
                                 <span><center><img class="img-responsive" src="https://i.ibb.co/fCPGTrP/zero-one.png" /></center>Select a Card</span>
                             </a>
                         </li>
                         <li>
                             <a>
-    
+
                                 <span><center><img class="img-responsive" src="https://i.ibb.co/bgc7ftM/zero-two.png" /></center>Message &amp; Details</span>
                             </a>
                         </li>
                         <li>
                             <a>
                                 <span><center><img class="img-responsive" src="https://i.ibb.co/XWcjZQz/zero-three.png" /></center>Confirm &amp; Pay</span>
-    
-    
+
+
                             </a>
                         </li>
                     </ul>
                     <div id="giftContainer1">
-                        <GiftCategory giftCategory={this.state.giftCategory}  />
+                        <GiftCategory giftCategory={this.state.giftCategory} />
                     </div>
                     <div id="giftContainer2">
-                    
-                        <GiftCardDisplay giftCard={this.state.giftData} addOrders={()=>{}} />
+                        {this.renderCards()}
+                        <GiftCardDisplay giftCard={this.state.giftData} finalGift={(data) => { this.addOrders(data) }} />
+                        <Link className="btn btn-primary" style={{ marginTop: "1%" }} onClick={this.proceed}>
+                            Proceed
+                        </Link>
                     </div>
                 </Fragment>
             )
-        }else{
-            return(
+        } else {
+            return (
                 <Fragment>
-                    <Header/>
+                    <Header />
                     <center><h1>Login First To view this Page</h1></center>
                 </Fragment>
             )
         }
-        
-        
+
+
     }
     componentDidMount() {
-        
+
         fetch(GiftCategoryUrl, { method: 'GET' })
             .then((res) => res.json())
             .then((data) => {
                 // console.log("Inside giftcar",data[0].gift_id)
-                sessionStorage.setItem('defaultgiftID',data[0].gift_id)
+                sessionStorage.setItem('defaultgiftID', data[0].gift_id)
                 this.setState({ giftCategory: data })
             })
-       
+
+
 
     }
 }

@@ -24,6 +24,9 @@ import Finder2 from './Coffee/coffeeFinder/finder2';
 import FinderData from './Coffee/coffeeFinder/finderData';
 import login from './login/login';
 import Register from './login/Register';
+import PlaceGift from './rewards/giftCard/placeGift/placeGift';
+import ViewGift from './rewards/giftCard/placeGift/viewGiftOrder';
+import viewBooking from './rewards/giftCard/placeGift/viewBooking';
 
 const Router = () =>{
     return(
@@ -56,6 +59,10 @@ const Router = () =>{
             <Route path="/careers" component={Careers}/>
             <Route path="/login" component={login}/>
             <Route path={"/register"} component={Register}/>
+            <Route path={"/placeGift"} component={PlaceGift}/>
+            <Route path={"/proceed"} component={ViewGift}/>
+            <Route path={"/viewBooking"} component={viewBooking}/>
+            
 
             <Footer/>
         </BrowserRouter>

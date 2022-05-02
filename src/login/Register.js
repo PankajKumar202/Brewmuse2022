@@ -14,6 +14,8 @@ constructor(props){
 
 }
 registerEvent=(event)=>{
+    
+    // sessionStorage.setItem('Phone',this.state.phone)
     console.log(event.target.value)
 this.setState({[event.target.name]:event.target.value})
 }

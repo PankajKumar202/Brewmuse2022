@@ -14,9 +14,9 @@ const Home = () =>{
     return(
         
         <React.Fragment>
-            <div className="togglediv">
+            {/* <div className="togglediv"> */}
             <Header/>
-            </div>
+            {/* </div> */}
           
             
             {/* <div id="coupon">

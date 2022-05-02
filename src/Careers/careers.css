@@ -1,3 +1,12 @@
+/* Header Starts */
+#headerCareersBtn{
+    float: right;
+    margin-top: -4%;
+    margin-right: 1%;
+}
+
+
+
 #careersDiv1{
     height: 600px;
     width: 100%;
@@ -20,7 +29,7 @@
 }
 
 #enterBtn{
-    margin-top: -3.6%;
+    margin-top: -3.7%;
     margin-left: 26%;
     width: 8%;
     border-radius: 1%;
@@ -28,10 +37,535 @@
 }
 
 #nameVisible{
-    width: 10%;
+    width: 13%;
     float: right;
     height: 60px;
     margin-right: 27%;
     margin-top: -20%;
     transform: rotate3d(10, -46, 10, -22deg);
+    color: #0e7451;
+    font-size: 23px;
+    font-family: cursive;
+    font-style: italic;
 }
+
+
+#jobDiv{
+    background-color: #738d7d;
+    /* background-color: #1e1e1e; */
+    height: 150px;
+    padding: 3%;
+}
+
+.jobsLabel{
+    display:block
+}
+
+#keywordsJob,#cityNameJob{
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    margin-left: 8%;
+}
+
+#submitBtnJob{
+    margin-top: -3.5%;
+    float: right;
+    margin-right: 8%;
+    width: 25%;
+}
+
+#component3Job{
+    width: 100%;
+}
+
+#img1Job{
+    padding: 0%;
+    width: 44%;
+}
+
+#img2Job{
+    width: 789px;
+    display: block;
+    height: 430px;
+    margin-left: 41.5%;
+    margin-top: -32.8%;
+}
+
+#jobContent{
+    position: absolute;
+    width: 44%;
+    height: 69%;
+    margin-left: -2%;
+    z-index: 50;
+    text-align: center;
+    background-color: #006341b3 !important;
+}
+
+#CareersPara{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    width: 83%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+#component4Job{
+    background-image: url(https://rmkcdn.successfactors.com/98fec2eb/08a0867b-1c6e-4965-b92a-4.jpg);
+    height: 580px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: -1%;
+}
+
+#comp4heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:48px; 
+    color: #1e1e1e;
+    text-align:center;
+    font-style: italic;
+}
+
+.card{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    height: 400px;
+}
+
+.card-img-top{
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+}
+
+#cardsCareer{
+    padding: 2%;
+    margin-left: 5%;
+}
+
+#tableCareers{
+    width:100%;
+    height:100px;
+    padding-bottom:5%;
+    background-color: #738d7d;
+}
+
+#displayJobs{
+    margin-top: 0%;
+    z-index: 100;
+    width: 50%;
+}
+
+/* Media Query Starts */
+@media screen and (max-width: 2000px){
+    #enterBtn {
+        margin-top: -2.9%;
+    }
+    #nameVisible {
+        margin-right: 22%;
+        margin-top: -16%;
+        font-size: 32px;
+    }
+    #careersDiv1 {
+       
+        background-position: 100%;
+    }
+    #submitBtnJob {
+        margin-top: -2.5%;
+        /* float: right; */
+        margin-right: 24%;
+    }
+    #img2Job {
+        width: 1011px;
+    }
+    #jobContent {
+        
+        height: 63%;
+    }
+}
+@media screen and (max-width: 1300px){
+    #enterBtn {
+        margin-top: -3.9%;
+    }
+    #nameVisible {
+        margin-right: 27%;
+        margin-top: -18%;
+    }
+}
+
+@media screen and (max-width: 1290px){
+    #img2Job{
+        height: 420px;
+    }
+    #jobContent {
+        height: 67%;
+    }    
+}
+
+@media screen and (max-width: 1250px){
+    #enterBtn {
+        margin-top: -4%;
+    }
+    #nameVisible {
+        width: 14%;
+        margin-right: 26%;
+        margin-top: -17%;
+    }
+    #CareersPara{
+        width: 85%;
+    }
+    #img2Job {
+        height: 400px;
+    }
+    #jobContent {
+        height: 64%;
+    }
+    
+}
+
+@media screen and (max-width:1200px){
+    #submitBtnJob {
+        margin-top: -4%;
+        margin-right: 2%;
+    }
+}
+
+
+@media screen and (max-width: 1190px){
+    #img2Job {
+        height: 390px;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    #enterBtn {
+        margin-top: -4.4%;
+    }
+    #nameVisible {
+        width: 14%;
+        margin-right: 25%;
+        margin-top: -14%;
+    }
+    #CareersPara {
+        font-size: 16px;
+    }
+    #jobContent {
+        height: 62%;
+    }
+    #img2Job {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 1131px){
+    #nameVisible {
+        width: 16%;
+        margin-right: 24%;
+        margin-top: -13%;
+    }
+    #img2Job {
+        height: 360px;
+    }
+    #jobContent {
+        height: 58%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #enterBtn {
+        margin-top: -4.6%;
+    }
+    #nameVisible {
+        margin-right: 25%;
+        margin-top: -11%;
+    }
+    #headerCareersBtn {
+        margin-top: -5%;
+    }
+    #keywordsJob{
+        margin-left: 20%;
+    }
+    #submitBtnJob {
+        margin-top: 2%;
+        margin-right: 38%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    #enterBtn {
+        margin-top: -4.8%;
+    }
+    #nameVisible {
+        margin-right: 24%;
+        margin-top: -10%;
+        width: 18%;
+    }
+    #CareersPara {
+        font-size: 14px;
+        width: 88%;
+    }
+    #img2Job {
+        height: 348px;
+    }
+    #jobContent {
+        height: 55%;
+    }
+    .card-img-top {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #enterBtn {
+        margin-top: -5%;
+        margin-left: 22%;
+    }
+    #nameVisible {
+        margin-right: 25%;
+        margin-top: -16%;
+    }
+    #nameDiv {
+        width: 30%;
+        padding-left: 4%;
+        padding-top: 20%;
+    }
+    #headerCareersBtn {
+        margin-top: -6%;
+    }
+    #img2Job {
+        height: 310px;
+    }
+    #jobContent {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #enterBtn {
+        margin-top: -5.4%;
+        margin-left: 23%;
+    }
+    #nameVisible {
+        margin-right: 25%;
+        margin-top: -15%;
+        width: 20%;
+    }
+    #nameDiv {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #enterBtn {
+        margin-top: -5.6%;
+        margin-left: 22%;
+    }
+    #nameVisible {
+        margin-right: 26%;
+        margin-top: -14%;
+        width: 23%;
+    }
+    #keywordsJob {
+        margin-left: 15%;
+    }
+    #img1Job, #img2Job, #jobContent{
+        display: none;
+    }
+    .card {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #enterBtn {
+        margin-top: -6%;
+        margin-left: 21%;
+    }
+    #nameVisible {
+        margin-right: 26%;
+        margin-top: -14%;
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 830px){
+    .card-text{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    #enterBtn {
+        margin-top: -6.4%;
+        margin-left: 20%;
+    }
+    #nameVisible {
+        margin-right: 29%;
+        margin-top: -13%;
+        width: 26%;
+    }
+    #careersLogo{
+        width: 10%;
+    }
+    #headerCareersBtn {
+        margin-top: -8%;
+    }
+    #keywordsJob {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    #enterBtn {
+        margin-top: -6.7%;
+        margin-left: 33%;
+    }
+    #nameVisible {
+        margin-right: 31%;
+        margin-top: 12%;
+    }
+    #nameDiv {
+        padding-left: 5%;
+        width: 45%;
+        padding-top: 1%;
+    }
+    #keywordsJob {
+        margin-left: 5%;
+    }
+    #submitBtnJob {
+        margin-right: 38=8%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #enterBtn {
+        margin-top: -7.2%;
+        margin-left: 33%;
+    }
+    #nameVisible {
+        margin-right: 37%;
+        margin-top: 14%;
+    }
+    #nameDiv {
+        padding-top: 2%;
+    }
+    .card-img-top {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 690px){
+    #enterBtn {
+        margin-top: -7.5%;
+        margin-left: 37%;
+    }
+    #nameVisible {
+        margin-right: 35%;
+        width: 28%;
+    }
+    #nameDiv {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #enterBtn {
+        margin-top: -8%;
+    }
+    #nameVisible {
+        margin-right: 40%;
+    }
+    #keywordsJob{
+        width: 200px;
+        margin-left: 15%;
+    }
+    #cityNameJob {
+        width: 200px;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #enterBtn {
+        margin-top: -8.7%;
+        width: 10%;
+    }
+    #nameVisible {
+        margin-right: 43%;
+        width: 30%;
+        margin-top: 16%;
+    }
+    #keywordsJob {
+        margin-left: 10%;
+    }
+    #submitBtnJob {
+        margin-top: 4%;
+        margin-right: 40%;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 586px){
+    #enterBtn {
+        margin-top: -8.9%;
+        margin-left: 41%;
+    }
+    #nameVisible {
+        margin-right: 43%;
+        width: 30%;
+        margin-top: 16%;
+    }
+    #nameDiv{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    #enterBtn {
+        margin-top: -9.5%;
+    }
+    #nameVisible {
+        margin-right: 46%;
+        width: 33%;
+        margin-top: 18%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    #keywordsJob {
+        margin-left: 5%;
+    }
+    #submitBtnJob {
+        margin-right: 43%;
+    }
+}
+
+@media screen and (max-width: 512px){
+    #enterBtn {
+        margin-top: -10.2%;
+    }
+    #nameVisible {
+        margin-right: 50%;
+        margin-top: 20%;
+        width: 36%;
+    }
+    #nameDiv{
+        width: 57%;
+    }
+    #submitBtnJob {
+        margin-right: 40%;
+    }
+}
+
+
+
