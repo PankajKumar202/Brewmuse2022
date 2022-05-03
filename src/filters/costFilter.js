@@ -1,7 +1,7 @@
 import React,{Component,Fragment} from "react";
 import axios from 'axios';
 
-const url = "https://brewmuse.herokuapp.com/filter";
+const url = "https://brewmusepk.herokuapp.com/filter";
 
 class CostFilter extends Component{
 

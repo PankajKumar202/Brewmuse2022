@@ -84,7 +84,7 @@ class ModalDisplay extends Component {
                                     return (
                                         <div class="form-check" key={index}>
 
-                                            <input class="form-check-input" type="radio" name="size" value={[sizeData.name, sizeData.Additional_Price]} id="flexRadioDefault1" onClick={this.handelevent}  defaultChecked={item.size[0].name === sizeData.name}/>
+                                            <input class="form-check-input" type="radio" name="size" value={[sizeData.name, sizeData.Additional_Price]} id="flexRadioDefault1" onClick={this.handelevent}  defaultChecked={item.size[0].name === sizeData.name} disabled={false===sizeData.inStock} />
 
                                             <label class="form-check-label" for="flexRadioDefault1">
 
@@ -106,7 +106,7 @@ class ModalDisplay extends Component {
                                     return (
                                         <Fragment>
                                             <div class="form-check" key={index}>
-                                                <input class="form-check-input" type="radio" name="espresso" value={[espressoData.name, espressoData.Additional_Price]} id="flexRadioDefault2" onClick={this.handelevent} defaultChecked={item.Espresso[0].name === espressoData.name}/>
+                                                <input class="form-check-input" type="radio" name="espresso" value={[espressoData.name, espressoData.Additional_Price]} id="flexRadioDefault2" onClick={this.handelevent} defaultChecked={item.Espresso[0].name === espressoData.name}  disabled={false===espressoData.inStock}/>
                                                 <label class="form-check-label" for="flexRadioDefault2">
 
                                                     <span>{espressoData.name}</span>
@@ -123,7 +123,7 @@ class ModalDisplay extends Component {
                                     return (
                                         <Fragment>
                                             <div class="form-check" key={index}>
-                                                <input class="form-check-input" type="radio" name="dairy" value={[dairyData.name, dairyData.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault3" defaultChecked={item.Dairy[0].name === dairyData.name}/>
+                                                <input class="form-check-input" type="radio" name="dairy" value={[dairyData.name, dairyData.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault3" defaultChecked={item.Dairy[0].name === dairyData.inStock}/>
                                                 <label class="form-check-label" for="flexRadioDefault3">
 
                                                     <span>{dairyData.name}</span>
@@ -145,7 +145,7 @@ class ModalDisplay extends Component {
                                         <Fragment>
 
                                             <div class="form-check" key={index}>
-                                                <input class="form-check-input" type="radio" name="whippedCream" value={[whippedData.name, whippedData.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault4" defaultChecked={item.whippedCream[0].name === whippedData.name}/>
+                                                <input class="form-check-input" type="radio" name="whippedCream" value={[whippedData.name, whippedData.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault4" defaultChecked={item.whippedCream[0].name === whippedData.name}  disabled={false===whippedData.inStock}/>
                                                 <label class="form-check-label" for="flexRadioDefault4">
 
                                                     <span>{whippedData.name}</span>
@@ -172,7 +172,7 @@ class ModalDisplay extends Component {
                                         <Fragment>
 
                                             <div class="form-check" key={index}>
-                                                <input class="form-check-input" type="radio" name="syrupsSauces" value={[syrupsSauces.name, syrupsSauces.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault5" defaultChecked={item.syrupsSauces[0].name === syrupsSauces.name}/>
+                                                <input class="form-check-input" type="radio" name="syrupsSauces" value={[syrupsSauces.name, syrupsSauces.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault5" defaultChecked={item.syrupsSauces[0].name === syrupsSauces.name} disabled={false===syrupsSauces.inStock}/>
                                                 <label class="form-check-label" for="flexRadioDefault5">
 
                                                     <span>{syrupsSauces.name}</span>
@@ -200,7 +200,7 @@ class ModalDisplay extends Component {
                                         <Fragment>
 
                                             <div class="form-check" key={index}>
-                                                <input class="form-check-input" type="radio" name="sugarStirrer" value={[sugarStirrer.name, sugarStirrer.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault" defaultChecked={item.sugarStirrer[0].name === sugarStirrer.name}/>
+                                                <input class="form-check-input" type="radio" name="sugarStirrer" value={[sugarStirrer.name, sugarStirrer.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault" defaultChecked={item.sugarStirrer[0].name === sugarStirrer.name}  disabled={false===sugarStirrer.inStock}/>
                                                 <label class="form-check-label" for="flexRadioDefault" >
 
                                                     <span>{sugarStirrer.name}</span>
@@ -228,7 +228,7 @@ class ModalDisplay extends Component {
                                         <Fragment>
 
                                             <div class="form-check" key={index}>
-                                                <input class="form-check-input" type="radio" name="optional" value={[optional.name, optional.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault6" defaultChecked={item.optional[0].name === optional.name}/>
+                                                <input class="form-check-input" type="radio" name="optional" value={[optional.name, optional.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault6" defaultChecked={item.optional[0].name === optional.name}  disabled={false===optional.inStock}/>
                                                 <label class="form-check-label" for="flexRadioDefault6">
 
                                                     <span>{optional.name}</span>
@@ -255,7 +255,7 @@ class ModalDisplay extends Component {
                                         <Fragment>
 
                                             <div class="form-check" key={index}>
-                                                <input class="form-check-input" type="radio" name="custom" value={[custom.name, custom.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault7" defaultChecked={item.Customs[0].name === custom.name}/>
+                                                <input class="form-check-input" type="radio" name="custom" value={[custom.name, custom.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault7" defaultChecked={item.Customs[0].name === custom.name}  disabled={false===custom.inStock}/>
                                                 <label class="form-check-label" for="flexRadioDefault7">
 
                                                     <span>{custom.name}</span>
@@ -282,7 +282,7 @@ class ModalDisplay extends Component {
                                         <Fragment>
 
                                             <div class="form-check" key={index}>
-                                                <input class="form-check-input" type="radio" name="iceCream" value={[IceCream.name, IceCream.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault8" defaultChecked={item.iceCream[0].name === IceCream.name}/>
+                                                <input class="form-check-input" type="radio" name="iceCream" value={[IceCream.name, IceCream.Additional_Price]} onClick={this.handelevent} id="flexRadioDefault8" defaultChecked={item.iceCream[0].name === IceCream.name}  disabled={false===IceCream.inStock}/>
                                                 <label class="form-check-label" for="flexRadioDefault8">
 
                                                     <span>{IceCream.name}</span>
@@ -308,6 +308,20 @@ class ModalDisplay extends Component {
         }
     }
 
+   
+    componentDidMount() {
+        let uniqueID = this.props.match.params.itemID;
+        console.log(uniqueID);
+        fetch(`${modalUrl}/${uniqueID}`, { method: 'GET' })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log("defaulter", data[0].Price);
+                console.log("defaulter now", data);
+                console.log("defaulter now id", data[0]._id);
+                this.setState({ modalData: data, defaultPrice: data[0].Price, itemID: data[0]._id })
+            })
+
+    }
     render() {
         console.log("Inside items", typeof(parseFloat(this.state.iceCream.split(',')[1])));
         // console.log("Inside Size", this.state.dairy
@@ -323,19 +337,6 @@ class ModalDisplay extends Component {
                 <center><button className="btn btn-success" onClick={this.addItem} style={{ marginTop: "-2.6%", marginLeft: "62%" }}>ADD</button></center>
             </Fragment>
         )
-    }
-    componentDidMount() {
-        let uniqueID = this.props.match.params.itemID;
-        console.log(uniqueID);
-        fetch(`${modalUrl}/${uniqueID}`, { method: 'GET' })
-            .then((res) => res.json())
-            .then((data) => {
-                console.log("defaulter", data[0].Price);
-                console.log("defaulter now", data);
-                console.log("defaulter now id", data[0]._id);
-                this.setState({ modalData: data, defaultPrice: data[0].Price, itemID: data[0]._id })
-            })
-
     }
 
 }
