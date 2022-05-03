@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 const GiftTabel=(props)=>{
     const ItemTabel=({orderTabel})=>{
+        console.log("Inside gift tabel ",orderTabel)
         if(orderTabel){
             return orderTabel.map((item)=>{
                 return(

@@ -8,6 +8,7 @@ class ViewGift extends Component{
     constructor(){
         super();
         this.state={
+            id:Math.floor(Math.random()*100000),
             orderItem: sessionStorage.getItem('orderItems'),
             imgUrl:sessionStorage.getItem('giftImg'),
             recipientName: sessionStorage.getItem('recipientName'),
@@ -79,8 +80,9 @@ class ViewGift extends Component{
                      <h5>To : {sessionStorage.getItem('recipientName')} ({sessionStorage.getItem('recipientEmail') }) </h5>
                     <h1><b>Summary</b></h1>
                      <hr/>
+                     {/* <form action="https://localhost:4500/paynow" method="POST"> */}
                      <form action="https://brewgiftpk.herokuapp.com/paynow" method="POST">
-                     <input type="hidden" name="orderItem" value={this.state.orderItem} />
+                     <input type="hidden" name="id" value={this.state.id} />
                      <input type="hidden" name="Amount" value={this.state.Amount} />
                      <input type="hidden" name="senderName" value={this.state.senderName} />
                      <input type="hidden" name="senderEmail" value={this.state.senderEmail} />
