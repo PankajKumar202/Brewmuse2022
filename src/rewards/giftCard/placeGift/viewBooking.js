@@ -2,11 +2,15 @@ import React,{Fragment,Component} from "react";
 import { Link } from "react-router-dom";
 import GiftTabel from "./giftTabel";
 import Header from "../../../Header";
-
+import "./place.css";
 // const getGift="http://localhost:4879/giftOrder";
 const getGift="https://brewmusepk.herokuapp.com/giftOrder";
 // const patchGiftOrder="http://localhost:4879/updategiftOrder";
 const patchGiftOrder="https://brewmusepk.herokuapp.com/updategiftOrder";
+
+
+   
+
 class viewBooking extends Component{
     constructor(props){
         super(props);

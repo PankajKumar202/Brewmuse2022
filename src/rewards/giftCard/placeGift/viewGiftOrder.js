@@ -1,7 +1,7 @@
 import React,{Fragment,Component} from "react";
 import { Link } from "react-router-dom";
 import Header from "../../../Header";
-import "./place.css"
+import "./place.css";
 const placeGift = "https://brewmusepk.herokuapp.com/placegiftOrder";
 // const patchGiftOrder="https://brewmusepk.herokuapp.com/updategiftOrder"
 class ViewGift extends Component{
@@ -67,6 +67,28 @@ class ViewGift extends Component{
             <Fragment>
                 <Header/>
                 <h1>Your Cart</h1>
+                <ul id="giftContainerbox">
+                        <li>
+                            <a>
+
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/fCPGTrP/zero-one.png" /></center>Select a Card</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/bgc7ftM/zero-two.png" /></center>Message &amp; Details</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/XWcjZQz/zero-three.png" /></center>Confirm &amp; Pay</span>
+
+
+                            </a>
+                        </li>
+                    </ul>
+                
                 <Fragment>
 
            

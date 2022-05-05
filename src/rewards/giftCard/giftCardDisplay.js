@@ -28,8 +28,8 @@ class GiftCardDisplay extends Component{
                     <div key={item._id} className="CardImages">
                         <Link>
                         
-                            <img src={item.img_url} />
-                            <button onClick={() => {this.giftID(item._id)}}>ADD</button>
+                            <img src={item.img_url} style={{border:"5px solid #006341",display:"inline-block",width:"45%"}}/><br/>
+                            <center><button className="btn " onClick={() => {this.giftID(item._id)}} style={{backgroundColor:"#006341",color:"#fff",display:"inline-block",marginTop:"-27%"}}>ADD</button></center>
                         </Link>
                     </div>
                 )

@@ -63,14 +63,38 @@ class PlaceGift extends Component {
             <Fragment>
                 {/* style={{display:"inline-block"}} */}
                 <Header />
+              
                  <div className="mb-3" >
                      <Link to={`/giftCards/${this.state.setGiftID}`}>
                      <button className="btn" onClick={this.checkOut} type="submit" style={{display:'block',backgroundColor:"#006341",color:"#fff"}}>Back</button>
                      </Link>
                
                 </div>
+
                 <h3>Gift Card Message</h3>
+                <ul id="giftContainer">
+                        <li>
+                            <a>
+
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/fCPGTrP/zero-one.png" /></center>Select a Card</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/bgc7ftM/zero-two.png" /></center>Message &amp; Details</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/XWcjZQz/zero-three.png" /></center>Confirm &amp; Pay</span>
+
+
+                            </a>
+                        </li>
+                    </ul>
                 {this.renderGiftMenu(this.state.orderItem)}
+
                 <div className="mb-3" >
                     <label for="exampleFormControlInput1" className="form-label" ><b>Recipient Name<sup>*</sup></b></label>
                     <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Receiver Name" name="recipientName" value={this.state.recipientName} onChange={this.handelgift} style={{marginTop:"-3%"}} required/>

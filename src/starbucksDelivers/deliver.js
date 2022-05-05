@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { withRouter } from 'react-router-dom';
 import "./delivers.css";
 import Header from '../Header'
@@ -75,17 +75,17 @@ class delivers extends Component {
 
                     <Deliverdisplay Menu={this.state.filtered} />
                     {/* <nav aria-label="...">
-                        <ul class="pagination">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        <ul className="pagination">
+                            <li className="page-item disabled">
+                                <a className="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#" onClick={this.pagination}>1</a></li>
-                            <li class="page-item active" aria-current="page">
-                                <a class="page-link" href="#" onClick={this.pagination}>2</a>
+                            <li className="page-item"><a className="page-link" href="#" onClick={this.pagination}>1</a></li>
+                            <li className="page-item active" aria-current="page">
+                                <a className="page-link" href="#" onClick={this.pagination}>2</a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#" onClick={this.pagination}>3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
+                            <li className="page-item"><a className="page-link" href="#" onClick={this.pagination}>3</a></li>
+                            <li className="page-item">
+                                <a className="page-link" href="#">Next</a>
                             </li>
                         </ul>
                     </nav> */}

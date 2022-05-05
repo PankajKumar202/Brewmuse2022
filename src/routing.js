@@ -13,7 +13,7 @@ import Responsibility from './Responsibility/Responsibility';
 import Store from './store/store';
 import Rewards from './rewards/rewards';
 import Gift from './rewards/giftCard/giftCard';
-import ModalDisplay from './starbucksDelivers/modalDisplay';
+// import ModalDisplay from './starbucksDelivers/modalDisplay';
 import Coffee from './Coffee/Coffee';
 import seasonGifting from './SeasonGifting/seasonGifting';
 import AboutUs from './AboutUs/about';
@@ -40,7 +40,7 @@ const Router = () =>{
             <Route path="/coffeehouse" component={coffeeHouse}/>
             <Route path="/responsibility" component={Responsibility}/>
             <Route exact path="/starbucksdelivers" component={delivers}/>
-            <Route  path="/starbucksdelivers/:itemID" component={ModalDisplay}/>
+            {/* <Route  path="/starbucksdelivers/:itemID" component={ModalDisplay}/> */}
             {/* <Route  path="/starbucksdelivers/:itemID" component={delivers}/> */}
             <Route  path="/drinksMenu/:categoryID" component={menuDisplay}/>
             <Route  path="/FoodMenu/:categoryID" component={menuDisplay}/>

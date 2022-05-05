@@ -3,3 +3,20 @@
     display: inline-block;
     width: 31%;
 }
+#giftContainerbox{
+    margin-left: 6%;
+    background-color: #d4e9e2;
+    width: 70%;
+    border: 2px solid black;
+    height: 100px;
+    display: block;
+    border-radius: 10px;
+}
+#giftContainerbox>li{
+    display: inline-block;
+    margin-left: 20%;
+}
+#giftContainerbox>li>a>span{
+font-weight: bold;
+font-size: 20px;
+}

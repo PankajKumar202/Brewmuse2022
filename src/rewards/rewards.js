@@ -134,7 +134,7 @@ if(sessionStorage.getItem('token') !== null){
                         Download the app <br />for best experience
                     </h1>
                     <p id="rewardpara">Maximise your rewards membership with the accompanying<br />Starbucks India App.</p>
-                    <button id="rewardButton2" className="btn">GET THE APP</button>
+                    <Link to={{pathname:"https://play.google.com/store/apps/details?id=com.starbucks.in"}} target="_blank"><button id="rewardButton2" className="btn">GET THE APP</button></Link>
 
 
 

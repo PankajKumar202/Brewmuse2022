@@ -22,8 +22,8 @@ class CategoryFilter extends Component {
             <Fragment>
               
                     <center style={{ color: '#006341', }}>Cuisine Filter</center>
-                    <div class="coffee" onChange={this.filterCategory}>
-                        <h2 class="filterheading">Coffee</h2>
+                    <div className="coffee" onChange={this.filterCategory}>
+                        <h2 className="filterheading">Coffee</h2>
                         <label className="radio">
                             <input type="radio" value="" name="cuisine" /> All
                         </label>
@@ -66,8 +66,8 @@ class CategoryFilter extends Component {
 
                     </div>
 
-                    <div class="food" onChange={this.filterCategory}>
-                        <h2 class="filterheading">Food</h2>
+                    <div className="food" onChange={this.filterCategory}>
+                        <h2 className="filterheading">Food</h2>
                         <label className="radio">
                             <input className="filterInput" type="radio" value="10" name="cuisine" /> Featured Food
                         </label>
