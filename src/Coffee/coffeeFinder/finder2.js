@@ -1,7 +1,9 @@
 import React, { Fragment, Component } from "react";
 import { Link,withRouter } from "react-router-dom";
 import Header from "../../Header";
+import "./finder.css"
 const finderUrl = "https://brewmusepk.herokuapp.com/coffeefinder"
+
 class Finder2 extends Component {
     constructor(props) {
         super(props)
@@ -14,9 +16,9 @@ class Finder2 extends Component {
             return data.map((item)=>{
                 return(
                     
-                        <Link to={`/coffeedata/${item.opt_id}`} key={item.opt_id}>
-                        <img src={item.img_url} alt="items" style={{display:"inline-block"}}/>
-                        <span>{item.name}</span>
+                        <Link to={`/coffeedata/${item.opt_id}`} key={item.opt_id} className="finderLink">
+                        <img src={item.img_url} alt="items" style={{display:"inline-block"}} className="finder1"/>
+                        <span className="finderSpan">{item.name}</span>
                     </Link>
                     
                  
@@ -30,7 +32,7 @@ class Finder2 extends Component {
         return (
             <Fragment>
                 <Header />
-                <h1>3. How intense do you like your coffee?</h1>
+                <h1 className="finderSpan">3. How intense do you like your coffee?</h1>
                 <div >
                 {this.display(this.state.finderData)}
                 </div>

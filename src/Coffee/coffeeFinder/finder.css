@@ -1,0 +1,60 @@
+.finderSpan{
+    color: black;
+    
+}
+.finderLink{
+    text-decoration: none;
+}
+@media screen and (max-width:800px) {
+    .finder1{
+        /* border:2px solid black; */
+        width: 50%;
+        height: 320px;
+    }
+    .finderSpan{
+        color: black;
+        
+    }
+    .finderLink{
+        text-decoration: none;
+    }
+    #dataBox{
+        border: 2px solid;
+        width: 90%;
+    }
+
+    
+}
+@media screen and (max-width:650px) {
+    .finder1{
+        width: 60%;
+    height: 320px;
+    }
+    .finderHead{
+        width: 80%;
+    }
+    #finderName{
+        font-size: 21px;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .finder1{
+        width: 87%;
+        height: 320px;
+    }
+  
+    #finderName{
+        display: none;    }
+
+    
+}
+@media screen and (max-width:300px) {
+    .finder1{
+        width: 97%;
+        height: 320px;
+    }
+    #finderName{
+display: none;    }
+    
+}

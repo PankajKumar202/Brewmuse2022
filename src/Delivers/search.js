@@ -1,5 +1,5 @@
 import React,{Component, Fragment} from "react";
-import Deliverdisplay from "./deliverDisplay";
+
 class Search extends Component{
     constructor(){
         super()
@@ -9,16 +9,16 @@ class Search extends Component{
     }
 
     handleChange=(event)=>{
-        console.log("inside handle chnage",event.target.value)
+        console.log("inside handle change",event.target.value)
         this.setState({keywords:event.target.value?event.target.value:'Search....'})
         this.props.userInput(event.target.value);
+        sessionStorage.setItem('keyVal',event.target.value)
     }
 
     render(){
         return(
             <Fragment>
-            <input onChange={this.handleChange} type="search" id="query" name="q" placeholder="Search..."/>
-            
+                <input onChange={this.handleChange} type="search" id="query" name="q" placeholder="Search..."/>
             </Fragment>
         )
     }

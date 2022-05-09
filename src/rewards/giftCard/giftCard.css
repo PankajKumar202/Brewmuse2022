@@ -48,7 +48,128 @@ font-size: 20px;
     margin-top: -13.7%;
 
 }
+#giftCardImg{
+    border:5px solid #006341;
+}
 /* .CardImages{
     display: inline-block;
 } */
+@media screen and (max-width:1500px) {
+    
+    #giftContainer>li{
+        margin-left: 12%;
+    }
+    #giftContainer2{
+        margin-top: -17.5%;
 
+    }
+}
+@media screen and (max-width:1400px) {
+    
+   
+    #giftContainer2{
+        margin-top: -21.5%;
+
+    }
+}
+@media screen and (max-width:1200px) {
+    
+   
+    #giftContainer2{
+        margin-top: -26.5%;
+
+    }
+}
+@media screen and (max-width:991px) {
+    
+   
+    #giftContainer2{
+        margin-top: 1.5%;
+        margin-left: 6%;
+        width: 90%;
+
+    }
+    #giftContainer{
+        width: 90%;
+    }
+    #giftContainer1{
+        width: 90%;
+    }
+    #renderAdded{
+        text-align: center;
+    }
+    #giftCardImg{
+        border:5px solid #006341;
+        /* display:inline-block; */
+        
+        width:45%;
+    }
+}
+@media screen and (max-width:801px){
+.eGift{
+    width: 45%;
+}
+#giftContainer>li {
+    margin-left: 8%;
+}
+#giftContainer>li>a>span {
+    /* font-weight: bold; */
+    font-size: 17px;
+}
+#giftCardImg {
+    border: 5px solid #006341;
+    /* display: inline-block; */
+    width: 98%;
+}
+}
+@media screen and (max-width:543px){
+    #giftContainer>li {
+        margin-left: 3%;
+    }
+    #giftContainer>li>a>span {
+        /* font-weight: bold; */
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:500px){
+    #giftContainer>li {
+        margin-left: 3%;
+    }
+    #giftContainer>li>a>span {
+        /* font-weight: bold; */
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:440px){
+    #giftContainer>li {
+        margin-left: 4%;
+    }
+    #giftContainer>li>a>span {
+        /* font-weight: bold; */
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:400px){
+    #giftContainer>li {
+        margin-top: 3%;
+        margin-left:28%;
+    }
+    #giftContainer>li>a>span {
+        /* font-weight: bold; */
+        font-size: 16px;
+    }
+    #giftContainer {
+        width: 90%;
+        height: 240px;
+    }
+    #giftHeading2 {
+        display: inline-block;
+        font-size: 19px;
+        margin-left: 6%;
+    }
+    #giftCardImg {
+        border: 5px solid #006341;
+        /* display: inline-block; */
+        width: 98%;
+    }
+}

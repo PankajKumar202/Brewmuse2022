@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+    margin: auto;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7 !important;
+}
+
+/* Header1 Starts */
+
+.Loading {
+    margin-left: 45%;
+    margin-top: 3%;
+}
+
+#form {
+    display: inline;
+    margin-top: 2%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+#form>input {
+    width: 178%;
+    outline-offset: 0px;
+    border: 2px solid #006341;
+    height: 40px;
+}
+
+#form>i {
+    position: absolute;
+    margin-left: 165%;
+    margin-top: 6%;
+}
+
+#buttons {
+    width: 45%;
+    float: right;
+    margin-top: 0.5%;
+}
+
+#cartImg {
+    margin-left: -11%;
+    position: absolute;
+    margin-top: -14%;
+    filter: invert(1);
+
+}
+
+#loginImage {
+    margin-left: -30%;
+    filter: invert(1);
+}
+
+#loginText {
+    margin-left: 12%
+}
+
+#signText {
+    margin-left: 7%;
+}
+
+#signImage {
+    filter: invert(1);
+    margin-left: -11%;
+}
+
+#cartText {
+    margin-left: -5%;
+    margin-top: -18%;
+    position: absolute;
+}
+
+.btn-secondary {
+    float: right;
+    margin-left: 1%;
+    height: 40px;
+}
+
+.btn-primary {
+    float: right;
+}
+
+#budgt {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 2.1%;
+    font-size: 23px;
+    color: #006341;
+    border: 2px solid;
+    font-weight: bold;
+}
+
+#delTime {
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 2.1%;
+    font-size: 23px;
+    color: #006341;
+    font-weight: bold;
+    border: 2px solid;
+}
+
+#cart {
+    margin-top: 0%;
+    margin-left: 23.5%
+}
+
+#cost4two {
+    margin-top: 5%;
+}
+
+/* Nav1 Div Starts */
+#nav1 {
+    background-color: #f7f7f7;
+    height: 90px;
+}
+
+/* Main Div Starts */
+
+/* Main Header Starts */
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Main Header Ends */
+
+
+/* Filter Box Starts */
+
+.Box {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 25%;
+    height: 930px;
+    padding: 1%;
+    border: 5px groove #b1bfbf;
+    display: inline-block;
+}
+
+.coffee {
+    margin-left: 5%;
+    width: 80%;
+    height: 300px;
+}
+
+.food {
+    margin-left: 5%;
+    width: 80%;
+    height: 240px;
+}
+
+.filter {
+    margin-left: 5%;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 2%;
+    font-size: 15px;
+}
+
+.filterheading {
+    text-align: left;
+    margin-left: 5%;
+    color: #006341 !important;
+}
+
+#filterForm {
+    color: #006341 !important;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.filterList>a {
+    text-decoration: none;
+    color: #006341 !important;
+}
+
+.filterList>a:hover {
+    color: orange !important;
+}
+
+label {
+    padding-bottom: 3%;
+}
+
+.filterSubHeading {
+    padding-top: 2%;
+}
+
+/* Filter Box Ends */
+
+/* Menu Divs Start */
+
+
+.menuDiv {
+    display: inline-block;
+    width: 60%;
+    margin-left: 33%;
+    vertical-align: top;
+}
+
+.menuCard {
+    height: 340px;
+    width: 95%;
+    margin-left: 2.5%;
+    color: #006341;
+    margin-top: 3%;
+}
+
+.component1 {
+    display: inline-block;
+    width: 60%;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+
+.component2 {
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.name {
+    padding: 2%;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 90%;
+}
+
+.foodType {
+    display: block;
+    margin-left: 5%;
+    width: 30px;
+    height: 30px;
+}
+
+.description,
+.price,
+.type,
+.ratings {
+    padding-left: 5%;
+    width: 90%;
+    display: block;
+}
+
+.foodImg {
+    border-radius: 5%;
+    margin-left: 15%;
+    display: inline-block;
+}
+
+.btn-success {
+    width: 50px;
+    height: 40px;
+    float: left;
+    margin-top: 14%;
+    margin-left: -11%;
+    position: absolute;
+}
+
+.btn-danger {
+    width: 50px;
+    height: 40px;
+    float: left;
+    margin-top: 14%;
+    margin-left: -6%;
+    position: absolute;
+}
+
+#proceedBtn {
+    margin-top: 2.1%;
+    float: right;
+    margin-right: 1%;
+    background-color: #006341;
+    color: white;
+}
+
+#cartDisplayDiv {
+    margin-left: 1%;
+    display: block;
+    background-color: #f7f7f7;
+    color: #006341;
+}
+
+#filterModalBtn {
+    visibility: collapse;
+    width: 20%;
+    margin-left: 2%;
+}
+
+/* Menu Div Ends */
+/* Main Div Ends */
+
+
+/* Social Icon Div Starts */
+#section12 {
+    height: 100px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 2px solid white;
+}
+
+.fab {
+    font-size: 33px;
+    margin-left: 3%;
+    margin-top: 2%;
+    color: #3d3935 !important;
+}
+
+.fab:hover {
+    color: #5b5959 !important;
+}
+
+/* Social Icon Div Ends */
+
+/* Accordion Ends */
+
+/* Filter starts */
+#FilterBox {
+    margin-left: 5%;
+    margin-top: 18%;
+    width: 20%;
+    height: 1150px;
+    padding: 1%;
+    border: 5px groove #b1bfbf;
+    display: inline-block;
+}
+
+.coffee {
+    margin-left: 5%;
+    width: 80%;
+}
+
+.food {
+    margin-left: 5%;
+    width: 80%;
+    padding-top: 20%;
+}
+
+#costFilter,
+#TypeFilter,
+#RatingsFilter {
+    margin-left: 5%;
+}
+
+#costFilter {
+    padding-top: 20%;
+}
+
+
+.filter {
+    margin-left: 5%;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 2%;
+    font-size: 15px;
+}
+
+.filterheading {
+    margin-top: 15%;
+    text-align: left;
+    color: #006341 !important;
+}
+
+#filterForm {
+    color: #006341 !important;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.filterInput {
+    text-decoration: none;
+    color: #006341 !important;
+}
+
+.filterInput:hover {
+    color: orange !important;
+}
+
+label {
+    padding-bottom: 3%;
+}
+
+.filterSubHeading {
+    padding-top: 2%;
+}
+
+/* Filter Box Ends */
+
+/* responsive for page */
+@media screen and (min-width:1800px) and (max-width:2000px) {
+    #cart {
+        margin-left: 29.8%;
+        width: 4%;
+    }
+
+    #delTime {
+        margin-left: 48%;
+    }
+
+    #form>input {
+        width: 255%;
+    }
+
+    #form>i {
+        margin-left: 232%;
+        margin-top: 6%;
+    }
+
+    .component1 {
+        margin-top: 2%;
+    }
+
+    .btn-success {
+        margin-top: 1%;
+        margin-left: 6%;
+    }
+}
+
+@media screen and (min-width:1600px) and (max-width:1800px) {
+    #cart {
+        margin-left: 28%;
+    }
+
+    #delTime {
+        margin-left: 50%;
+    }
+
+    #form>input {
+        width: 227%;
+    }
+
+    #form>i {
+        margin-left: 211%;
+    }
+
+    .component1 {
+        margin-top: 2%;
+    }
+
+    .btn-success {
+        margin-top: 1%;
+        margin-left: 7%;
+    }
+}
+
+@media screen and (min-width:1400px) and (max-width:1600px) {
+    #cart {
+        margin-left: 25%;
+    }
+
+    #delTime {
+        margin-left: 52%;
+    }
+
+    #form>input {
+        width: 187%;
+    }
+
+    #form>i {
+        margin-left: 172%;
+    }
+
+    .component1 {
+        margin-top: 2%;
+    }
+
+    .btn-success {
+        margin-top: 1%;
+        margin-left: 7%;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width:1200px) {
+    #cart {
+        margin-left: 20%;
+    }
+
+    #budgt {
+        font-size: 17px;
+        margin-left: 33%;
+    }
+
+    #delTime {
+        margin-left: 50.5%;
+        font-size: 17px;
+    }
+
+    #form>input {
+        width: 133%;
+    }
+
+    #form>i {
+        margin-left: 119%;
+    }
+
+    .component1 {
+        margin-top: 2%;
+    }
+
+    .btn-success {
+        margin-top: 15.1%;
+        margin-left: -10.7%;
+    }
+
+    .btn-success {
+        margin-top: 1%;
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #FilterBox {
+        display: none;
+    }
+
+    #filterModalBtn {
+        visibility: visible;
+    }
+
+    .food{
+        padding-top: 12%;
+    }
+
+    #costFilter{
+        padding-top: 18%;
+    }
+
+    #TypeFilter, #RatingsFilter{
+        margin-top: -10%;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1100px) {
+    #cart {
+        margin-left: 17%;
+    }
+
+    #budgt {
+        font-size: 17px;
+        margin-left: 33%;
+    }
+
+    #delTime {
+        margin-left: 50.5%;
+        font-size: 17px;
+    }
+
+    #form>input {
+        width: 133%;
+    }
+
+    #form>i {
+        margin-left: 119%;
+    }
+
+    .component1 {
+        margin-top: 2%;
+    }
+
+    .btn-success {
+        margin-top: 1%;
+        margin-left: 8%;
+    }
+
+}
+
+
+@media screen and (min-width:900px) and (max-width:991px) {
+
+    #cart {
+        margin-left: 14%;
+        height: 35px;
+        margin-top: -5%;
+    }
+
+    .btn-primary {
+        height: 35px;
+        margin-top: -5%;
+        margin-left: 23%;
+        position: absolute;
+
+    }
+
+    .btn-secondary {
+        height: 35px;
+        margin-top: -5%;
+        width: 20%;
+        margin-left: 34%;
+        position: absolute;
+
+    }
+
+    #budgt {
+        font-size: 17px;
+        margin-left: 33%;
+        margin-top: 5%;
+    }
+
+    #delTime {
+        margin-left: 53%;
+        font-size: 17px;
+        margin-top: 5%;
+    }
+
+    #form>input {
+        width: 120%;
+    }
+
+    #form>i {
+        margin-left: 108%;
+    }
+
+    .component1 {
+        margin-top: 2%;
+    }
+
+    .btn-success {
+        margin-top: 1%;
+        margin-left: 8%;
+    }
+}
+
+@media screen and (min-width:844px) and (max-width:900px) {
+
+    #cart {
+        margin-left: 10%;
+        height: 35px;
+        margin-top: -5%;
+    }
+
+    .btn-primary {
+        height: 35px;
+        margin-top: -5%;
+        margin-left: 20%;
+        position: absolute;
+
+    }
+
+    .btn-secondary {
+        height: 35px;
+        margin-top: -5%;
+        width: 11%;
+        margin-left: 32%;
+        position: absolute;
+
+    }
+
+    #budgt {
+        font-size: 17px;
+        margin-left: 38%;
+        margin-top: 5%;
+    }
+
+    #delTime {
+        margin-left: 60%;
+        font-size: 17px;
+        margin-top: 5%;
+    }
+
+    #form>input {
+        width: 120%;
+    }
+
+    #form>i {
+        margin-left: 108%;
+    }
+
+    .component1 {
+        margin-top: 2%;
+    }
+
+    .btn-success {
+        margin-top: 18%;
+        margin-left: -12%;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:844px) {
+
+    #cart {
+        margin-left: 10%;
+        height: 35px;
+        margin-top: -5%;
+    }
+
+    .btn-primary {
+        height: 35px;
+        margin-top: -5%;
+        margin-left: 20%;
+        position: absolute;
+
+    }
+
+    .btn-secondary {
+        height: 35px;
+        margin-top: -5%;
+        width: 11%;
+        margin-left: 32%;
+        position: absolute;
+
+    }
+
+    #budgt {
+        font-size: 17px;
+        margin-left: 38%;
+        margin-top: 5%;
+    }
+
+    #delTime {
+        margin-left: 60%;
+        font-size: 17px;
+        margin-top: 5%;
+    }
+
+    #form>input {
+        width: 120%;
+    }
+
+    #form>i {
+        margin-left: 108%;
+    }
+
+    .component1 {
+        margin-top: 2%;
+    }
+
+    .btn-success {
+        margin-top: 1%;
+        margin-left: 8%;
+    }
+}
+
+/* responsive for page ends till 800 px*/

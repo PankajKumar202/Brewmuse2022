@@ -40,6 +40,7 @@ class viewBooking extends Component{
                     "bank_name":query.split('&')[3].split('=')[1].split('%20')[0]
                 }
                 let id=query.split('&ORDERID=')[1].split('&')[0].split('_')[1];
+                console.log("idididi",id)
             
             fetch(`${patchGiftOrder}/${id}`,{
                 method:'PATCH',

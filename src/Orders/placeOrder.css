@@ -1,0 +1,25 @@
+.orderItemsCard{
+    width: 25%;
+    height: 300px;
+    float: left;
+    vertical-align: top;
+    /* box-shadow: 4px 6px 11px grey; */
+}
+
+#menuItems{
+    width: 100%;
+    display: inline-block;
+}
+
+#finalSubmit{
+    margin-top: -4%;
+    position: absolute;
+    width: 10%;
+    margin-left: 22%;
+}
+
+@media screen and (max-width:1000px){
+    .orderItemsCard{
+        width: 30%;
+    }
+}

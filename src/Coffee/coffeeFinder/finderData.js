@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from "react";
 import Header from "../../Header";
-
+import "./finder.css"
 const finderData = "https://brewmusepk.herokuapp.com/ourcoffee";
 class FinderData extends Component {
     constructor(props) {
@@ -14,21 +14,18 @@ class FinderData extends Component {
             return data.map((item) => {
                 return (
                     <div id="dataBox" key={item._id}>
-                        <img src={item.img_url} alt="data" />
-                        <span>Name : {item.name}</span>
-                        <span>Roast : {item.roast}</span>
-                        <span>Format : {item.format}</span>
-                        <span>Flavoured : {item.flavoured}</span>
-                        <span>Caffeine : {item.caffeine}</span>
-                        <span>Taste : {item.taste}</span>
-                        <div class="btn-group dropstart">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropstart
-                            </button>
-                            <span class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                {item.desc}
-                            </span>
-                        </div>
+                        <br/><img src={item.img_url} alt="data" />
+                        <h3 id="finderName"><b>Name :</b> {item.name}</h3><br/>
+                        <h3><b>Roast :</b> {item.roast}</h3><br/>
+                        <h3><b>Format :</b> {item.format}</h3><br/>
+                        <h3><b>Flavoured :</b> {item.flavoured}</h3><br/>
+                        <h3><b>Caffeine :</b> {item.caffeine}</h3><br/>
+                        <h3><b>Taste :</b> {item.taste}</h3><br/>
+                       
+                            <p>
+                                <b>description :</b>{item.desc}
+                            </p>
+                    
 
                     </div>
                 )

@@ -6,7 +6,9 @@ import Home from './Home/Home';
 import Menu from './Menu/menu';
 import Drinks from './Menu/Drinks/Drinks';
 import Food from './Menu/Food/Food';
-import delivers from './starbucksDelivers/deliver';
+import delivers from './Delivers/delivers';
+// import delivers from './Delivers/deliver';
+// import delivers from './starbucksDelivers/deliver';
 import menuDisplay from './Menu/menuDisplay';
 import coffeeHouse from './coffeeHouse/coffeeHouse';
 import Responsibility from './Responsibility/Responsibility';
@@ -27,6 +29,8 @@ import Register from './login/Register';
 import PlaceGift from './rewards/giftCard/placeGift/placeGift';
 import ViewGift from './rewards/giftCard/placeGift/viewGiftOrder';
 import viewBooking from './rewards/giftCard/placeGift/viewBooking';
+import PlaceOrder from './Orders/placeOrder';
+import viewOrders from './Orders/viewOrders';
 
 const Router = () =>{
     return(
@@ -62,6 +66,8 @@ const Router = () =>{
             <Route path={"/placeGift"} component={PlaceGift}/>
             <Route path={"/proceed"} component={ViewGift}/>
             <Route path={"/viewBooking"} component={viewBooking}/>
+            <Route path="/placeOrder" component={PlaceOrder}/>
+            <Route path="/viewOrders" component={viewOrders}/>
             
 
             <Footer/>

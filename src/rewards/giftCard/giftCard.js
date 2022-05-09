@@ -53,18 +53,18 @@ class Gift extends Component {
                         <li>
                             <a>
 
-                                <span><center><img class="img-responsive" src="https://i.ibb.co/fCPGTrP/zero-one.png" /></center>Select a Card</span>
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/fCPGTrP/zero-one.png" className="eGift" /></center>Select a Card</span>
                             </a>
                         </li>
                         <li>
                             <a>
 
-                                <span><center><img class="img-responsive" src="https://i.ibb.co/bgc7ftM/zero-two.png" /></center>Message &amp; Details</span>
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/bgc7ftM/zero-two.png"  className="eGift"/></center>Message &amp; Details</span>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <span><center><img class="img-responsive" src="https://i.ibb.co/XWcjZQz/zero-three.png" /></center>Confirm &amp; Pay</span>
+                                <span><center><img class="img-responsive" src="https://i.ibb.co/XWcjZQz/zero-three.png" className="eGift"/></center>Confirm &amp; Pay</span>
 
 
                             </a>
