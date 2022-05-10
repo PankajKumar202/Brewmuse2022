@@ -17,7 +17,9 @@ class PlaceOrder extends Component {
             cost: 0,
             phone: '',
             address: '',
-            menuItem: ''
+            menuItem: '',
+            itemCustomization:''
+
         }
     }
 
@@ -123,6 +125,8 @@ class PlaceOrder extends Component {
 
 
     componentDidMount() {
+        let custObj=localStorage.getItem('Customizeddata');
+        console.log("custObj",JSON.parse(custObj))
         let menuItem = sessionStorage.getItem('finalOrder')
         let orderId = [];
         menuItem.split(',').map((item) => {
@@ -140,6 +144,16 @@ class PlaceOrder extends Component {
             .then((res) => res.json())
             .then((data) => {
                 let totalPrice = 0;
+                let custItem = Object.keys(data[0]).length;
+                console.log("Inside Data",custItem)
+                if(custItem<11){
+                    this.setState({itemCustomization:"No Customization for this item"})
+                    localStorage.removeItem('Customizeddata')
+                }else{
+                    
+                    this.setState({itemCustomization:JSON.parse(localStorage.getItem('Customizeddata'))})
+                }
+
                 data.map((item) => {
                     totalPrice += parseFloat(item.Price)
                     return 'ok'

@@ -47,9 +47,9 @@ class delivers extends Component {
     }
 
     render() {
-        let arr=localStorage.getItem('Customizeddata');
-        var result = Object.entries(arr)
-        console.log("Arr arrr",result)
+        // let arr=localStorage.getItem('Customizeddata');
+        // var result = Object.entries(arr)
+        // console.log("Arr arrr",result)
 
         return (
             <React.Fragment>

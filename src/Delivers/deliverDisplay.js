@@ -9,7 +9,8 @@ class Deliverdisplay extends Component {
         super()
         this.state = {
             modalData: "",
-            itemID: ""
+            itemID: "",
+            itemName:""
         }
     }
 
@@ -31,6 +32,7 @@ class Deliverdisplay extends Component {
                 [event.target.name]: event.target.value
             })
             sessionStorage.setItem('tempId',(event.target.value).split(',')[0])
+            sessionStorage.setItem('tempName',(event.target.value).split(',')[2])
         }
     }
 
@@ -38,7 +40,9 @@ class Deliverdisplay extends Component {
         fetch(`${modalUrl}/${Number(data)}`, { method: 'GET' })
         .then((res) => res.json())
         .then((data) => {
+            console.log("modal Data>>>>",data.name)
             this.setState({ modalData: data })
+            // sessionStorage.setItem({})
         })
     }
 
@@ -85,7 +89,7 @@ class Deliverdisplay extends Component {
                                     <div class="component2">
                                         <img src={item.image_url} alt="Coffee" class="foodImg" />
 
-                                        <button type="button" class="btn btn-success" id="deliverAdd" data-bs-toggle="modal" name="itemID" value={[item._id, item.Price]} data-bs-target="#exampleModal" onClick={this.handleButton}>
+                                        <button type="button" class="btn btn-success" id="deliverAdd" data-bs-toggle="modal" name="itemID" value={[item._id, item.Price,item.name]} data-bs-target="#exampleModal" onClick={this.handleButton}>
                                                 +
                                         </button>
 

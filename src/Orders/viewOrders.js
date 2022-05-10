@@ -62,7 +62,10 @@ class viewOrders extends Component {
         }
 
         let email = sessionStorage.getItem('email');
-        axios.get(`${url}?email=${email}`).then((res) => { this.setState({ orders: res.data }) })
+        axios.get(`${url}?email=${email}`).then((res) => {
+             this.setState({ orders: res.data })
+             localStorage.removeItem('Customizeddata')
+            })
 
     }
 

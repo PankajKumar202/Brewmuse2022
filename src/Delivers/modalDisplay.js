@@ -4,6 +4,7 @@ class Modal extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            itemName:"",
             size: "",
             espresso: "",
             dairy: "",
@@ -33,11 +34,45 @@ class Modal extends Component {
     addItem = () => {
       
         let custData=
-            [
-                this.state.size.split(',')[0],
-                this.state.size.split(',')[1],
-                this.state.size.split(',')[0],
-                this.state.espresso.split(',')[1]
+            [   {
+                    "coffeeName":sessionStorage.getItem('tempName')
+                },
+                {
+                    "size":this.state.size.split(',')[0],
+                    "sizePrice":this.state.size.split(',')[1]
+            },
+            {
+                "espresso":this.state.espresso.split(',')[0],
+                "espressoPrice":this.state.espresso.split(',')[1]
+            },
+            {
+                "dairy":this.state.dairy.split(',')[0],
+                "dairyPrice":this.state.dairy.split(',')[1]
+            },
+            {
+                "whippedCream":this.state.whippedCream.split(',')[0],
+                "whippedPrice":this.state.whippedCream.split(',')[1]
+            },
+            {
+                "syrupsSauces":this.state.syrupsSauces.split(',')[0],
+                "syrupsPrices":this.state.syrupsSauces.split(',')[1]
+            },
+            {
+                "sugarStir":this.state.sugarStirrer.split(',')[0],
+                "sugarPrice":this.state.sugarStirrer.split(',')[1]
+
+            },
+            {
+                "custom":this.state.custom.split(',')[0],
+                "customPrice":this.state.custom.split(',')[1],
+            },
+            {
+                "iceCream":this.state.iceCream.split(',')[0],
+                "iceCreamPrice":this.state.iceCream.split(',')[1],
+                
+            }
+
+                
                 // "size":this.state.size.split(',')[0], 
                 // "Additional_size":this.state.size.split(',')[1],
                 // "espresso": this.state.size.split(',')[0],
@@ -48,13 +83,13 @@ class Modal extends Component {
             // this.state.espresso.split(',')[0], this.state.espresso.split(',')[1],
             // this.state.dairy.split(',')[0], this.state.dairy.split(',')[1],
             // this.state.whippedCream.split(',')[0], this.state.whippedCream.split(',')[1],
-            // this.state.syrupsSauces.split(',')[0], this.state.syrupsSauces.split(',')[1],
+            // this.state.syrupsSauces.split(',')[0], thisate.sy.strupsSauces.split(',')[1],
             // this.state.sugarStirrer.split(',')[0], this.state.sugarStirrer.split(',')[1],
             // this.state.custom.split(',')[0], this.state.custom.split(',')[1],
             // this.state.iceCream.split(',')[0], this.state.iceCream.split(',')[1]
         
         this.CustomizedData.push(custData)
-        localStorage.setItem('Customizeddata',this.CustomizedData)    
+        localStorage.setItem('Customizeddata',JSON.stringify(this.CustomizedData))    
         
         let temp_id = sessionStorage.getItem('tempId');
         this.props.tempId(Number(temp_id));
@@ -64,7 +99,9 @@ class Modal extends Component {
     addOn = ({ addOn }) => {
         if (addOn) {
             if (addOn.length > 0) {
+               
                 return addOn.map((item) => {
+                    // this.setState({itemName:item.name})
                     return (
                         <Fragment key={item._id}>
                             <h1>Customize : <b>{item.name}</b></h1>
