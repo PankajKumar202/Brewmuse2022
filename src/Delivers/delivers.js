@@ -30,7 +30,7 @@ class delivers extends Component {
 
     proceed = () => {
         sessionStorage.setItem('finalOrder', this.state.userItems)
-        
+
         this.props.history.push(`/placeOrder`)
     }
 
@@ -55,27 +55,22 @@ class delivers extends Component {
             <React.Fragment>
                 <Header />
                 <div className="row">
-                
-                    <div id="header">
-                    <div id="FilterBox">
-                            <CategoryFilter dataPerCategory={(data) => { this.setDataPerFilter(data) }} />
-                            <CostFilter dataPerCost={(data) => { this.setDataPerFilter(data) }} />
-                            <TypeFilter dataPerType={(data) => { this.setDataPerFilter(data) }} />
-                            <RatingsFilter dataPerRatings={(data) => { this.setDataPerFilter(data) }} />
-                        </div>
+              
+                    <div id="header2">
+                   
                         <form id="form">
                             <i className="fas fa-search"></i>
                             <Search userInput={(data) => { this.filtered(data) }} />
                         </form>
-                      
+
                         <button className="btn" id="proceedBtn" onClick={this.proceed}>Proceed To Place Order</button>
                         <span id="budgt">Cost For Two : <i className="fa-solid fa-indian-rupee-sign"></i>₹1200</span>
                         <span id="delTime">Delivery Time <i className="fa-duotone fa-moped"></i> : 30 mins</span>
-                     
-                    </div>
-                    
 
-                    
+                    </div>
+                  
+
+
                     <button className="btn btn-dark" id="filterModalBtn" type="submit" data-bs-toggle="modal" data-bs-target="#filter_modal">Click For Filter Options</button>
 
 
@@ -99,8 +94,18 @@ class delivers extends Component {
                             </div>
                         </div>
                     </div>
+                    <div>
+                    <div className="FilterBox">
+                            <CategoryFilter dataPerCategory={(data) => { this.setDataPerFilter(data) }} />
+                            <CostFilter dataPerCost={(data) => { this.setDataPerFilter(data) }} />
+                            <TypeFilter dataPerType={(data) => { this.setDataPerFilter(data) }} />
+                            <RatingsFilter dataPerRatings={(data) => { this.setDataPerFilter(data) }} />
+                          
+                        </div>
 
-                    <Deliverdisplay Menu={this.state.filtered} final={(itemId) => { this.addToCart(itemId) }} />
+                        <Deliverdisplay Menu={this.state.filtered} final={(itemId) => { this.addToCart(itemId) }} />
+                        </div>
+                   
 
                 </div>
 

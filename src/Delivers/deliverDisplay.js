@@ -171,7 +171,7 @@ class Deliverdisplay extends Component {
         return (
             <>
                 {this.handleModal(this.state.itemID.split(',')[0])}
-                <div id="cartDisplayDiv">
+                <div id="cartDisplayDiv" style={{"display":"inline-block"}}>
                     <h1>Added Items:</h1>
                     Item Number: {this.renderCart(this.orderId)} Added.
                 </div>

@@ -120,7 +120,8 @@ body {
 /* Main Div Starts */
 
 /* Main Header Starts */
-#header {
+#header2 {
+   
     height: 100px;
     width: 100%;
     background-color: #ffffff;
@@ -160,7 +161,9 @@ body {
     margin-bottom: 2%;
     font-size: 15px;
 }
-
+.cost{
+    margin-top: 35%;
+}
 .filterheading {
     text-align: left;
     margin-left: 5%;
@@ -292,6 +295,14 @@ label {
     width: 20%;
     margin-left: 2%;
 }
+#deliverAdd{
+    margin-left: -7%;
+    margin-top: 11%;
+}
+#deliverSub{
+    margin-top: 11%;
+    margin-left: -3%;
+}
 
 /* Menu Div Ends */
 /* Main Div Ends */
@@ -321,14 +332,15 @@ label {
 /* Accordion Ends */
 
 /* Filter starts */
-#FilterBox {
+.FilterBox {
     margin-left: 5%;
-    margin-top: 18%;
+    margin-top: 6%;
     width: 20%;
-    height: 1150px;
+    height: 1253px;
     padding: 1%;
     border: 5px groove #b1bfbf;
     display: inline-block;
+    position: absolute;
 }
 
 .coffee {
@@ -515,7 +527,7 @@ label {
 }
 
 @media screen and (max-width:1100px) {
-    #FilterBox {
+    .FilterBox {
         display: none;
     }
 
