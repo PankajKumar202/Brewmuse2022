@@ -10,7 +10,8 @@ class Deliverdisplay extends Component {
         this.state = {
             modalData: "",
             itemID: "",
-            itemName:""
+           
+          
         }
     }
 
@@ -33,6 +34,7 @@ class Deliverdisplay extends Component {
             })
             sessionStorage.setItem('tempId',(event.target.value).split(',')[0])
             sessionStorage.setItem('tempName',(event.target.value).split(',')[2])
+            sessionStorage.setItem('tempImg',(event.target.value).split(',')[3])
         }
     }
 
@@ -70,6 +72,7 @@ class Deliverdisplay extends Component {
     }
 
     display = ({ Menu }) => {
+        
 
         if (Menu) {
             if (Menu.length > 0) {
@@ -88,8 +91,8 @@ class Deliverdisplay extends Component {
                                     </div>
                                     <div class="component2">
                                         <img src={item.image_url} alt="Coffee" class="foodImg" />
-
-                                        <button type="button" class="btn btn-success" id="deliverAdd" data-bs-toggle="modal" name="itemID" value={[item._id, item.Price,item.name]} data-bs-target="#exampleModal" onClick={this.handleButton}>
+                                        <div id="orderAdd">
+                                        <button type="button" class="btn btn-success" id="deliverAdd" data-bs-toggle="modal" name="itemID" value={[item._id, item.Price,item.name,item.image_url]} data-bs-target="#exampleModal" onClick={this.handleButton}>
                                                 +
                                         </button>
 
@@ -98,6 +101,9 @@ class Deliverdisplay extends Component {
                                         <button type="button" class="btn btn-danger" id="deliverSub" onClick={() => { this.removeItem(item._id) }}>
                                             -
                                         </button>
+
+                                        </div>
+                                     
 
                                         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div className="modal-dialog modal-dialog-scrollable">
@@ -135,7 +141,7 @@ class Deliverdisplay extends Component {
                                     </div>
                                     <div class="component2">
                                         <img src={item.image_url} alt="Coffee" class="foodImg" />
-
+                                        <div id="orderAdd">
                                         <button type="button" class="btn btn-success" id="deliverAdd" onClick={() => { this.addItem(item._id) }}>
                                             +
                                         </button>
@@ -143,6 +149,8 @@ class Deliverdisplay extends Component {
                                         <button type="button" class="btn btn-danger" id="deliverSub" onClick={() => { this.removeItem(item._id) }}>
                                             -
                                         </button>
+                                        </div>
+                                      
                                     </div>
                                 </div>
                                 <hr />
@@ -167,10 +175,10 @@ class Deliverdisplay extends Component {
     }
 
     render() {
-        console.log("Insiude customized data",this.props)
+        // console.log("Insiude customized data",this.props)
         return (
             <>
-                {this.handleModal(this.state.itemID.split(',')[0])}
+              {this.handleModal(this.state.itemID.split(',')[0])}
                 <div id="cartDisplayDiv" style={{"display":"inline-block"}}>
                     <h1>Added Items:</h1>
                     Item Number: {this.renderCart(this.orderId)} Added.
@@ -182,6 +190,11 @@ class Deliverdisplay extends Component {
             </>
         )
     }
+   
+    
+       
+    
+    
 }
 
 

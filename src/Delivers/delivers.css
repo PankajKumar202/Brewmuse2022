@@ -126,6 +126,11 @@ body {
     width: 100%;
     background-color: #ffffff;
 }
+#orderAdd{
+    margin-top: -44%;
+    margin-left: 57%;
+
+}
 
 /* Main Header Ends */
 
@@ -435,6 +440,7 @@ label {
 }
 
 @media screen and (min-width:1600px) and (max-width:1800px) {
+ 
     #cart {
         margin-left: 28%;
     }
@@ -462,6 +468,10 @@ label {
 }
 
 @media screen and (min-width:1400px) and (max-width:1600px) {
+    #orderAdd{
+        margin-top: -50%;
+        margin-left: 62%;
+    }
     #cart {
         margin-left: 25%;
     }
@@ -485,6 +495,35 @@ label {
     .btn-success {
         margin-top: 1%;
         margin-left: 7%;
+    }
+    #deliverAdd{
+        margin-left: -8%;
+        margin-top: 13%;
+    }
+    #deliverSub{
+        margin-top: 13%;
+        margin-left: -3%;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1400px){
+    #deliverAdd {
+        margin-left: -9%;
+        margin-top: 15%;
+    }
+    #deliverSub{
+        margin-top: 15%;
+        margin-left: -4%;
+    }
+    #orderAdd {
+        margin-top: -58%;
+        margin-left: 71%;
+    }
+    .FilterBox {
+        margin-top: 9%;
+    }
+    .food {
+       
+        padding-top: 37%;
     }
 }
 
@@ -524,6 +563,14 @@ label {
         margin-top: 1%;
         margin-left: 8%;
     }
+    #deliverAdd {
+        margin-left: -11%;
+        margin-top: 17%;
+    }
+    #deliverSub{
+        margin-top: 17%;
+        margin-left: -4%;
+    }
 }
 
 @media screen and (max-width:1100px) {
@@ -532,7 +579,12 @@ label {
     }
 
     #filterModalBtn {
+        width: 17%;
         visibility: visible;
+        margin-left: 81%;
+    }
+    #cartDisplayDiv {
+        margin-left: 42%;
     }
 
     .food{
@@ -542,13 +594,24 @@ label {
     #costFilter{
         padding-top: 18%;
     }
-
+    .menuDiv {
+       
+        margin-left: 22%;
+    
+    }
+    #deliverAdd {
+        border:2px solid;
+        margin-left: -12%;
+        margin-top: 19%;
+    }
+    #deliverSub {
+        border:2px solid;
+        margin-top: 19%;
+        margin-left: -6%;
+    }
     #TypeFilter, #RatingsFilter{
         margin-top: -10%;
     }
-}
-
-@media screen and (min-width:991px) and (max-width:1100px) {
     #cart {
         margin-left: 17%;
     }
@@ -581,6 +644,18 @@ label {
     }
 
 }
+
+/* @media screen and (min-width:991px) and (max-width:1100px) {
+    /* #deliverAdd {
+        margin-left: -12%;
+        margin-top: 19%;
+    }
+    #deliverSub {
+        margin-top: 19%;
+        margin-left: -6%;
+    } */
+  
+/* } */ 
 
 
 @media screen and (min-width:900px) and (max-width:991px) {

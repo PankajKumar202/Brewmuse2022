@@ -71,7 +71,7 @@ class delivers extends Component {
                   
 
 
-                    <button className="btn btn-dark" id="filterModalBtn" type="submit" data-bs-toggle="modal" data-bs-target="#filter_modal">Click For Filter Options</button>
+                    <button className="btn btn-dark" id="filterModalBtn" type="submit" data-bs-toggle="modal" data-bs-target="#filter_modal">Filter</button>
 
 
                     <div id="filterModal">

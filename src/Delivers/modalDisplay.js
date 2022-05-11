@@ -4,7 +4,7 @@ class Modal extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            itemName:"",
+            itemName: "",
             size: "",
             espresso: "",
             dairy: "",
@@ -20,7 +20,7 @@ class Modal extends Component {
     handleEvent = (event) => {
         if (event) {
             this.setState({
-                [event.target.name]: event.target.value
+                [event.target.name]: event.target.value  
             })
         }
     }
@@ -30,67 +30,58 @@ class Modal extends Component {
         sessionStorage.setItem('totalCust', totalPrice);
         return totalPrice;
     }
-    CustomizedData=[]
+    CustomizedData = []
     addItem = () => {
-      
-        let custData=
-            [   {
-                    "coffeeName":sessionStorage.getItem('tempName')
-                },
-                {
-                    "size":this.state.size.split(',')[0],
-                    "sizePrice":this.state.size.split(',')[1]
-            },
-            {
-                "espresso":this.state.espresso.split(',')[0],
-                "espressoPrice":this.state.espresso.split(',')[1]
-            },
-            {
-                "dairy":this.state.dairy.split(',')[0],
-                "dairyPrice":this.state.dairy.split(',')[1]
-            },
-            {
-                "whippedCream":this.state.whippedCream.split(',')[0],
-                "whippedPrice":this.state.whippedCream.split(',')[1]
-            },
-            {
-                "syrupsSauces":this.state.syrupsSauces.split(',')[0],
-                "syrupsPrices":this.state.syrupsSauces.split(',')[1]
-            },
-            {
-                "sugarStir":this.state.sugarStirrer.split(',')[0],
-                "sugarPrice":this.state.sugarStirrer.split(',')[1]
 
-            },
-            {
-                "custom":this.state.custom.split(',')[0],
-                "customPrice":this.state.custom.split(',')[1],
-            },
-            {
-                "iceCream":this.state.iceCream.split(',')[0],
-                "iceCreamPrice":this.state.iceCream.split(',')[1],
-                
-            }
+        let custData =
+        {
+            "coffeeID": sessionStorage.getItem('tempId'),
+            "coffeeName": sessionStorage.getItem('tempName'),
+            "coffeeImg": sessionStorage.getItem('tempImg'),
 
-                
-                // "size":this.state.size.split(',')[0], 
-                // "Additional_size":this.state.size.split(',')[1],
-                // "espresso": this.state.size.split(',')[0],
-                // "Additional_espresso": this.state.espresso.split(',')[1]
-            ]
-           
-            // this.state.size.split(',')[1],
-            // this.state.espresso.split(',')[0], this.state.espresso.split(',')[1],
-            // this.state.dairy.split(',')[0], this.state.dairy.split(',')[1],
-            // this.state.whippedCream.split(',')[0], this.state.whippedCream.split(',')[1],
-            // this.state.syrupsSauces.split(',')[0], thisate.sy.strupsSauces.split(',')[1],
-            // this.state.sugarStirrer.split(',')[0], this.state.sugarStirrer.split(',')[1],
-            // this.state.custom.split(',')[0], this.state.custom.split(',')[1],
-            // this.state.iceCream.split(',')[0], this.state.iceCream.split(',')[1]
-        
+
+            "size": this.state.size.split(',')[0],
+            "sizePrice": this.state.size.split(',')[1],
+
+
+            "espresso": this.state.espresso.split(',')[0],
+            "espressoPrice": this.state.espresso.split(',')[1],
+
+
+            "dairy": this.state.dairy.split(',')[0],
+            "dairyPrice": this.state.dairy.split(',')[1],
+
+
+            "whippedCream": this.state.whippedCream.split(',')[0],
+            "whippedPrice": this.state.whippedCream.split(',')[1],
+
+
+            "syrupsSauces": this.state.syrupsSauces.split(',')[0],
+            "syrupsPrices": this.state.syrupsSauces.split(',')[1],
+
+
+            "sugarStir": this.state.sugarStirrer.split(',')[0],
+            "sugarPrice": this.state.sugarStirrer.split(',')[1],
+
+
+
+            "custom": this.state.custom.split(',')[0],
+            "customPrice": this.state.custom.split(',')[1],
+
+
+            "iceCream": this.state.iceCream.split(',')[0],
+            "iceCreamPrice": this.state.iceCream.split(',')[1]
+
+        }
+
+
+
+
+
+
         this.CustomizedData.push(custData)
-        localStorage.setItem('Customizeddata',JSON.stringify(this.CustomizedData))    
-        
+        localStorage.setItem('Customizeddata', JSON.stringify(this.CustomizedData))
+
         let temp_id = sessionStorage.getItem('tempId');
         this.props.tempId(Number(temp_id));
         // this.props.CustomizedData(this.CustomizedData);
@@ -99,7 +90,7 @@ class Modal extends Component {
     addOn = ({ addOn }) => {
         if (addOn) {
             if (addOn.length > 0) {
-               
+
                 return addOn.map((item) => {
                     // this.setState({itemName:item.name})
                     return (
@@ -112,8 +103,8 @@ class Modal extends Component {
                                     return (
                                         <div className="form-check" key={index}>
                                             <form>
-                                                <input className="form-check-input" type="radio" name="size" value={[sizeData.name, sizeData.Additional_Price]} id="flexRadioDefault1" onClick={this.handleEvent} defaultChecked={item.size[0].name === sizeData.name} disabled={false === sizeData.inStock} />
-                                                <label className="form-check-label" for="flexRadioDefault1">
+                                                <input className="form-check-input" type="radio" name="size" value={[sizeData.name, sizeData.Additional_Price]}  onClick={this.handleEvent}/>
+                                                <label className="form-check-label" >
                                                     <span>{sizeData.inStock}</span>
                                                     <span >{sizeData.name}: </span>
                                                     <span>{sizeData.Additional_Price}</span>
@@ -132,7 +123,7 @@ class Modal extends Component {
                                         <Fragment>
                                             <div className="form-check" key={index}>
                                                 <form>
-                                                    <input className="form-check-input" type="radio" name="espresso" value={[espressoData.name, espressoData.Additional_Price]} id="flexRadioDefault2" onClick={this.handleEvent} defaultChecked={item.Espresso[0].name === espressoData.name} disabled={false === espressoData.inStock} />
+                                                    <input className="form-check-input" type="radio" name="espresso" value={[espressoData.name, espressoData.Additional_Price]} id="flexRadioDefault2" onClick={this.handleEvent}  />
                                                     <label className="form-check-label" for="flexRadioDefault2">
 
                                                         <span>{espressoData.name}: </span>
@@ -152,7 +143,7 @@ class Modal extends Component {
                                         <Fragment>
                                             <div className="form-check" key={index}>
                                                 <form>
-                                                    <input className="form-check-input" type="radio" name="dairy" value={[dairyData.name, dairyData.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault3" defaultChecked={item.Dairy[0].name === dairyData.name} disabled={false === dairyData.inStock} />
+                                                    <input className="form-check-input" type="radio" name="dairy" value={[dairyData.name, dairyData.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault3"  />
                                                     <label className="form-check-label" for="flexRadioDefault3">
 
                                                         <span>{dairyData.name}: </span>
@@ -173,7 +164,7 @@ class Modal extends Component {
 
                                             <div className="form-check" key={index}>
                                                 <form>
-                                                    <input className="form-check-input" type="radio" name="whippedCream" value={[whippedData.name, whippedData.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault4" defaultChecked={item.whippedCream[0].name === whippedData.name} disabled={false === whippedData.inStock} />
+                                                    <input className="form-check-input" type="radio" name="whippedCream" value={[whippedData.name, whippedData.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault4"  />
                                                     <label className="form-check-label" for="flexRadioDefault4">
 
                                                         <span>{whippedData.name}: </span>
@@ -194,7 +185,7 @@ class Modal extends Component {
                                         <Fragment>
                                             <div className="form-check" key={index}>
                                                 <form>
-                                                    <input className="form-check-input" type="radio" name="syrupsSauces" value={[syrupsSauces.name, syrupsSauces.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault5" defaultChecked={item.syrupsSauces[0].name === syrupsSauces.name} disabled={false === syrupsSauces.inStock} />
+                                                    <input className="form-check-input" type="radio" name="syrupsSauces" value={[syrupsSauces.name, syrupsSauces.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault5" />
                                                     <label className="form-check-label" for="flexRadioDefault5">
 
                                                         <span>{syrupsSauces.name}: </span>
@@ -214,7 +205,7 @@ class Modal extends Component {
                                         <Fragment>
                                             <div className="form-check" key={index}>
                                                 <form>
-                                                    <input className="form-check-input" type="radio" name="sugarStirrer" value={[sugarStirrer.name, sugarStirrer.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault6" defaultChecked={item.sugarStirrer[0].name === sugarStirrer.name} disabled={false === sugarStirrer.inStock} />
+                                                    <input className="form-check-input" type="radio" name="sugarStirrer" value={[sugarStirrer.name, sugarStirrer.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault6"  />
                                                     <label className="form-check-label" for="flexRadioDefault6" >
 
                                                         <span>{sugarStirrer.name}: </span>
@@ -236,7 +227,7 @@ class Modal extends Component {
 
                                             <div className="form-check" key={index}>
                                                 <form>
-                                                    <input className="form-check-input" type="radio" name="optional" value={[optional.name, optional.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault7" defaultChecked={item.optional[0].name === optional.name} disabled={false === optional.inStock} />
+                                                    <input className="form-check-input" type="radio" name="optional" value={[optional.name, optional.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault7" />
                                                     <label className="form-check-label" for="flexRadioDefault7">
 
                                                         <span>{optional.name}: </span>
@@ -258,7 +249,7 @@ class Modal extends Component {
 
                                             <div className="form-check" key={index}>
                                                 <form>
-                                                    <input className="form-check-input" type="radio" name="custom" value={[custom.name, custom.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault8" defaultChecked={item.Customs[0].name === custom.name} disabled={false === custom.inStock} />
+                                                    <input className="form-check-input" type="radio" name="custom" value={[custom.name, custom.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault8" />
                                                     <label className="form-check-label" for="flexRadioDefault8">
 
                                                         <span>{custom.name}: </span>
@@ -280,8 +271,7 @@ class Modal extends Component {
 
                                             <div className="form-check" key={index}>
                                                 <form>
-                                                    <input className="form-check-input" type="radio" name="iceCream" value={[IceCream.name, IceCream.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault9" defaultChecked=
-                                                        {item.iceCream[0].name === IceCream.name} disabled={false === IceCream.inStock} />
+                                                    <input className="form-check-input" type="radio" name="iceCream" value={[IceCream.name, IceCream.Additional_Price]} onClick={this.handleEvent} id="flexRadioDefault9"  />
                                                     <label className="form-check-label" for="flexRadioDefault9">
 
                                                         <span>{IceCream.name}: </span>
@@ -310,6 +300,7 @@ class Modal extends Component {
         }
     }
     render() {
+        
         return (
             <Fragment>
                 {this.addOn(this.props)}
@@ -320,6 +311,9 @@ class Modal extends Component {
             </Fragment>
         )
     }
+   
+       
+    
 }
 
 export default Modal;
