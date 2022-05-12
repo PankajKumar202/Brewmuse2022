@@ -8,9 +8,10 @@ import CategoryFilter from '../filters/categoryFilter';
 import CostFilter from '../filters/costFilter';
 import TypeFilter from '../filters/typeFilter';
 import RatingsFilter from '../filters/ratingsFilter';
+import ReactPaginate from 'react-paginate';
 
 
-const menuUrl = "https://brewmusepk.herokuapp.com/Menu";
+const menuUrl = "https://brewmusepk.herokuapp.com/Menu?limit=7";
 
 class delivers extends Component {
     constructor(props) {
@@ -37,6 +38,7 @@ class delivers extends Component {
     setDataPerFilter = (data) => {
         this.setState({ filtered: data })
     }
+    
 
 
     filtered = (userText) => {
@@ -45,7 +47,18 @@ class delivers extends Component {
         })
         this.setState({ filtered: output })
     }
-
+    pagination=(current)=>{
+        fetch(`https://brewmusepk.herokuapp.com/filter?skip=${current}&limit=7`,{method:'GET'})
+        .then((res)=>res.json())
+        .then((data=>{
+            console.log("Page data",data)
+            this.setState({filtered:data})
+        }))
+    }
+    PageClick=(data)=>{
+        console.log(data.selected+6)
+        this.pagination(data.selected+6);
+    }
     render() {
         // let arr=localStorage.getItem('Customizeddata');
         // var result = Object.entries(arr)
@@ -54,7 +67,7 @@ class delivers extends Component {
         return (
             <React.Fragment>
                 <Header />
-                <div className="row">
+                {/* <div className="row"> */}
               
                     <div id="header2">
                    
@@ -104,10 +117,14 @@ class delivers extends Component {
                         </div>
 
                         <Deliverdisplay Menu={this.state.filtered} final={(itemId) => { this.addToCart(itemId) }} />
+                        <ReactPaginate previousLabel={'previous'} nextLabel={'next'} breakLabel={'...'} pageCount={11} marginPagesDisplayed={1} pageRangeDisplayed={1}
+            onPageChange={this.PageClick} containerClassName={'pagination justify-content-end w-85'} pageClassName={'page-item'} pageLinkClassName={'page-link'}
+            previousClassName={'page-item'} previousLinkClassName={'page-link'} nextClassName={'page-item'} nextLinkClassName={'page-link'}
+            breakClassName={'page-item'} breakLinkClassName={'page-link'} activeClassName={'active'}/>
                         </div>
                    
 
-                </div>
+                {/* </div> */}
 
             </React.Fragment>
         )

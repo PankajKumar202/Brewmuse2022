@@ -203,7 +203,7 @@ class Header extends Component {
                 .then((res) => res.json())
                 .then((data) => {
                     console.log(data);
-                    sessionStorage.setItem('city', data.city.name)
+                    // sessionStorage.setItem('city', data.city.name)
                     data.list.map((item) => {
                         console.log(item.temp.day)
                         y.innerText = `${item.temp.day}°C`;

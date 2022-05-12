@@ -292,7 +292,7 @@ class Modal extends Component {
             else {
                 return (
                     <div>
-                        <img className="Loading" src='/image/Loader.gif' alt="Loader..." />
+                        <img className="Loading" src='../loading/dritan-dritanalsela.gif' alt="Loader..." />
                         <h1 className="Loading">Loading.....</h1>
                     </div>)
             }

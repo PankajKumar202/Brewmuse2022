@@ -71,7 +71,7 @@ class Deliverdisplay extends Component {
         }
     }
 
-    display = ({ Menu }) => {
+    display = ({ Menu}) => {
         
 
         if (Menu) {
@@ -167,7 +167,7 @@ class Deliverdisplay extends Component {
         else {
             return (
                 <div>
-                    <img className="Loading" src='image/Loader.gif' alt="Loader..." />
+                    <img className="Loading" src="../loading/Loader.gif" alt="Loader..." />
                     <h1 className="Loading">Loading.....</h1>
                 </div>
             )

@@ -12,6 +12,7 @@ body {
     height: 10px;
 }
 
+
 /* Nav1 Div Starts */
 #nav1 {
     background-color: #f7f7f7;
@@ -829,6 +830,11 @@ margin-top: 6%;
 
 
 @media screen and (max-width: 991px) {
+    #header1 {
+        background-color: #006341;
+        width: 103.3%;
+        height: 10px;
+    }
     .find {
         visibility: hidden;
     }
@@ -976,7 +982,7 @@ margin-top: 6%;
     footer {
         height: 460px;
     }
-
+   
     #category1 {
         visibility: hidden;
     }
@@ -1029,6 +1035,11 @@ margin-top: 6%;
 }
 
 @media screen and (max-width: 600px) {
+    #header1 {
+        /* background-color: #006341; */
+        width: 100%;
+      
+    }
     #findStore {
         margin-left: 81%;
         margin-top: -13%;

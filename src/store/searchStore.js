@@ -16,7 +16,7 @@ class StoreSearch extends Component {
     render() {
         return (
             <Fragment>
-                <input onChange={this.storeChange} id='searchStore' type="search" name="q" placeholder="Search store..." value={sessionStorage.getItem('city')} />
+                <input onChange={this.storeChange} id='searchStore' type="search" name="q" placeholder="Search store..." value={'Delhi'} />
                 <br />
             </Fragment>
 

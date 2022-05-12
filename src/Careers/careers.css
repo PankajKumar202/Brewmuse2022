@@ -137,11 +137,11 @@
     height: 400px;
 }
 
-.card-img-top{
+/* .card-img-top{
     width: 90%;
     height: 50%;
     margin-left: 5%;
-}
+} */
 
 #cardsCareer{
     padding: 2%;
@@ -163,9 +163,10 @@
 
 /* Media Query Starts */
 @media screen and (max-width: 2000px){
-    #enterBtn {
-        margin-top: -2.9%;
-    }
+   #enterBtn {
+    margin-top: 0.1%;
+    margin-left: 2%;
+}
     #nameVisible {
         margin-right: 22%;
         margin-top: -16%;
@@ -187,6 +188,11 @@
         
         height: 63%;
     }
+}
+@media screen and (max-width: 2000px){
+#enterBtn {
+    margin-top: 0.0%;
+}
 }
 @media screen and (max-width: 1300px){
     #enterBtn {
@@ -315,10 +321,10 @@
     #jobContent {
         height: 55%;
     }
-    .card-img-top {
+    /* .card-img-top {
         width: 100%;
         margin-left: 0%;
-    }
+    } */
 }
 
 @media screen and (max-width: 1000px){
@@ -457,9 +463,9 @@
     #nameDiv {
         padding-top: 2%;
     }
-    .card-img-top {
+    /* .card-img-top {
         height: 40%;
-    }
+    } */
 }
 
 @media screen and (max-width: 690px){

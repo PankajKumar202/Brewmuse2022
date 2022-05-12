@@ -211,9 +211,9 @@ label {
 }
 
 .menuCard {
-    height: 340px;
-    width: 95%;
-    margin-left: 2.5%;
+height: 350px;
+    width: 107%;
+    margin-left: -2.5%;
     color: #006341;
     margin-top: 3%;
 }
@@ -471,6 +471,7 @@ label {
     #orderAdd{
         margin-top: -50%;
         margin-left: 62%;
+   
     }
     #cart {
         margin-left: 25%;
@@ -642,6 +643,11 @@ label {
         margin-top: 1%;
         margin-left: 8%;
     }
+    
+#orderAdd {
+    margin-top: -86%;
+    margin-left: 89%;
+}
 
 }
 
@@ -658,7 +664,7 @@ label {
 /* } */ 
 
 
-@media screen and (min-width:900px) and (max-width:991px) {
+@media screen and (max-width:991px) {
 
     #cart {
         margin-left: 14%;
@@ -684,23 +690,24 @@ label {
     }
 
     #budgt {
-        font-size: 17px;
-        margin-left: 33%;
-        margin-top: 5%;
+        font-size: 19px;
+        margin-left: 27%;
+        margin-top: 8.5%;
     }
 
     #delTime {
-        margin-left: 53%;
-        font-size: 17px;
-        margin-top: 5%;
+        margin-left: 1%;
+        font-size: 19px;
+        margin-top: 8.5%;
     }
 
     #form>input {
+        margin-left: 189%;
         width: 120%;
     }
 
     #form>i {
-        margin-left: 108%;
+        margin-left: 294%;
     }
 
     .component1 {
@@ -713,7 +720,11 @@ label {
     }
 }
 
-@media screen and (min-width:844px) and (max-width:900px) {
+ @media screen and (max-width:847px) {
+#form>input {
+    margin-left: 142%;
+    width: 170%;
+}
 
     #cart {
         margin-left: 10%;
@@ -738,7 +749,7 @@ label {
 
     }
 
-    #budgt {
+    /* #budgt {
         font-size: 17px;
         margin-left: 38%;
         margin-top: 5%;
@@ -748,14 +759,15 @@ label {
         margin-left: 60%;
         font-size: 17px;
         margin-top: 5%;
-    }
+    } */
 
     #form>input {
-        width: 120%;
+        width: 165%;
+        margin-left: 98%;
     }
 
     #form>i {
-        margin-left: 108%;
+        margin-left: 248%;
     }
 
     .component1 {
@@ -766,9 +778,147 @@ label {
         margin-top: 18%;
         margin-left: -12%;
     }
+} 
+@media screen and (max-width:800px) {
+    #delTime {
+        
+        margin-top: 12.5%;
+    }
+    #budgt {
+        /* font-size: 19px; */
+        margin-left: 36%;
+        margin-top: 12.5%;
+}
+#form>input {
+ 
+    margin-left: -8%;
+}
+#form>i {
+    margin-left: 142%;
+}
+#deliverAdd {
+    /* border: 2px solid; */
+    margin-left: -16%;
+}
+#orderAdd {
+    margin-top: -73%;
+    /* margin-left: 89%;
+ } */
+}
+}
+@media  screen and (max-width:600px) {
+    #delTime {
+        margin-top: 26.5%;
+    }
+    #budgt {
+        /* font-size: 19px; */
+        margin-left: 1.4%;
+        margin-top: 15.5%;
+        width: 49%;
+    }
+    #proceedBtn {
+        margin-top: 26.1%;
+        float: right;
+        margin-right: 1%;
+        background-color: #006341;
+        color: white;
+        font-size: 13px;
+    }
+    #filterModalBtn {
+        font-size: 15px;
+        width: 40%;
+        visibility: visible;
+        margin-left: 59%;
+        margin-top: 3%;
+    }
+    #form>input {
+        width: 216%;
+    }
+    #form>i {
+        margin-left: 193%;
+    }
+    #cartDisplayDiv {
+        margin-left: 3%;
+    }
+    #orderAdd {
+        margin-top: -42%;
+        margin-left: 65%;
+    }
+    #deliverSub {
+        /* border: 2px solid; */
+        margin-top: 19%;
+        margin-left: -1%;
+    }
+    .menuCard {
+        height: 391px;
+        width: 159%;
+        margin-left: -36.5%;
+        color: #006341;
+        margin-top: 3%;
+        /* border: 2px solid; */
+    }
+    
+}
+@media  screen and (max-width:400px) {
+    #form>input {
+        width: 161%;
+    }
+    #form>i {
+        margin-left: 137%;
+    }
+    .menuCard {
+        height: 418px;
+    }
+    #delTime {
+        margin-top: 26.5%;
+        font-size: 14px;
+    }
+    #budgt {
+        font-size: 15px;
+        margin-left: 1.4%;
+        margin-top: 16.5%;
+    }
+    #cartDisplayDiv {
+        font-size: 15px;
+        margin-left: 3%;
+    }
+    #cartDisplayDiv > h1{
+    font-size: 23px;
+    font-weight: bold;
+}
+#proceedBtn {
+    margin-top: 40.1%;
+    float: right;
+    margin-right: 46%;
+    background-color: #006341;
+    color: white;
+    font-size: 13px;
+}
+#filterModalBtn {
+    font-size: 15px;
+    width: 40%;
+    visibility: visible;
+    margin-left: 57%;
+    margin-top: -21%;
+}
+#deliverSub {
+    /* border: 2px solid; */
+    margin-top: 39%;
+    margin-left: -11%;
+}
+#deliverAdd {
+    /* border: 2px solid; */
+    margin-left: -10%;
+}
+.menuCard {
+    /* border: 2px solid; */
+    height: 500px;
 }
 
-@media screen and (min-width:801px) and (max-width:844px) {
+    
+}
+
+/* @media screen and (min-width:801px) and (max-width:844px) {
 
     #cart {
         margin-left: 10%;
@@ -821,6 +971,6 @@ label {
         margin-top: 1%;
         margin-left: 8%;
     }
-}
+} */
 
 /* responsive for page ends till 800 px*/

@@ -59,7 +59,7 @@ class PlaceOrder extends Component {
     }
 
     render() {
-        if (sessionStorage.getItem('loginStatus') === 'logIn') {
+         if(sessionStorage.getItem('loginStatus') === 'logIn') {
             return (
                 <div className="container" id="formContainer">
                     &nbsp; &nbsp;
