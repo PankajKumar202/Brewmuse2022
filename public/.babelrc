@@ -1,0 +1,12 @@
+{
+  "plugins": ["transform-template-literals"],
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": "last 2 Firefox versions, last 2 Chrome versions, last 2 Edge versions, last 2 Safari versions"
+      },
+      "exclude":["node_modules/mapbox-gl/dist/mapbox-gl.js"]
+    }]
+  ]
+}
+// './node_modules/mapbox-gl/dist/mapbox-gl.js'

@@ -1,91 +1,79 @@
 import React, { Fragment } from 'react';
-// import { useState } from 'react';
 
 const OrderDisplay = (props) => {
-    
-
 
     const renderTable = ({ orderData }) => {
         console.log("ORDER DATA>>>", orderData)
         if (orderData) {
             return orderData.map((item) => {
-      
-             
-                console.log("item new", item.itemCustomization)
-                if ("No Customization for this item" === item.itemCustomization) {
+                if (item.itemCustomization === "No Customization for this item") {
                     return (
-                        <div key={item._id} >
-                            <span><h4>OrderId : {item.id}</h4></span>
-                            <span><h4>Name : {item.name} </h4></span>
-                            <span><h4>Phone : {item.phone}</h4></span>
-                            <span><h4>Email : {item.email}</h4></span>
-                            <span><h4 >Cost : Rs.{item.cost}</h4></span>
-                            <span><h4>Date : {item.date}</h4></span>
-                            <span><h4>Status : {item.status}</h4></span>
-                            <span><h4>Bank Name : {item.bank_name} Bank</h4></span>
-                            <span><h4>Ordered Items : {item.menuItem}</h4></span>
-                            <span><h4>Customization Items : {item.itemCustomization}</h4></span>
+                        <div key={item._id} style={{"backgroundColor":"#fff"}}>
+                            <span><h5>OrderId : {item.id}</h5></span>
+                            <span><h5>Name : {item.name} </h5></span>
+                            <span><h5>Phone : {item.phone}</h5></span>
+                            <span><h5>Email : {item.email}</h5></span>
+                            <span><h5>Cost : Rs.{item.cost}</h5></span>
+                            <span><h5>Date : {item.date}</h5></span>
+                            <span><h5>Status : {item.status}</h5></span>
+                            <span><h5>Bank Name : {item.bank_name} Bank</h5></span>
+                            <span><h5>Ordered Items : {item.menuItem}</h5></span>
+                            <span><h5>Customization Items : No Customization for ordered item(s).</h5></span>
                             <hr />
                         </div>
                     )
-
-                } else {
+                }
+                else {
                     return (
-                        <div key={item._id}>
-                            <span><h4>OrderId : {item.id}</h4></span>
-                            <span><h4>Name : {item.name} </h4></span>
-                            <span><h4>Phone : {item.phone}</h4></span>
-                            <span><h4>Email : {item.email}</h4></span>
-                            <span><h4>Cost : Rs.{item.cost}</h4></span>
-                            <span><h4>Date : {item.date}</h4></span>
-                            <span><h4>Status : {item.status}</h4></span>
-                            <span><h4>Bank Name : {item.bank_name} Bank</h4></span>
-                            <span><h4>Ordered Items : {item.menuItem}</h4></span>
-                            <span><h4>Customization Items : {
-                                item.itemCustomization.map((item, index) => {
-                                    if (item) {
+                        <div key={item._id} style={{"backgroundColor":"#fff"}}>
+                            <span><h5>OrderId : {item.id}</h5></span>
+                            <span><h5>Name : {item.name} </h5></span>
+                            <span><h5>Phone : {item.phone}</h5></span>
+                            <span><h5>Email : {item.email}</h5></span>
+                            <span><h5>Cost : Rs.{item.cost}</h5></span>
+                            <span><h5>Date : {item.date}</h5></span>
+                            <span><h5>Status : {item.status}</h5></span>
+                            <span><h5>Bank Name : {item.bank_name} Bank</h5></span>
+                            <span><h5>Ordered Items : {item.menuItem}</h5></span>
+                            <span><h5>Customization :
+                                {
+                                    item.itemCustomization.map((itemCust,index) => {
                                         return (
-                                            <Fragment key={item.id}>
-                                                <div style={{ "border": "2px solid" }}>
-                                                    <span><h4>Coffee Customization Details:<img src={item.coffeeImg} alt='coffeeImg' /></h4> </span>
-                                                    <span><h4>Item ID : {item.coffeeID}</h4></span>
-                                                    <span><h4>Item Name : {item.coffeeName}</h4></span>
-                                                    <span><h4>Coffee Size : {item.size}</h4></span>
-                                                    <span><h4>Choice of Espresso : {item.espresso}</h4></span>
-                                                    <span><h4>Choice of Dairy : {item.dairy}</h4></span>
-                                                    <span><h4>Whipped Cream : {item.whippedCream}</h4></span>
-                                                    <span><h4>Syrups & Sauces : {item.syrupsSauces}</h4></span>
-                                                    <span><h4>Sugar & Stirrer : {item.sugarStir}</h4></span>
-                                                    <span><h4>Customs : {item.custom}</h4></span>
-                                                    <span><h4>Ice Cream : {item.iceCream}</h4></span>
-                                                    <hr />
+                                            <Fragment key={index}>
+                                                <br/>
+                                                <div>
+                                                    <span><h6>{index+1}. Coffee Customization Details:<img src={itemCust.coffeeImg} alt='coffeeImg' /></h6> </span>
+                                                    <span><h6>Item ID : {itemCust.coffeeID} </h6></span>
+                                                    <span><h6>Item Name : {itemCust.coffeeName}</h6></span>
+                                                    <span><h6>Coffee Size : {itemCust.size} (Rs.{itemCust.sizePrice})</h6></span>
+                                                    <span><h6>Choice of Espresso : {itemCust.espresso} (Rs.{itemCust.espressoPrice})</h6></span>
+                                                    <span><h6>Choice of Dairy : {itemCust.dairy} (Rs.{itemCust.dairyPrice})</h6></span>
+                                                    <span><h6>Whipped Cream : {itemCust.whippedCream} (Rs.{itemCust.whippedPrice})</h6></span>
+                                                    <span><h6>Syrups & Sauces : {itemCust.syrupsSauces} (Rs.{itemCust.syrupsPrices})</h6></span>
+                                                    <span><h6>Sugar & Stirrer : {itemCust.sugarStir} (Rs.{itemCust.sugarPrice})</h6></span>
+                                                    <span><h6>Customs : {itemCust.custom} (Rs.{itemCust.customPrice})</h6></span>
+                                                    <span><h6>Ice Cream : {itemCust.iceCream} (Rs.{itemCust.iceCreamPrice})</h6></span>
                                                 </div>
 
                                             </Fragment>
                                         )
-                                    }
+                                    })
 
-                                })
-
-
-                            }</h4></span>
-                            <hr />
+                                }
+                            </h5></span>
+                            <hr/>
                         </div>
+                        
                     )
-
-
                 }
             })
         }
     }
 
-
-
     return (
-        <div className="container">
-            <center><h3>Orders:</h3></center>
+        <div className="container-fluid">
+            <center><h3>Order History:</h3></center>
             {renderTable(props)}
-            {/* {renderCustomization(props)} */}
         </div>
     )
 }

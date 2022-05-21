@@ -30,7 +30,7 @@ class delivers extends Component {
     }
 
     proceed = () => {
-        sessionStorage.setItem('finalOrder', this.state.userItems)
+        sessionStorage.setItem('finalOrder', JSON.stringify(this.state.userItems))
 
         this.props.history.push(`/placeOrder`)
     }
@@ -100,9 +100,7 @@ class delivers extends Component {
                                         <TypeFilter dataPerType={(data) => { this.setDataPerFilter(data) }} />
                                         <RatingsFilter dataPerRatings={(data) => { this.setDataPerFilter(data) }} />
                                     </div>
-                                    <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Apply Filter</button>
-                                    </div>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -118,9 +116,10 @@ class delivers extends Component {
 
                         <Deliverdisplay Menu={this.state.filtered} final={(itemId) => { this.addToCart(itemId) }} />
                         <ReactPaginate previousLabel={'previous'} nextLabel={'next'} breakLabel={'...'} pageCount={11} marginPagesDisplayed={1} pageRangeDisplayed={1}
-            onPageChange={this.PageClick} containerClassName={'pagination justify-content-end w-85'} pageClassName={'page-item'} pageLinkClassName={'page-link'}
+            onPageChange={this.PageClick} containerClassName={'pagination justify-content-center w-85 '} pageClassName={'page-item'} pageLinkClassName={'page-link'}
             previousClassName={'page-item'} previousLinkClassName={'page-link'} nextClassName={'page-item'} nextLinkClassName={'page-link'}
-            breakClassName={'page-item'} breakLinkClassName={'page-link'} activeClassName={'active'}/>
+            breakClassName={'page-item'} breakLinkClassName={'page-link'} activeClassName={'active '}/>
+            
                         </div>
                    
 

@@ -67,7 +67,7 @@ class ViewGift extends Component{
             <Fragment>
                 <Header/>
                 <h1>Your Cart</h1>
-                <ul id="giftContainerbox">
+                <ul id="giftContainer">
                         <li>
                             <a>
 

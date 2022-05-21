@@ -1,7 +1,6 @@
 import React, { Fragment, Component } from "react";
-import { Link,withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import Header from "../../Header";
-import "./finder.css"
 const finderUrl = "https://brewmusepk.herokuapp.com/coffeefinder"
 
 class Finder2 extends Component {
@@ -11,18 +10,16 @@ class Finder2 extends Component {
             finderData: ""
         }
     }
-    display=(data)=>{
-        if(data){
-            return data.map((item)=>{
-                return(
-                    
-                        <Link to={`/coffeedata/${item.opt_id}`} key={item.opt_id} className="finderLink">
-                        <img src={item.img_url} alt="items" style={{display:"inline-block"}} className="finder1"/>
-                        <span className="finderSpan">{item.name}</span>
-                    </Link>
-                    
-                 
-                    
+    display = (data) => {
+        if (data) {
+            return data.map((item) => {
+                return (
+                    <div id="coffeeBox">
+                        <Link to={`/coffeedata/${item.opt_id}`} key={item.opt_id} className="coffeeLink">
+                            <img src={item.img_url} alt="items" style={{ display: "inline-block" }} />
+                            <span className="coffeeSpan">{item.name}</span>
+                        </Link>
+                    </div>
                 )
             })
         }
@@ -32,21 +29,21 @@ class Finder2 extends Component {
         return (
             <Fragment>
                 <Header />
-                <h1 className="finderSpan">3. How intense do you like your coffee?</h1>
+                <h1>3. How intense do you like your coffee?</h1>
                 <div >
-                {this.display(this.state.finderData)}
+                    {this.display(this.state.finderData)}
                 </div>
             </Fragment>
         )
     }
     componentDidMount() {
         let finderID = 3;
-      
+
         console.log("finderID", finderID)
         fetch(`${finderUrl}/${finderID}`, { method: 'GET' })
             .then((res) => res.json())
             .then((data) => {
-                this.setState({ finderData: data})
+                this.setState({ finderData: data })
             })
 
     }

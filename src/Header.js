@@ -1,8 +1,8 @@
-import userEvent from "@testing-library/user-event";
+
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import './main.css'
-import Menu from "./Menu/menu";
+
 const headerUrl = "https://brewauth.herokuapp.com/api/auth/userInfo"
 // Geolocation and Weather
 
@@ -33,8 +33,8 @@ class Header extends Component {
                     <Fragment>
 
                         
-                            <Link className="nav-link active" to={"#"} id="signinMsgXl">Let's have coffee &#x2615;{sessionStorage.getItem('userName')}</Link>
-                            <Link onClick={this.signOut} className="signOutXl">SignOut</Link>
+                            <Link className="nav-link active" to={"#"} id="signinMsgXl" ><b style={{"color":"black"}}>Let's have coffee &#x2615;{sessionStorage.getItem('userName')}</b></Link>
+                            <Link onClick={this.signOut} className="signOutXl" style={{textDecoration:"none"}}><b style={{"color":"black"}}>SignOut</b></Link>
                         
                     </Fragment>   
                 )
@@ -42,7 +42,7 @@ class Header extends Component {
         } else {
           
                 return (
-                    <Link to={"/login"} className="find">SignIn</Link>
+                    <Link to={"/login"} className="find" style={{textDecoration:"none"}}><b style={{"color":"black"}}>SignIn</b></Link>
                 )
             
            
@@ -61,7 +61,7 @@ class Header extends Component {
 
                         
                             <Link className="nav-link active" to={"#"} id="signinMsgSm">Let's have coffee &#x2615;{sessionStorage.getItem('userName')}</Link>
-                            <Link onClick={this.signOut} className="signOutSm">SignOut</Link>
+                            <Link onClick={this.signOut} className="signOutSm" style={{textDecoration:"none"}}>SignOut</Link>
                         
                     </Fragment>   
                 )
@@ -70,7 +70,7 @@ class Header extends Component {
           
                 return (
                    <li className="nav-item" id="signIn">
-                                    <Link className="nav-link active" to={'/login'}>SignIn</Link>
+                                    <Link className="nav-link active" to={'/login'} style={{textDecoration:"none"}}>SignIn</Link>
                                 </li> 
                 )
             
@@ -93,15 +93,16 @@ class Header extends Component {
                         <Link className="navbar-brand" to={"/"}><img src="https://i.ibb.co/zbXs3MY/logo.png" alt="Logo" /></Link>
                     </div>
                    
-  <p id="weather"></p>
-                    <div id="icon"></div>
+  <b><p id="weather"></p></b>
+                    <div id="icons"></div>
                     
                   
 
                     <div id="findStore">
+                    <Link to={"/store"}>
                         <i className="fas fa-map-marker-alt"></i>
-                        <Link to={"/store"}>
-                            <p className="find">Find a Store</p>
+                        
+                            <p className="find"><b style={{"color":"black"}}>Find a Store</b></p>
                         </Link>&nbsp;&nbsp;&nbsp;
                         <div id="conditionalHeaderxl">
                         {this.conditionalHeaderxl()}
@@ -109,12 +110,13 @@ class Header extends Component {
                        
                     </div>
                 </div>
-
+              
                 <nav className="navbar navbar-expand-lg navbar-light">
-                    <div className="container-fluid">
-                        <button id="navIcon" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={this.navbar} >
+                <button id="navIcon" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={this.navbar} >
                             <span className="navbar-toggler-icon"></span>
                         </button>
+                    <div className="container-fluid">
+                     
 
                         <div className="collapse navbar-collapse w-50" id="navbarNav">
                             <ul className="navbar-nav">
@@ -138,7 +140,7 @@ class Header extends Component {
                                     <Link className="nav-link active" to={"/careers"}>CAREERS</Link>
                                 </li>
                                 <li className="nav-item" id="gift">
-                                    <Link className="nav-link active" to={"/seasonGifting"}>STARBUCKS SEASON'S GIFTING</Link>
+                                    <Link className="nav-link active" to={"/seasonGifting"}>BREWMUSE SEASON'S GIFTING</Link>
                                 </li>
                                 <li className="nav-item" id="del">
                                     <Link className="nav-link active" aria-current="page" to={"/starbucksdelivers"}>BREWMUSE DELIVERS</Link>
@@ -193,7 +195,7 @@ class Header extends Component {
 
         let showPosition = (data) => {
             let y = document.getElementById("weather");
-            let z = document.getElementById('icon')
+            let z = document.getElementById('icons')
             let lon = data.coords.longitude;
             let lat = data.coords.latitude;
             console.log(data);
@@ -204,10 +206,10 @@ class Header extends Component {
                 .then((data) => {
                     console.log(data);
                     // sessionStorage.setItem('city', data.city.name)
-                    data.list.map((item) => {
+                    return data.list.map((item) => {
                         console.log(item.temp.day)
                         y.innerText = `${item.temp.day}°C`;
-                        z.innerHTML = `<img class='card-img-top' src='https://openweathermap.org/img/w/${item.weather[0].icon}.png' alt='weather'/>`
+                        z.innerHTML = `<img class='card-img-top1' src='https://openweathermap.org/img/w/${item.weather[0].icon}.png' alt='weather'/>`
                     })
 
                 })

@@ -31,6 +31,7 @@ import ViewGift from './rewards/giftCard/placeGift/viewGiftOrder';
 import viewBooking from './rewards/giftCard/placeGift/viewBooking';
 import PlaceOrder from './Orders/placeOrder';
 import viewOrders from './Orders/viewOrders';
+import ForgotPassword from './login/forgot';
 
 const Router = () =>{
     return(
@@ -68,6 +69,7 @@ const Router = () =>{
             <Route path={"/viewBooking"} component={viewBooking}/>
             <Route path="/placeOrder" component={PlaceOrder}/>
             <Route path="/viewOrders" component={viewOrders}/>
+            <Route path="/forgotPassword" component={ForgotPassword}/>
             
 
             <Footer/>

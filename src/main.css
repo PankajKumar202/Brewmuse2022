@@ -139,7 +139,7 @@ body {
     color: #006341;
 }
 
-#icon {
+#icons {
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -572,7 +572,7 @@ footer {
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 0.5%;
     }
@@ -590,7 +590,7 @@ footer {
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 1%;
         margin-left: 77.5%;
@@ -620,7 +620,7 @@ footer {
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 1%;
         margin-left: 76.5%;
@@ -654,7 +654,7 @@ footer {
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 2%;
         margin-left: 75%;
@@ -688,7 +688,7 @@ footer {
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 2%;
         margin-left: 75%;
@@ -718,7 +718,7 @@ footer {
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 3.5%;
         margin-left: 73%;
@@ -755,7 +755,7 @@ footer {
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 3%;
         margin-left: 74%;
@@ -789,7 +789,7 @@ margin-top: 6%;
 
     }
 
-    #icon {
+    #icons {
 
             margin-top: 3%;
     margin-left: 66%;
@@ -808,7 +808,7 @@ margin-top: 6%;
     }
 
 
-    #icon {
+    #icons {
 
         margin-top: 3%;
         margin-left: 62%;
@@ -926,7 +926,7 @@ margin-top: 6%;
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 1%;
         margin-left: 64%;
@@ -1027,7 +1027,7 @@ margin-top: 6%;
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 2%;
         margin-left: 62%;
@@ -1064,7 +1064,7 @@ margin-top: 6%;
         margin-top: -20%;
     }
 
-    #icon {
+    #icons {
 
         margin-top: 2%;
         margin-left: 53%;
@@ -1094,7 +1094,7 @@ margin-top: 6%;
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 2%;
         margin-left: 46%;
@@ -1105,7 +1105,11 @@ margin-top: 6%;
     .navbar-toggler {
         margin-left: 79%;
     }
-
+    .navbar-toggler:focus{
+      
+        margin-left: 79% !important;
+       
+   }
     #findStore {
         margin-left: 74%;
     }
@@ -1120,7 +1124,7 @@ margin-top: 6%;
 
     }
 
-    #icon {
+    #icons {
 
         margin-top: 6%;
         margin-left: 34%;
@@ -1135,6 +1139,11 @@ margin-top: 6%;
     .navbar-toggler {
         margin-left: 73%;
     }
+    .navbar-toggler:focus{
+      
+        margin-left: 73% !important;
+       
+   }
 
     #findStore {
         margin-left: 68%;
@@ -1154,7 +1163,7 @@ margin-top: 6%;
     
     }
 
-    #icon {
+    #icons {
 
         margin-top: 8%;
         margin-left: 31%;
@@ -1162,6 +1171,7 @@ margin-top: 6%;
 }
 
 @media screen and (max-width: 350px) {
+   
     #ResponsiveFooterLinks {
         margin-top: 70%;
     }
@@ -1175,13 +1185,19 @@ margin-top: 6%;
     margin-left: 69%;
     margin-top: -21%;
     }
-    #icon {
+    #icons {
         margin-top: 7%;
         margin-left: 23%;
 
     }
     .navbar-toggler{
         margin-top: -31%;
+        margin-left: 78%;
+        
+    }
+     .navbar-toggler:focus{
+         margin-top: -31% !important;
+         margin-left: 78% !important;
         
     }
    

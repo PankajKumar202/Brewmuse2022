@@ -7,6 +7,12 @@
     margin-left: 25%;
     border: 5px solid #006341;
 }
+.storePage {
+    width: 321%;
+    /* border: 2px solid; */
+    justify-content: center!important;
+    margin-top: 9%;
+}
 #storeContain {
     display: inline-block;
     margin-top: -34%;
@@ -58,7 +64,7 @@ margin-left: 2%;
     }
     #searchStore {
         text-align: center;
-        width: 97%;
+        width: 323%;
     }
     #storeComponent {
         width: 321%;

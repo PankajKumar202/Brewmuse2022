@@ -29,8 +29,8 @@
 }
 
 #enterBtn{
-    margin-top: -3.7%;
-    margin-left: 26%;
+    margin-top: 0%;
+    margin-left: 1%;
     width: 8%;
     border-radius: 1%;
     height: 50px;
@@ -52,7 +52,6 @@
 
 #jobDiv{
     background-color: #738d7d;
-    /* background-color: #1e1e1e; */
     height: 150px;
     padding: 3%;
 }
@@ -69,7 +68,7 @@
 }
 
 #submitBtnJob{
-    margin-top: -3.5%;
+    margin-top: -2.5%;
     float: right;
     margin-right: 8%;
     width: 25%;
@@ -137,11 +136,11 @@
     height: 400px;
 }
 
-/* .card-img-top{
+.card-img-top{
     width: 90%;
     height: 50%;
     margin-left: 5%;
-} */
+}
 
 #cardsCareer{
     padding: 2%;
@@ -162,42 +161,7 @@
 }
 
 /* Media Query Starts */
-@media screen and (max-width: 2000px){
-   #enterBtn {
-    margin-top: 0.1%;
-    margin-left: 2%;
-}
-    #nameVisible {
-        margin-right: 22%;
-        margin-top: -16%;
-        font-size: 32px;
-    }
-    #careersDiv1 {
-       
-        background-position: 100%;
-    }
-    #submitBtnJob {
-        margin-top: -2.5%;
-        /* float: right; */
-        margin-right: 24%;
-    }
-    #img2Job {
-        width: 1011px;
-    }
-    #jobContent {
-        
-        height: 63%;
-    }
-}
-@media screen and (max-width: 2000px){
-#enterBtn {
-    margin-top: 0.0%;
-}
-}
 @media screen and (max-width: 1300px){
-    #enterBtn {
-        margin-top: -3.9%;
-    }
     #nameVisible {
         margin-right: 27%;
         margin-top: -18%;
@@ -214,9 +178,6 @@
 }
 
 @media screen and (max-width: 1250px){
-    #enterBtn {
-        margin-top: -4%;
-    }
     #nameVisible {
         width: 14%;
         margin-right: 26%;
@@ -249,9 +210,6 @@
 }
 
 @media screen and (max-width: 1170px){
-    #enterBtn {
-        margin-top: -4.4%;
-    }
     #nameVisible {
         width: 14%;
         margin-right: 25%;
@@ -283,9 +241,6 @@
 }
 
 @media screen and (max-width: 1100px){
-    #enterBtn {
-        margin-top: -4.6%;
-    }
     #nameVisible {
         margin-right: 25%;
         margin-top: -11%;
@@ -303,9 +258,6 @@
 }
 
 @media screen and (max-width: 1050px){
-    #enterBtn {
-        margin-top: -4.8%;
-    }
     #nameVisible {
         margin-right: 24%;
         margin-top: -10%;
@@ -321,17 +273,13 @@
     #jobContent {
         height: 55%;
     }
-    /* .card-img-top {
+    .card-img-top {
         width: 100%;
         margin-left: 0%;
-    } */
+    }
 }
 
 @media screen and (max-width: 1000px){
-    #enterBtn {
-        margin-top: -5%;
-        margin-left: 22%;
-    }
     #nameVisible {
         margin-right: 25%;
         margin-top: -16%;
@@ -353,10 +301,6 @@
 }
 
 @media screen and (max-width: 950px){
-    #enterBtn {
-        margin-top: -5.4%;
-        margin-left: 23%;
-    }
     #nameVisible {
         margin-right: 25%;
         margin-top: -15%;
@@ -368,10 +312,6 @@
 }
 
 @media screen and (max-width: 900px){
-    #enterBtn {
-        margin-top: -5.6%;
-        margin-left: 22%;
-    }
     #nameVisible {
         margin-right: 26%;
         margin-top: -14%;
@@ -389,10 +329,6 @@
 }
 
 @media screen and (max-width: 850px){
-    #enterBtn {
-        margin-top: -6%;
-        margin-left: 21%;
-    }
     #nameVisible {
         margin-right: 26%;
         margin-top: -14%;
@@ -409,10 +345,6 @@
 }
 
 @media screen and (max-width: 800px){
-    #enterBtn {
-        margin-top: -6.4%;
-        margin-left: 20%;
-    }
     #nameVisible {
         margin-right: 29%;
         margin-top: -13%;
@@ -431,8 +363,8 @@
 
 @media screen and (max-width: 770px){
     #enterBtn {
-        margin-top: -6.7%;
-        margin-left: 33%;
+        margin-left: 2%;
+        width: 10%;
     }
     #nameVisible {
         margin-right: 31%;
@@ -452,10 +384,7 @@
 }
 
 @media screen and (max-width: 700px){
-    #enterBtn {
-        margin-top: -7.2%;
-        margin-left: 33%;
-    }
+    
     #nameVisible {
         margin-right: 37%;
         margin-top: 14%;
@@ -463,16 +392,13 @@
     #nameDiv {
         padding-top: 2%;
     }
-    /* .card-img-top {
+    .card-img-top {
         height: 40%;
-    } */
+    }
 }
 
 @media screen and (max-width: 690px){
-    #enterBtn {
-        margin-top: -7.5%;
-        margin-left: 37%;
-    }
+    
     #nameVisible {
         margin-right: 35%;
         width: 28%;
@@ -483,9 +409,7 @@
 }
 
 @media screen and (max-width: 650px){
-    #enterBtn {
-        margin-top: -8%;
-    }
+    
     #nameVisible {
         margin-right: 40%;
     }
@@ -500,10 +424,6 @@
 }
 
 @media screen and (max-width: 600px){
-    #enterBtn {
-        margin-top: -8.7%;
-        width: 10%;
-    }
     #nameVisible {
         margin-right: 43%;
         width: 30%;
@@ -522,10 +442,7 @@
 }
 
 @media screen and (max-width: 586px){
-    #enterBtn {
-        margin-top: -8.9%;
-        margin-left: 41%;
-    }
+    
     #nameVisible {
         margin-right: 43%;
         width: 30%;
@@ -537,9 +454,7 @@
 }
 
 @media screen and (max-width: 570px){
-    #enterBtn {
-        margin-top: -9.5%;
-    }
+    
     #nameVisible {
         margin-right: 46%;
         width: 33%;
@@ -557,9 +472,6 @@
 }
 
 @media screen and (max-width: 512px){
-    #enterBtn {
-        margin-top: -10.2%;
-    }
     #nameVisible {
         margin-right: 50%;
         margin-top: 20%;
@@ -570,6 +482,104 @@
     }
     #submitBtnJob {
         margin-right: 40%;
+    }
+}
+
+@media screen and (max-width: 499px){
+    #headerCareersBtn {
+        margin-top: -9%;
+    }
+    #enterBtn {
+        width: 14%;
+    }
+    #nameDiv {
+        width: 70%;
+        margin-top: 3%;
+    }
+    #careersDiv1 {
+        background-position-x: 80%;
+    }
+    #nameVisible {
+        margin-right: 22%;
+        margin-top: 16%;
+        width: 40%;
+    }
+    #component4Job {
+        height: 1300px;
+    }
+    .card {
+        height: 350px;
+        width: 80%;
+        display: block;
+        margin-left: 7%;
+    }
+    .card-img-top {
+        height: 50%;
+    }
+    .card-text {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 470px){
+    #jobDiv {
+        height: 170px;
+    }
+    #cityNameJob{
+        width: 225px;
+    }
+    #keywordsJob {
+        width: 225px;
+        margin-left: 1%;
+    }
+    #submitBtnJob {
+        margin-right: 10%;
+        margin-top: -15%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #nameVisible {
+        margin-right: 28%;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #nameVisible {
+        margin-right: 30%;
+        margin-top: 25%;
+        width: 45%
+    }
+    #submitBtnJob {
+        margin-right: 4%;
+        margin-top: -20%;
+    }
+    #cityNameJob{
+        width: 180px;
+    }
+    #keywordsJob {
+        margin-bottom: 5%;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #nameVisible {
+        margin-right: 29%;
+        margin-top: 22%;
+        width: 56%;
+    }
+    #enterBtn {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #submitBtnJob {
+        margin-right: 2%;
+        margin-top: -23%;
     }
 }
 

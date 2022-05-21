@@ -76,7 +76,7 @@ class Gift extends Component {
                     <div id="giftContainer2">
                         {this.renderCards()}
                         <GiftCardDisplay giftCard={this.state.giftData} finalGift={(data) => { this.addOrders(data) }} />
-                        <Link className="btn btn-primary" style={{ marginTop: "1%" }} onClick={this.proceed}>
+                        <Link className="btn btn-primary" style={{ "marginTop": "1%","marginLeft": "69%" }} onClick={this.proceed}>
                             Proceed
                         </Link>
                     </div>

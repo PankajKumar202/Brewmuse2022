@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
-
 import Header from "../Header";
 import { Link } from "react-router-dom";
+import './login.css'
+
 const loginUrl="https://brewauth.herokuapp.com/api/auth/login";
 class login extends Component {
     constructor() {
@@ -12,7 +13,7 @@ class login extends Component {
             message: ""
         }
     }
-  loginEvent=(event)=>{
+    loginEvent=(event)=>{
         this.setState({[event.target.name]:event.target.value})
     }
     handleLogin=()=>{
@@ -31,7 +32,7 @@ class login extends Component {
                 this.setState({message:data.token})
             }else{
                 sessionStorage.setItem('token',data.token)
-                sessionStorage.setItem('email',this.state.email)
+                sessionStorage.setItem('email', this.state.email)
                 this.props.history.push('/')
             }
         })
@@ -42,7 +43,7 @@ class login extends Component {
                 <Header />
                 <div className="loginContainer">
                     <br />
-                    <div class="card-body">
+                    <div class="card-body" id="loginCard">
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="form-group">
@@ -60,8 +61,9 @@ class login extends Component {
                             </div>
                         </div>
                         <h3 style={{ color: 'red' }}>{this.state.message}</h3>
-                        <center><button className="btn btn-danger" style={{ marginTop: '2%' }} onClick={this.handleLogin}>Login</button></center>
-                        <center><Link to={"/register"} style={{textDecoration:"none"}}><h5 style={{color:"#006341"}}>Don't have account? SignUp</h5></Link></center>
+                        <center><Link to="/forgotPassword" style={{textDecoration:"none"}}><h5 style={{color:"#006341"}}><b>Forgot Password? Click Me</b></h5></Link></center>
+                        <center><button className="btn btn-danger" id="loginBtn" onClick={this.handleLogin}>Login</button></center>
+                        <center><Link to={"/register"} style={{textDecoration:"none"}}><h5 style={{color:"#006341"}}><b>Don't have account? SignUp</b></h5></Link></center>
                     </div>
                 </div>
            

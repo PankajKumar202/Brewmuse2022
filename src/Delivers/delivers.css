@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* pagination start */
+.page-item.active .page-link {
+    background-color: #006341 !important;
+    border-color: #006341 !important;
+}
 
+/* pagination end */
 body {
     margin: auto;
     font-family: Lato, Helvetica, Arial, sans-serif;
@@ -10,7 +16,8 @@ body {
 /* Header1 Starts */
 
 .Loading {
-    margin-left: 45%;
+  width: 51%;
+    margin-left: 30%;
     margin-top: 3%;
 }
 
@@ -874,7 +881,7 @@ label {
         font-size: 14px;
     }
     #budgt {
-        font-size: 15px;
+        font-size: 14px;
         margin-left: 1.4%;
         margin-top: 16.5%;
     }
@@ -887,12 +894,14 @@ label {
     font-weight: bold;
 }
 #proceedBtn {
+       margin-left: 56%;
     margin-top: 40.1%;
     float: right;
-    margin-right: 46%;
+    /* margin-right: 38%; */
     background-color: #006341;
     color: white;
     font-size: 13px;
+    position: absolute;
 }
 #filterModalBtn {
     font-size: 15px;
@@ -917,60 +926,3 @@ label {
 
     
 }
-
-/* @media screen and (min-width:801px) and (max-width:844px) {
-
-    #cart {
-        margin-left: 10%;
-        height: 35px;
-        margin-top: -5%;
-    }
-
-    .btn-primary {
-        height: 35px;
-        margin-top: -5%;
-        margin-left: 20%;
-        position: absolute;
-
-    }
-
-    .btn-secondary {
-        height: 35px;
-        margin-top: -5%;
-        width: 11%;
-        margin-left: 32%;
-        position: absolute;
-
-    }
-
-    #budgt {
-        font-size: 17px;
-        margin-left: 38%;
-        margin-top: 5%;
-    }
-
-    #delTime {
-        margin-left: 60%;
-        font-size: 17px;
-        margin-top: 5%;
-    }
-
-    #form>input {
-        width: 120%;
-    }
-
-    #form>i {
-        margin-left: 108%;
-    }
-
-    .component1 {
-        margin-top: 2%;
-    }
-
-    .btn-success {
-        margin-top: 1%;
-        margin-left: 8%;
-    }
-} */
-
-/* responsive for page ends till 800 px*/

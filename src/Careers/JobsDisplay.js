@@ -91,9 +91,7 @@ class JobsDisplay extends Component {
                                     <div className="modal-body">
                                         {this.jobsDisplay(this.state.jobs)}
                                     </div>
-                                    <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    </div>
+                                  
                                 </div>
                         </div>
                     </div>

@@ -34,6 +34,13 @@ class GiftCardDisplay extends Component{
                     </div>
                 )
             })
+        }else{
+            return (
+                <div>
+                    <img className="Loading1" src="https://i.ibb.co/Y3zWkHy/dritan-dritanalsela.gif" alt="dritan-dritanalsela" border="0"></img>
+                    
+                    <h1 className="Loading">Loading.....</h1>
+                </div>)
         }
     }   
     //  margin-top: -22%;

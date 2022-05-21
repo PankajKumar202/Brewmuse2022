@@ -1,7 +1,8 @@
 .orderImage{
     /* border: 2px solid; */
     display: inline-block;
-    width: 31%;
+   width: 65%;
+    margin-left: 5%;
 }
 #giftContainerbox{
     margin-left: 6%;

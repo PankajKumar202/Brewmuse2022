@@ -32,6 +32,7 @@ class Deliverdisplay extends Component {
             this.setState({
                 [event.target.name]: event.target.value
             })
+            this.handleModal((event.target.value).split(',')[0])
             sessionStorage.setItem('tempId',(event.target.value).split(',')[0])
             sessionStorage.setItem('tempName',(event.target.value).split(',')[2])
             sessionStorage.setItem('tempImg',(event.target.value).split(',')[3])
@@ -42,12 +43,12 @@ class Deliverdisplay extends Component {
         fetch(`${modalUrl}/${Number(data)}`, { method: 'GET' })
         .then((res) => res.json())
         .then((data) => {
-            console.log("modal Data>>>>",data.name)
+            console.log("modal Data>>>>",data)
             this.setState({ modalData: data })
             // sessionStorage.setItem({})
         })
     }
-
+    
     removeItem = (id) => {
         let orderVal = sessionStorage.getItem('orders');
         if (this.orderId.indexOf(id) > -1 || this.orderId.indexOf(orderVal) > -1) {
@@ -72,10 +73,13 @@ class Deliverdisplay extends Component {
     }
 
     display = ({ Menu}) => {
+        // console.log(Menu)
+      
+        
         
 
         if (Menu) {
-            if (Menu.length > 0) {
+            if (Menu.length>0) {
                 return Menu.map((item) => {
                     let custSize = Object.keys(item).length;
                     if (custSize <= 18 && custSize > 11) {
@@ -115,9 +119,7 @@ class Deliverdisplay extends Component {
                                                     <div className="modal-body">
                                                         <Modal addOn={this.state.modalData} defaultPrice={this.state.itemID.split(',')[1]} tempId={(itemId) => { this.addItem(itemId) }}/>
                                                     </div>
-                                                    <div className="modal-footer">
-                                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={() => sessionStorage.removeItem('tempId')}>Close</button>
-                                                    </div>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -158,27 +160,24 @@ class Deliverdisplay extends Component {
                         )
                     }
                 })
-            } else {
+            }  else {
                 return (
-                    <h2>No data found</h2>
+                    <div>
+                        <img className="Loading" src="https://i.ibb.co/Kz406Z6/Loader.gif" alt="Loader" border="0"></img>
+                        
+                        <h1 className="Loading">Loading.....</h1>
+                    </div>
                 )
             }
         }
-        else {
-            return (
-                <div>
-                    <img className="Loading" src="../loading/Loader.gif" alt="Loader..." />
-                    <h1 className="Loading">Loading.....</h1>
-                </div>
-            )
-        }
+      
     }
 
     render() {
         // console.log("Insiude customized data",this.props)
         return (
             <>
-              {this.handleModal(this.state.itemID.split(',')[0])}
+              
                 <div id="cartDisplayDiv" style={{"display":"inline-block"}}>
                     <h1>Added Items:</h1>
                     Item Number: {this.renderCart(this.orderId)} Added.
@@ -187,6 +186,8 @@ class Deliverdisplay extends Component {
                 <div>
                     {this.display(this.props)}
                 </div>
+               
+                
             </>
         )
     }

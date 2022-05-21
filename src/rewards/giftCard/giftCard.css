@@ -91,6 +91,7 @@ font-size: 20px;
     }
     #giftContainer{
         width: 90%;
+        height:146px;
     }
     #giftContainer1{
         width: 90%;
@@ -160,7 +161,7 @@ font-size: 20px;
     }
     #giftContainer {
         width: 90%;
-        height: 240px;
+        height: 377px;
     }
     #giftHeading2 {
         display: inline-block;

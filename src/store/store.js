@@ -1,10 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import mapboxgl from "mapbox-gl";
+
 import StoreSearch from './searchStore';
 import Header from '../Header';
 import ReactPaginate from 'react-paginate';
 import StoreDisplay from './storeDisplay';
-const storeUrl = "https://brewmusepk.herokuapp.com/store";
+// import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker'
+const coordsUrl = "https://brewmusepk.herokuapp.com/store";
+const storeUrl = "https://brewmusepk.herokuapp.com/store?skip=0&limit=7";
 mapboxgl.accessToken = "pk.eyJ1IjoicGFua2Fqa3VtYXI5OSIsImEiOiJja3RzYjlxemQwYWY2MnBvMzBxczV6bHVyIn0.BlMzug6pTDIMl4kp_2zhqQ";
 class Store extends Component {
     constructor(props) {
@@ -26,13 +29,13 @@ class Store extends Component {
     }
 
     handlePageClick=(data)=>{
-        console.log(data.selected+6)
-        this.handlepagination(data.selected+6);
+    
+        this.handlepagination(data.selected+10);
     }
     filteredstore = (Text) => {
         if (this.state.coords) {
             let storeData = this.state.coords.filter((item) => {
-                console.log("Insiode >>>", item.name)
+                // console.log("Insiode >>>", item.name)
                 // let names=item.name.split(' ')[0];
                 return item.city_name.toLowerCase().indexOf(Text.toLowerCase()) > -1
 
@@ -58,7 +61,7 @@ class Store extends Component {
                     <StoreSearch storeInput={(data) => { this.filteredstore(data) }} />
                     <StoreDisplay storeloc={this.state.filter } />
                     <ReactPaginate previousLabel={'previous'} nextLabel={'next'} breakLabel={'...'} pageCount={11} marginPagesDisplayed={1} pageRangeDisplayed={1}
-            onPageChange={this.handlePageClick} containerClassName={'pagination justify-content-center'} pageClassName={'page-item'} pageLinkClassName={'page-link'}
+            onPageChange={this.handlePageClick} containerClassName={'pagination storePage'} pageClassName={'page-item'} pageLinkClassName={'page-link'}
             previousClassName={'page-item'} previousLinkClassName={'page-link'} nextClassName={'page-item'} nextLinkClassName={'page-link'}
             breakClassName={'page-item'} breakLinkClassName={'page-link'} activeClassName={'active'}/>
                 </div>
@@ -78,10 +81,11 @@ class Store extends Component {
         )
     }
     componentDidMount() {
-        fetch(storeUrl, { method: 'GET' })
+        fetch(coordsUrl, { method: 'GET' })
             .then((res) => res.json())
             .then((data => {
-                this.setState({ coords: data,filter:data});
+                this.setState({ coords: data});
+                // mapboxgl.workerClass = MapboxWorker;
                 const map = new mapboxgl.Map({
                     container: this.mapContainer.current,
                     style: 'mapbox://styles/pankajkumar99/ckzjk5tnm00db14l9ur49pa15',
@@ -101,6 +105,12 @@ class Store extends Component {
                         .addTo(map)
                 })
             }))
+            fetch(storeUrl,{method:'GET'})
+            .then((res)=>res.json())
+            .then((data)=>{
+                this.setState({filter:data})
+            })
+        
         
 
     }
